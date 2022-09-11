@@ -1,11 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Home from "./pages/Home/Home";
+import Home from "./components/pages/Home/Home";
+import Footer from "./components/sharedPage/Footer";
+import Navbar from "./components/sharedPage/Navbar";
 
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
       <Home></Home>
+      <Footer></Footer>
     </div>
   );
 }
