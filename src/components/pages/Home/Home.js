@@ -1,10 +1,13 @@
 import React from "react";
-import HomeCard from "../../components/HomeCard";
+import HomeCard from "./HomeCard";
+import Product from "./Product";
 
 const Home = () => {
   return (
     <div>
-      <h1>Epic</h1>
+      <HomeCard></HomeCard>
+      <Product></Product>
+
     </div>
   );
 };
