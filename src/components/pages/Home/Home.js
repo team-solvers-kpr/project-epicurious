@@ -1,4 +1,5 @@
 import React from "react";
+import Books from "./Books";
 import HomeCard from "./HomeCard";
 import Product from "./Product";
 
@@ -7,7 +8,7 @@ const Home = () => {
     <div>
       <HomeCard></HomeCard>
       <Product></Product>
-
+      <Books></Books>
     </div>
   );
 };
