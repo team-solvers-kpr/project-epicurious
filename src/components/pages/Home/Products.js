@@ -6,12 +6,12 @@ import readPaperPastaImg from '../../../assets/images/RedPepperPasta_HERO_040821
 export default function Products() {
   return (
       <div className='container'>
-          <div className='products flex justify-center'>
-              <a href='/'>
+          <a href='/'>
+            <div className='products flex justify-center'>
                 <Product heading='meal plan' title='A Week of Easy Dinners to Get You Back in the Cooking Groove' author='by anna hezel' img={moonCakesImg}/>
                 <Product heading='dessert' title='A Week of Easy Dinners to Get You Back in the Cooking Groove' author='By Genevieve Yam' img={readPaperPastaImg}/>
-              </a>
-          </div>
+            </div>
+          </a>
       </div>
   )
 }
