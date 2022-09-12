@@ -1,14 +1,14 @@
 import React from "react";
 import Books from "./Books";
 import HomeCard from "./HomeCard";
-import Product from "./Product";
+import Products from "./Products";
 
 const Home = () => {
   return (
     <div>
       <HomeCard></HomeCard>
-      <Product></Product>
       <Books></Books>
+      <Products></Products>
     </div>
   );
 };
