@@ -5,37 +5,37 @@ import FortunateImg from '../images/Fortune_Cookie_Magic_Shell_RECIPE_082522_392
 import SesameImg from '../images/sesameNoodlesRecipe.jpg';
 import TunaImg from '../images/TunaNoodleCasserole_RECIPE_090721_2033.jpg';
 
-const RecipesData = [
+const recipesData = [
     {
         id: uuidv4(),
-        name:'Jaitul Fol',
-        desc: 'Reduce the risk of cancer,Relieves skin inflammation,Smooth blood flow,Controlling cholesterol,Prevent premature aging,Reduce the risk of diabetes.',
+        name:'epicurious',
+        desc: 'Fortune Cookie Magic Shell Sundae',
         img: CandiedImg,
     },
     {
         id: uuidv4(),
-        name:'Jaitul Fol',
-        desc: 'Reduce the risk of cancer,Relieves skin inflammation,Smooth blood flow,Controlling cholesterol,Prevent premature aging,Reduce the risk of diabetes.',
+        title:'epicurious',
+        desc: 'Easy Candied Orange Peel',
         img: CheaterImg,
     },
     {
         id: uuidv4(),
-        name:'Jaitul Fol',
-        desc: 'Reduce the risk of cancer,Relieves skin inflammation,Smooth blood flow,Controlling cholesterol,Prevent premature aging,Reduce the risk of diabetes.',
+        name:'epicurious',
+        desc: 'Tuna Noodle Casserole',
         img: FortunateImg,
     },
     {
         id: uuidv4(),
-        name:'Jaitul Fol',
-        desc: 'Reduce the risk of cancer,Relieves skin inflammation,Smooth blood flow,Controlling cholesterol,Prevent premature aging,Reduce the risk of diabetes.',
+        name:'Dinner In one',
+        desc: "Cheater's Instant Pot Chicken and Duplings",
         img: SesameImg,
     },
     {
         id: uuidv4(),
-        name:'Jaitul Fol',
-        desc: 'Reduce the risk of cancer,Relieves skin inflammation,Smooth blood flow,Controlling cholesterol,Prevent premature aging,Reduce the risk of diabetes.',
+        name:'The vegan Chines Kitchen',
+        desc: 'Sesame Noodles',
         img: TunaImg,
     },
 ];
 
-export default RecipesData;
+export default recipesData;
