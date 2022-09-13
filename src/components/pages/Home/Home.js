@@ -1,13 +1,14 @@
 import React from "react";
+import BookRelease from "./BookRelease";
 import HomeCard from "./HomeCard";
-import Product from "./Product";
+import Products from "./Products";
 
 const Home = () => {
   return (
     <div>
       <HomeCard></HomeCard>
-      <Product></Product>
-
+      <BookRelease></BookRelease>
+      <Products></Products>
     </div>
   );
 };
