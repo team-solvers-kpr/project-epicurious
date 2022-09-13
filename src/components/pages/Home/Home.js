@@ -9,6 +9,8 @@ const Home = () => {
       <HomeCard></HomeCard>
       <BookRelease></BookRelease>
       <Products></Products>
+
+      
     </div>
   );
 };
