@@ -3,21 +3,20 @@ import recipesImg from '../../../assets/images/CandiedCitrus_RECIPE_080420_37712
 
 export default function Recipe({
     img = recipesImg,
-    name = 'new recipes name',
-    desc = 'recipes desc'
+    heading = 'recipes',
+    title = 'recipes title lorem'
 }) {
   return (
-    <div>
-        <a href='/' className="recipes_img">
-            <img src={img} alt="recipes img" />
-        </a>
+    <div className='recipes_items'>
+        <div className="recipes_img overflow-hidden">
+            <img src={img} alt="recipes img" className='h-44 rounded-full' />
+        </div>
         <div className="recipes_info">
             <a href='/'>
-                <p className="recipes_desc">{desc}</p>
+                <h2 className="recipes_litle hover:underline text-black font-semibold">{title}</h2>
             </a>
-            <h3 className="projectItem_title">{name}</h3>
-            
-      </div>
+            <h3 className="recipes_heading uppercase">{heading}</h3>
+        </div>
     </div>
   )
 }

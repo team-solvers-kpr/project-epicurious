@@ -8,32 +8,32 @@ import TunaImg from '../images/TunaNoodleCasserole_RECIPE_090721_2033.jpg';
 const recipesData = [
     {
         id: uuidv4(),
-        name:'epicurious',
-        desc: 'Fortune Cookie Magic Shell Sundae',
+        heading:'epicurious',
+        title: 'Fortune Cookie Magic Shell Sundae',
         img: CandiedImg,
     },
     {
         id: uuidv4(),
-        title:'epicurious',
-        desc: 'Easy Candied Orange Peel',
+        heading:'epicurious',
+        title: 'Easy Candied Orange Peel',
         img: CheaterImg,
     },
     {
         id: uuidv4(),
-        name:'epicurious',
-        desc: 'Tuna Noodle Casserole',
+        heading:'epicurious',
+        title: 'Tuna Noodle Casserole',
         img: FortunateImg,
     },
     {
         id: uuidv4(),
-        name:'Dinner In one',
-        desc: "Cheater's Instant Pot Chicken and Duplings",
+        heading:'Dinner In one',
+        title: "Cheater's Instant Pot Chicken and Duplings",
         img: SesameImg,
     },
     {
         id: uuidv4(),
-        name:'The vegan Chines Kitchen',
-        desc: 'Sesame Noodles',
+        heading:'The vegan Chines Kitchen',
+        title: 'Sesame Noodles',
         img: TunaImg,
     },
 ];
