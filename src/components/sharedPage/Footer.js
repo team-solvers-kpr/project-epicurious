@@ -8,11 +8,59 @@ const Footer = () => {
             <p class="text-sky-400">The quick brown fox...</p>
 
             </section>
-            <section class='h-96 ' style={{backgroundColor:'#f93f23'}}>
+
+            {/* // -- middle part of footer-- */}
+            <section class='h-96 px-60 py-10 ' style={{backgroundColor:'#f93f23'}}>
+            <div class='flex justify-between'>
+                    <div class='flex'>
+                    <div class=' p-2'>
+                        <h1 class='text-4xl font-bold text-white'>epicurious</h1>
+                    </div>
+               
+                    </div>
+                <div class='flex p-2'>
+                       <div class='mx-4 '>
+                       <div class='mb-4 '>
+                       <h3><a href='https://www.condenast.com/careers' class='hover:underline underline-offset-0  text-white font-bold mx-2 p-1' target='_blank' rel="noopener noreferrer">SITE MAP</a></h3>
+                       </div>
+                       <h5> <a href='https://www.epicurious.com/recipes-menus' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Recipes & Menus</a></h5>
+                       <h5> <a href='https://www.epicurious.com/expert-advice' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Expert Advice</a></h5>
+                       <h5> <a href='https://www.epicurious.com/ingredients' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Ingredients</a></h5>
+                       <h5> <a href='https://www.epicurious.com/holidays-events' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Holidays & Events</a></h5>
+                       <h5> <a href='https://video.epicurious.com/' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Video</a></h5>
+                       </div>
+                       <div class='mx-4'>
+                       <div class='mb-4'>
+                       <h3 class='text-white font-bold mx-2 p-1'>HELPFUL LINKS</h3>
+                       </div>
+                       <h5> <a href='https://www.epicurious.com/info/epicurious-user-help-article' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Subscription FAQs</a></h5>
+                       <h5> <a href='https://www.epicurious.com/about/contact-us' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Contact us</a></h5>
+                       <h5> <a href='https://www.epicurious.com/about/masthead' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Masthead</a></h5>
+                       <h5> <a href='https://www.epicurious.com/expert-advice/accessibility-help-article' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Accessibility Help</a></h5>
+                       <h5> <a href='https://www.condenast.com/careers' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Advertising</a></h5>
+                       <h5> <a href='https://www.epicurious.com/about/press-center' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Press Center</a></h5>
+                       <h5> <a href='https://www.epicurious.com/newsletter' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Newsletters</a></h5>
+                       </div>
+                       <div class='mx-4'>
+                       <div class='mb-4'>
+                       <h3 class='text-white font-bold mx-2 p-1'>FOOD INNOVATION GROUP</h3>
+                       </div>
+                       <h5> <a href='https://www.bonappetit.com/' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Bon Appetit</a></h5>
+                       <h5> <a href='https://www.epicurious.com/' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Epicurios</a></h5>
+                       <h5> <a href='http://www.gourmet.com/' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Gourment</a></h5>
+                       
+                       </div>
+                      
+                       
+                    </div>
+
+                    </div>
            
                 
                 </section>
-                <section class='h-76 px-60 py-20' style={{backgroundColor:'#292929'}}>
+
+               {/* // -- last part of footer-- */}
+              <section class='h-76 px-60 py-20 ' style={{backgroundColor:'#292929'}}>
                     <div class='flex justify-between'>
                     <div class='flex'>
                     <div class=' p-2'>
