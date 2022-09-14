@@ -70,12 +70,8 @@ const Navbar = () => {
                         </div>
                         <Link to='/signin' className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4">Sign In</Link>
                     </div>
-<<<<<<< HEAD
-           </div>
-=======
                 </div>
 
->>>>>>> 1d78a7eff94b3129974d8c77cf89d89a7f376209
                 <p className='m-2 text-xl text-gray-500 hover:text-gray-700'><BsFillHeartFill /></p>
                 <Link className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' to='/signin'>Sign In</Link>
             </div>
