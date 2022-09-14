@@ -7,7 +7,6 @@ import image5 from '../../../assets/images/f5.avif';
 import image6 from '../../../assets/images/f6.avif';
 
 const HomeCard = () => {
-
     return (
         <div>
           <h4 className="text-3xl">Banner Add</h4>
@@ -124,6 +123,8 @@ const HomeCard = () => {
           </section>
        </body>
           </div>
+
+  
   );
 };
 

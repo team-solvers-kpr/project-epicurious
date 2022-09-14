@@ -1,5 +1,5 @@
 import React from "react";
-import BookRelease from "./BookRelease";
+import Banner from "./Banner";
 import HomeCard from "./HomeCard";
 import NewestRecipes from "./NewestRecipes";
 import Products from "./Products";
@@ -7,7 +7,7 @@ import Products from "./Products";
 const Home = () => {
   return (
     <div>
-      <Products></Products>
+      <Banner></Banner>
       <HomeCard></HomeCard>
       <NewestRecipes></NewestRecipes>
     </div>
