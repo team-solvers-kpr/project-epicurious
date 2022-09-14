@@ -6,9 +6,8 @@ import Products from "./Products";
 const Home = () => {
   return (
     <div>
-      <HomeCard></HomeCard>
-      <BookRelease></BookRelease>
       <Products></Products>
+      <HomeCard></HomeCard>
     </div>
   );
 };
