@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsFacebook } from 'react-icons/bs';
+import { FaTwitterSquare } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -15,11 +17,15 @@ const Footer = () => {
                     <div class='flex'>
                     <div class=' p-2'>
                         <h1 class='text-4xl font-bold text-white'>epicurious</h1>
+                       <div class='m-2'>< BsFacebook class='text-white'></BsFacebook>
+                                <FaTwitterSquare class='text-white'></FaTwitterSquare>
+                       </div>
+
                     </div>
                
                     </div>
                 <div class='flex p-2'>
-                       <div class='mx-4 '>
+                       <div class='m-4 '>
                        <div class='mb-4 '>
                        <h3><a href='https://www.condenast.com/careers' class='hover:underline underline-offset-0  text-white font-bold mx-2 p-1' target='_blank' rel="noopener noreferrer">SITE MAP</a></h3>
                        </div>
@@ -29,7 +35,7 @@ const Footer = () => {
                        <h5> <a href='https://www.epicurious.com/holidays-events' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Holidays & Events</a></h5>
                        <h5> <a href='https://video.epicurious.com/' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Video</a></h5>
                        </div>
-                       <div class='mx-4'>
+                       <div class='m-4'>
                        <div class='mb-4'>
                        <h3 class='text-white font-bold mx-2 p-1'>HELPFUL LINKS</h3>
                        </div>
@@ -41,7 +47,7 @@ const Footer = () => {
                        <h5> <a href='https://www.epicurious.com/about/press-center' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Press Center</a></h5>
                        <h5> <a href='https://www.epicurious.com/newsletter' class='hover:underline underline-offset-0  text-white  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Newsletters</a></h5>
                        </div>
-                       <div class='mx-4'>
+                       <div class='m-4'>
                        <div class='mb-4'>
                        <h3 class='text-white font-bold mx-2 p-1'>FOOD INNOVATION GROUP</h3>
                        </div>
