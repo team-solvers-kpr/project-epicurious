@@ -1,6 +1,12 @@
 import React from 'react';
 import { BsFacebook } from 'react-icons/bs';
+import { BsPinterest } from 'react-icons/bs';
 import { FaTwitterSquare } from 'react-icons/fa';
+import {FaTumblrSquare} from 'react-icons/fa'
+import {TiSocialYoutubeCircular} from 'react-icons/ti'
+import {ImGooglePlus3} from 'react-icons/im'
+import {AiFillInstagram} from 'react-icons/ai'
+import { BsRssFill } from 'react-icons/bs';
 
 const Footer = () => {
     return (
@@ -17,8 +23,15 @@ const Footer = () => {
                     <div class='flex'>
                     <div class=' p-2'>
                         <h1 class='text-4xl font-bold text-white'>epicurious</h1>
-                       <div class='m-2'>< BsFacebook class='text-white'></BsFacebook>
-                                <FaTwitterSquare class='text-white'></FaTwitterSquare>
+                       <div class='m-2 flex p-2'>
+                        < BsFacebook class='text-white text-2xl mx-1'></BsFacebook>
+                                <FaTwitterSquare class='text-white text-2xl mx-1' ></FaTwitterSquare>
+                                <BsPinterest  class='text-white text-2xl mx-1'></BsPinterest>
+                                <FaTumblrSquare class='text-white text-2xl mx-1'></FaTumblrSquare>
+                                <TiSocialYoutubeCircular class='text-white text-3xl mx-1'></TiSocialYoutubeCircular>
+                                <ImGooglePlus3 class='text-white text-2xl mx-1'></ImGooglePlus3>
+                                <AiFillInstagram class='text-white text-3xl mx-1'></AiFillInstagram>
+                                <BsRssFill class='text-white text-2xl mx-1'></BsRssFill>
                        </div>
 
                     </div>
