@@ -20,7 +20,8 @@ const Footer = () => {
 
             </div>
              {/* // -- first part 2nd phase of footer-- */}
-            <div class='flex mx-60  justify-between'>
+            <div class=' border-t border-gray-300'>
+                      <div className='flex mx-60  justify-between mt-8'>
                       <div class='m-4 '>
                        <div class='mb-10'>
                        <h3 class='text-slate-700 font-bold mx-2 p-1 text-lg'>QUICK LINKS</h3>
@@ -61,6 +62,7 @@ const Footer = () => {
                        <h5> <a href='https://www.epicurious.com/ingredient/fish' class='hover:underline underline-offset-0  text-slate-700  p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Fish Recipes</a></h5>
                        </div>
                        </div>
+                      </div>
             </div>
 
             </section>
