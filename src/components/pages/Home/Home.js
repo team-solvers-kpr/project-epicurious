@@ -1,15 +1,15 @@
 import React from "react";
 import Banner from "./Banner";
 import HomeCard from "./HomeCard";
-import Product from "./Product";
+import NewestRecipes from "./NewestRecipes";
+import Products from "./Products";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <HomeCard></HomeCard>
-      <Product></Product>
-
+      {/* <HomeCard></HomeCard> */}
+      <NewestRecipes></NewestRecipes>
     </div>
   );
 };

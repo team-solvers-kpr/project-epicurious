@@ -3,6 +3,7 @@ import { AiFillTwitterCircle, AiFillInstagram, AiOutlineTwitter, AiOutlineInstag
 import { FaFacebookSquare, FaFacebookF } from 'react-icons/fa';
 import { BsFillHeartFill } from 'react-icons/bs';
 import SearchModal from '../pages/Home/SearchModal';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -69,16 +70,17 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4">Sign In</button>
+                        <Link to='/signin' className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4">Sign In</Link>
                     </div>
                 </div>
 
                 <p className='m-2 text-xl text-gray-500 hover:text-gray-700'><BsFillHeartFill /></p>
-                <a className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' href="#">Sign In</a>
+
+                <Link className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' to='/signin'>Sign In</Link>
             </div>
 
             <div className="navbar-center">
-                <a className="cursor-pointer normal-case font-bold text-3xl text-rose-600" href='/'>epicurious</a>
+                <Link className="cursor-pointer normal-case font-bold text-3xl text-rose-600" to='/'>epicurious</Link>
             </div>
 
             <div className="navbar-end">
