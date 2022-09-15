@@ -7,17 +7,56 @@ import {TiSocialYoutubeCircular} from 'react-icons/ti'
 import {ImGooglePlus3} from 'react-icons/im'
 import {AiFillInstagram} from 'react-icons/ai'
 import { BsRssFill } from 'react-icons/bs';
+import image from '../../assets/images/Gourmet.png';
+import image2 from '../../assets/images/bon.png';
+import image3 from '../../assets/images/self.png';
+import image4 from '../../assets/images/penguin.png';
+import image5 from '../../assets/images/weelicious.png';
+import image6 from '../../assets/images/harper.png';
 
 const Footer = () => {
     return (
-        <div class='mt-20'>
-            <h1>This is footer section!!!</h1>
-
-             {/* // -- first part of footer-- */}
-            <section class='h-screen bg-gray-100'>
+        <div class='mt-20 bg-gray-100 '>
             
-            <div>
 
+             {/* // -- first part 2nd phase of footer-- */}
+            <section class=' mb-32'>
+            
+            <div className='mb-32'>
+                    <h1 class='text-slate-700 font-bold mx-2 p-1 text-lg'>
+                    OUR PARTNERS
+                    </h1>
+
+                   <div className='flex justify-between mx-48'>
+                   <div >
+                   <img src={image}/>
+                    <h5 class=''> <a href='https://www.epicurious.com/source/gourmet' class='hover:underline underline-offset-0  text-slate-700    text-xs font-bold  ' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
+                   </div>
+                   <div>
+                   <img src={image2}/>
+                    <h5 class='mt-4'> <a href='https://www.epicurious.com/source/bon-appetit' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
+                   </div>
+                   <div>
+                   <img src={image3}/>
+                    <h5 class='mt-4'> <a href='https://www.epicurious.com/source/self' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
+                   </div>
+                   <div>
+                   <img src={image4}/>
+                    <h5 class='m-11'> <a href='https://www.epicurious.com/source/randomhouse' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
+                   </div>
+                   </div>
+                  
+                   <div className='flex  mx-48'>
+                   <div>
+                   <img className='mix-blend-luminosity' src={image5}/>
+                    <h5 class='my-2'> <a href='https://www.epicurious.com/source/weelicious' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
+                   </div>
+                   <div >
+                   <img className='mix-blend-luminosity' src={image6}/>
+                    <h5 class='mt-8'> <a href='https://www.epicurious.com/source/harpercollins' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
+                   </div>
+                   </div>
+                  
             </div>
              {/* // -- first part 2nd phase of footer-- */}
             <div class=' border-t border-gray-300'>
