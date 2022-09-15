@@ -12,8 +12,56 @@ const Footer = () => {
     return (
         <div class='mt-20'>
             <h1>This is footer section!!!</h1>
+
+             {/* // -- first part of footer-- */}
             <section class='h-screen bg-gray-100'>
-            <p class="text-sky-400">The quick brown fox...</p>
+            
+            <div>
+
+            </div>
+             {/* // -- first part 2nd phase of footer-- */}
+            <div class='flex mx-60  justify-between'>
+                      <div class='m-4 '>
+                       <div class='mb-10'>
+                       <h3 class='text-slate-700 font-bold mx-2 p-1 text-lg'>QUICK LINKS</h3>
+                       </div>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/meal/breakfast' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1 my-4' target='_blank' rel="noopener noreferrer">Breakfast Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/meal/lunch' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Lunch Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/meal/dinner' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Dinner Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/meal/dessert' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Dessert Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/meal/drink' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Drink Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/special-consideration/healthy' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer"> Healthy Recipes</a></h5>
+                       <h5> <a href='https://www.epicurious.com/special-consideration/quick-and-easy' class='hover:underline underline-offset-0  text-slate-700  p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Quick and Easy Recipes</a></h5>
+                       </div>
+                       <div class='m-4 border-l border-gray-300 p-2'>
+                      <div class='ml-10'>
+                      <div class='mb-10'>
+                       <h3 class='text-slate-700 font-bold mx-2 p-1 text-lg'>THE BEST OF</h3>
+                       </div>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/occasion/valentines-day' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1 my-4' target='_blank' rel="noopener noreferrer">Valentine’s Day Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/occasion/st-patricks-day' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">St. Patrick’s Day Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/recipes-menus/easter-recipes' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Easter Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/occasion/fourth-of-july' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer"> 4th of July Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/occasion/halloween' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Halloween Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/collection/thanksgiving-recipes-menus-strategies-tips' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Thanksgiving Recipes</a></h5>
+                       <h5> <a href='https://www.epicurious.com/occasion/christmas' class='hover:underline underline-offset-0  text-slate-700  p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Christmas Recipes</a></h5>
+                      </div>
+                       </div>
+                       <div class='m-4 border-l border-gray-300 p-2'>
+                       <div class='ml-10'>
+                       <div class='mb-10'>
+                       <h3 class='text-slate-700 font-bold mx-2 p-1 text-lg '>EPICURIOUS CLASSICS</h3>
+                       </div>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/ingredient/beef' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1 my-4' target='_blank' rel="noopener noreferrer">Beef Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/ingredient/chicken' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Chicken Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/ingredient/seafood' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Seafood Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/ingredient/pasta' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Pasta Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/type/salad' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Salad Recipes</a></h5>
+                       <h5 class='my-2'> <a href='https://www.epicurious.com/ingredient/fish' class='hover:underline underline-offset-0  text-slate-700  mx-2 p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Pork Recipes</a></h5>
+                       <h5> <a href='https://www.epicurious.com/ingredient/fish' class='hover:underline underline-offset-0  text-slate-700  p-1 text-xs font-bold  leading-1' target='_blank' rel="noopener noreferrer">Fish Recipes</a></h5>
+                       </div>
+                       </div>
+            </div>
 
             </section>
 

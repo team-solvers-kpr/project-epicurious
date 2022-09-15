@@ -1,13 +1,12 @@
 import React from "react";
-import image1 from '../../../assets/Images/f1.avif';
-import image2 from '../../../assets/Images/f2.avif';
-import image3 from '../../../assets/Images/f3.avif';
-import image4 from '../../../assets/Images/f4.avif';
-import image5 from '../../../assets/Images/f5.avif';
-import image6 from '../../../assets/Images/f6.avif';
+import image1 from '../../../assets/images/f1.avif';
+import image2 from '../../../assets/images/f2.avif';
+import image3 from '../../../assets/images/f3.avif';
+import image4 from '../../../assets/images/f4.avif';
+import image5 from '../../../assets/images/f5.avif';
+import image6 from '../../../assets/images/f6.avif';
 
 const HomeCard = () => {
-
     return (
         <div>
           <h4 className="text-3xl">Banner Add</h4>
@@ -124,6 +123,8 @@ const HomeCard = () => {
           </section>
        </body>
           </div>
+
+  
   );
 };
 
