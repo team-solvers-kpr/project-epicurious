@@ -9,12 +9,13 @@ import 'swiper/css';
 
 export default function NewestRecipes() {
   return (
-    <div className='p-14 newest_recipes bg-slate-100 md:mt-[36rem] sm:mt-[110rem]'>
-                <div className='recipes_header'>
-                    <div className="divider md:inline-flex lg:inline-flex w-full mt-16 sm:mt-12 text-black">
-                        <h1 className='font-bold font-serif text-3xl'>Our Newest Recipes</h1>
-                    </div>
+    <div className='newest_recipes bg-slate-100'>
+        <div className='lg:m-40 sm:p-2 sm:m-28'>
+            <div className='recipes_header'>
+                <div className="divider md:inline-flex lg:inline-flex w-full mt-16 text-black">
+                    <h1 className='font-bold font-serif text-3xl'>Our Newest Recipes</h1>
                 </div>
+            </div>
                 <div className='recipes_allItems md:m-8 mb-8'>
                     <Swiper
                         spaceBetween={5}
@@ -51,7 +52,8 @@ export default function NewestRecipes() {
                         )
                     })}
                     </Swiper>
-                </div>
+                </div>    
             </div>
+        </div>
     )
 }
