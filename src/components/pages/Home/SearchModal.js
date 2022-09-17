@@ -10,7 +10,7 @@ const SearchModal = () => {
                     <label htmlFor="search-modal" className="btn btn-sm btn-circle absolute lg:right-52 lg:top-32 top-1 right-1">✕</label>
                     <span className="sr-only">Search</span>
                     <div className='hover:text-gray-800'>
-                        <span className="absolute inset-y-0 lg:flex hidden items-center pl-4 lg:-top-64 -top left-60 text-gray-500 hover:text-gray-800 lg:text-3xl z-10">
+                        <span className="absolute inset-y-0 lg:flex hidden items-center pl-4 lg:-top-56 left-60 text-gray-500 hover:text-gray-800 lg:text-3xl z-10">
                             <FaSearch className='top-50' />
                         </span>
                         <input

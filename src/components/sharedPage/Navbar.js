@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { AiFillTwitterCircle, AiFillInstagram, AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai';
-import { FaFacebookSquare, FaFacebookF } from 'react-icons/fa';
-import { BsFillHeartFill } from 'react-icons/bs';
+import * as AiIcons from 'react-icons/ai';
+import * as FaIcons from 'react-icons/fa';
+import * as MdIcons from 'react-icons/md';
+import * as BsIcons from 'react-icons/bs';
 import SearchModal from '../pages/Home/SearchModal';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ const Navbar = () => {
     const dashboardOpen = () => { setIsOpen(!isOpen) };
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 overflow-hidden fixed top-0 z-10">
             <div className="navbar-start">
                 <div className="flex-none">
                     {!isOpen ?
@@ -27,24 +28,24 @@ const Navbar = () => {
                     }
                     <div className={`top-0 left-0 fixed bg-gray-800 lg:w-[23vw] w-[60vw] h-full ${isOpen ? 'translate-x-0' : '-translate-x-full'} ease-in-out duration-700 z-10`}>
                         <div className='my-16'>
-                            <a href="/" className='text-white font-bold text-6xl bg-rose-600 lg:p-4 p-2 rounded-full'>epi</a>
+                            <Link to="/" className='text-white font-bold text-6xl bg-rose-600 lg:p-4 p-2 rounded-full'>epi</Link>
                         </div>
 
                         <ul>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
-                                <a href="/">RECIPIES & MENU</a>
+                                <Link to="/">RECIPIES & MENU</Link>
                             </li>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
-                                <a href="/">EXPERT ADVICE</a>
+                                <Link to="/">EXPERT ADVICE</Link>
                             </li>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
-                                <a href="/">INGREDIENTS</a>
+                                <Link to="/">INGREDIENTS</Link>
                             </li>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
-                                <a href="/">HOLIDAYS & EVENTS</a>
+                                <Link to="/">HOLIDAYS & EVENTS</Link>
                             </li>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
-                                <a href="/">VIDEOS</a>
+                                <Link to="/">VIDEOS</Link>
                             </li>
                         </ul>
 
@@ -54,17 +55,17 @@ const Navbar = () => {
                                 <div className='flex mx-auto'>
                                     <p className='text-3xl text-rose-600 mr-4'>
                                         <a href="https://www.fb.com">
-                                            <FaFacebookF />
+                                            <FaIcons.FaFacebookF />
                                         </a>
                                     </p>
                                     <p className='text-3xl text-rose-600 mr-4'>
-                                        <a href="https://www.fb.com">
-                                            <AiOutlineTwitter />
+                                        <a href="https://www.twitter.com">
+                                            <AiIcons.AiOutlineTwitter />
                                         </a>
                                     </p>
                                     <p className='text-3xl text-rose-600 mr-4'>
-                                        <a href="https://www.fb.com">
-                                            <AiOutlineInstagram />
+                                        <a href="https://www.instagram.com">
+                                            <AiIcons.AiOutlineInstagram />
                                         </a>
                                     </p>
                                 </div>
@@ -74,7 +75,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <p className='m-2 text-xl text-gray-500 hover:text-gray-700'><BsFillHeartFill /></p>
+                <Link to='/' className='m-2 text-xl text-gray-500 hover:text-gray-700 focus:text-rose-600 cursor-pointer'><BsIcons.BsFillHeartFill /></Link>
 
                 <Link className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' to='/signin'>Sign In</Link>
             </div>
@@ -85,14 +86,14 @@ const Navbar = () => {
 
             <div className="navbar-end">
                 <p className='mr-4 font-bold text-gray-500 pb-2 hidden lg:block'>Follow</p>
-                <a className='text-2xl text-rose-600 mr-3 hidden lg:block' href="https://www.fb.com">
-                    <FaFacebookSquare />
-                </a>
                 <a className='text-3xl text-rose-600 mr-3 hidden lg:block' href="https://www.fb.com">
-                    <AiFillTwitterCircle />
+                    <MdIcons.MdOutlineFacebook />
                 </a>
-                <a className='text-3xl text-rose-600 hidden lg:block' href="https://www.fb.com">
-                    <AiFillInstagram />
+                <a className='text-3xl text-rose-600 mr-3 hidden lg:block' href="https://www.twitter.com">
+                    <AiIcons.AiFillTwitterCircle />
+                </a>
+                <a className='text-3xl text-rose-600 hidden lg:block' href="https://www.instagram.com">
+                    <AiIcons.AiFillInstagram />
                 </a>
                 <label
                     htmlFor="search-modal"
