@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { AiFillTwitterCircle, AiFillInstagram, AiOutlineTwitter, AiOutlineInstagram } from 'react-icons/ai';
 import { FaFacebookSquare, FaFacebookF } from 'react-icons/fa';
 import { BsFillHeartFill } from 'react-icons/bs';
+import SearchModal from '../pages/Home/SearchModal';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [showSearchModal, setShowSearchModal] = useState(false);
 
     const dashboardOpen = () => { setIsOpen(!isOpen) };
 
@@ -20,7 +22,7 @@ const Navbar = () => {
                             </button>
                         ) :
                         (
-                            <button className="btn btn-ghost text-white text-xl hover:text-rose-600 rounded-full fixed top-4 left-4 z-20" onClick={dashboardOpen}>x</button>
+                            <button className="btn btn-ghost text-white text-xl hover:text-rose-600 rounded-full fixed top-4 left-4 z-20" onClick={dashboardOpen}>✕</button>
                         )
                     }
                     <div className={`top-0 left-0 fixed bg-gray-800 lg:w-[23vw] w-[60vw] h-full ${isOpen ? 'translate-x-0' : '-translate-x-full'} ease-in-out duration-700 z-10`}>
@@ -73,6 +75,7 @@ const Navbar = () => {
                 </div>
 
                 <p className='m-2 text-xl text-gray-500 hover:text-gray-700'><BsFillHeartFill /></p>
+
                 <Link className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' to='/signin'>Sign In</Link>
             </div>
 
@@ -91,11 +94,16 @@ const Navbar = () => {
                 <a className='text-3xl text-rose-600 hidden lg:block' href="https://www.fb.com">
                     <AiFillInstagram />
                 </a>
-                <a className="flex mx-4 cursor-pointer text-gray-500 hover:text-gray-700" href='/'>
+                <label
+                    htmlFor="search-modal"
+                    className="flex mx-4 cursor-pointer text-gray-500 hover:text-gray-700 modal-button"
+                    onClick={() => setShowSearchModal(true)}
+                >
                     <p className='pr-2 font-bold hidden lg:block'>Search</p>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                </a>
+                </label>
             </div>
+            {showSearchModal && <SearchModal />}
         </div>
     );
 };
