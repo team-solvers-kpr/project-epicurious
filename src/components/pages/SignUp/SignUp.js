@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
-import Footer from "../../sharedPage/Footer";
+// import Footer from "../../sharedPage/Footer";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
