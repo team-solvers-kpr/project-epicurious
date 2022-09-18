@@ -168,9 +168,9 @@ const Footer = () => {
                 </section>
 
                {/* // -- last part of footer-- */}
-              <section class='h-76 px-60 py-20  ' style={{backgroundColor:'#292929'}}>
-                    <div class='flex justify-between'>
-                    <div class='flex'>
+              <section class='h-76 lg:px-60 py-20  ' style={{backgroundColor:'#292929'}}>
+                    <div class='lg:flex justify-between'>
+                    <div class='lg:flex'>
                     <div class=' p-2'>
                         <h1 class='text-4xl font-semibold text-gray-600'>Condé Nast</h1>
                     </div>
@@ -194,7 +194,7 @@ const Footer = () => {
                     
                 </div>
                     </div>
-                <div class=' p-2'>
+                <div class=' p-2 hidden lg:block'>
                         <a href='https://www.condenast.com/careers' class='hover:text-orange-600 hover:font-bold text-gray-600 font-medium mx-2 p-1' target='_blank' rel="noopener noreferrer">CAREERS</a>
                         <a href='https://condenaststore.com/' class='hover:text-orange-600 hover:font-bold text-gray-600 font-medium mx-2 p-1'target='_blank' rel="noopener noreferrer">CONDE NAST STORE</a>
                         <a href='https://www.condenast.com/reprints-permissions' class='hover:text-orange-600 hover:font-bold text-gray-600 font-medium mx-2 p-1'target='_blank' rel="noopener noreferrer">CONDé NAST</a>
