@@ -111,7 +111,7 @@ const Footer = () => {
             <div class='lg:flex justify-between ' >
                     <div class='lg:flex '>
                     <div class=' p-2'>
-                        <h1 class='text-5xl font-bold text-white'>epicurious</h1>
+                        <h1 class='text-4xl font-bold text-white'>epicurious</h1>
                        <div class='m-2 flex p-2 md:flex justify-center '>
                         < BsFacebook class='text-white text-2xl mx-1 '></BsFacebook>
                                 <FaTwitterSquare class='text-white text-2xl mx-1' ></FaTwitterSquare>
