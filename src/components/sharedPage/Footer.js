@@ -16,18 +16,18 @@ import image6 from '../../assets/images/harper.png';
 
 const Footer = () => {
     return (
-        <div class='mt-20 bg-gray-100 '>
+        <div class='mt-20 bg-gray-100  '>
             
 
              {/* // -- first part 2nd phase of footer-- */}
-            <section class=' mb-32'>
+            <section class=' mb-32 hidden lg:block  '>
             
-            <div className='mb-32'>
+            <div className='mb-32 '>
                     <h1 class='text-slate-700 font-bold mx-2 p-1 text-lg'>
                     OUR PARTNERS
                     </h1>
 
-                   <div className='flex justify-between mx-48'>
+                   <div className='flex justify-between mx-48 '>
                    <div >
                    <img src={image}/>
                     <h5 class=''> <a href='https://www.epicurious.com/source/gourmet' class='hover:underline underline-offset-0  text-slate-700    text-xs font-bold  ' target='_blank' rel="noopener noreferrer">view Recipes</a></h5>
@@ -59,7 +59,7 @@ const Footer = () => {
                   
             </div>
              {/* // -- first part 2nd phase of footer-- */}
-            <div class=' border-t border-gray-300'>
+            <div class=' border-t border-gray-300 '>
                       <div className='flex mx-60  justify-between mt-8'>
                       <div class='m-4 '>
                        <div class='mb-10'>
@@ -113,7 +113,7 @@ const Footer = () => {
                     <div class=' p-2'>
                         <h1 class='text-4xl font-bold text-white'>epicurious</h1>
                        <div class='m-2 flex p-2'>
-                        < BsFacebook class='text-white text-2xl mx-1'></BsFacebook>
+                        < BsFacebook class='text-white text-2xl mx-1 '></BsFacebook>
                                 <FaTwitterSquare class='text-white text-2xl mx-1' ></FaTwitterSquare>
                                 <BsPinterest  class='text-white text-2xl mx-1'></BsPinterest>
                                 <FaTumblrSquare class='text-white text-2xl mx-1'></FaTumblrSquare>
@@ -168,7 +168,7 @@ const Footer = () => {
                 </section>
 
                {/* // -- last part of footer-- */}
-              <section class='h-76 px-60 py-20 ' style={{backgroundColor:'#292929'}}>
+              <section class='h-76 px-60 py-20  ' style={{backgroundColor:'#292929'}}>
                     <div class='flex justify-between'>
                     <div class='flex'>
                     <div class=' p-2'>
