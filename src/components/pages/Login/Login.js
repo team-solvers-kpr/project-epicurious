@@ -34,7 +34,7 @@ const Login = () => {
   if (user) {
     return (
       <div>
-        <p>Signed In User: {user.email}</p>
+        <p>Welcome back Emperor of The See: {user.email}</p>
       </div>
     );
   }
@@ -48,10 +48,10 @@ const Login = () => {
         <div className=" flex flex-col lg:min-w-[500px]">
         <div className="px-8 py-4 bg-white">
           {" "}
-          <label class="label">
-            <span class="label-text">Email</span>
+          <label className="label">
+            <span className="label-text">Email</span>
           </label>
-          <div class="input-group flex justify-between border  h-12  ">
+          <div className="input-group flex justify-between border  h-12  ">
             <input
               type="email"
               value={email}
@@ -61,10 +61,10 @@ const Login = () => {
             />
             <button className="border-0 bg-white">Edit</button>
           </div>
-          <label class="label">
-            <span class="label-text">Password</span>
+          <label className="label">
+            <span className="label-text">Password</span>
           </label>
-          <div class="flex justify-between border  h-12  ">
+          <div className="flex justify-between border  h-12  ">
             <input
               type="password"
               value={password}
@@ -75,22 +75,35 @@ const Login = () => {
             <button className="border-0 bg-white">Show</button>
           </div>
             <button 
-            onClick={() => signInWithGoogle(email, password)}
-            type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'>Sign In</button>
+              onClick={() => signInWithEmailAndPassword(email, password)} 
+              className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'
+            >
+              Sign In
+            </button>
 
             <div className="divider">OR</div>
 
             <div>
-            <button 
-            onClick={() => signInWithEmailAndPassword(email, password)}
-            type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'>
-              <FcGoogle />
-              Sign In With Google</button>
-            <button 
-            onClick={() => signInWithApple(email, password)}
-            type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'>
-              <AiFillApple /> Sign In With Apple
-            </button>
+
+            {/* // sign in with google */}
+
+              <button 
+                  onClick={() => signInWithGoogle(email, password)}
+                  className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'
+                >
+                <span><FcGoogle /></span> 
+                <span>Sign In With Google</span> 
+              </button>
+
+              {/* // sign in with apple */}
+
+              <button 
+                  onClick={() => signInWithApple(email, password)}
+                   className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'
+                >
+                <span><AiFillApple /></span> 
+                <span>Sign In With Apple</span>
+              </button>
             </div>
           </div>
       </div>
