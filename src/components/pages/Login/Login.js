@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSignInWithEmailAndPassword, useSignInWithApple, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from "../../../firebase.init";
 import {FcGoogle} from 'react-icons/fc'
-import {AiFillApple} from 'react-icons/ai'
+import {AiFillApple} from 'react-icons/ai';
 // import Footer from "../../sharedPage/Footer";
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -75,24 +75,24 @@ const Login = () => {
             <button className="border-0 bg-white">Show</button>
           </div>
             <button 
-            onClick={() => signInWithEmailAndPassword(email, password)}
+            onClick={() => signInWithGoogle(email, password)}
             type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'>Sign In</button>
 
             <div className="divider">OR</div>
 
             <div>
             <button 
-            onClick={() => signInWithGoogle(email, password)}
+            onClick={() => signInWithEmailAndPassword(email, password)}
             type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'>
               <FcGoogle />
               Sign In With Google</button>
             <button 
             onClick={() => signInWithApple(email, password)}
             type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'>
-              <AiFillApple /> Sign In With Apple</button>
+              <AiFillApple /> Sign In With Apple
+            </button>
             </div>
-
-        </div>
+          </div>
       </div>
       </div>
     </div>
