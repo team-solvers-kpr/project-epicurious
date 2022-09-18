@@ -19,7 +19,7 @@ const Footer = () => {
         <div class='mt-20 bg-gray-100  '>
             
 
-             {/* // -- first part 2nd phase of footer-- */}
+             {/* // -- first part 1st phase of footer-- */}
             <section class=' mb-32 hidden lg:block  '>
             
             <div className='mb-32 '>
@@ -107,7 +107,7 @@ const Footer = () => {
             </section>
 
             {/* // -- middle part of footer-- */}
-            <section class='h-96 px-60 py-10 ' style={{backgroundColor:'#f93f23'}}>
+            <section class='h-96 lg:px-60 py-10 ' style={{backgroundColor:'#f93f23'}}>
             <div class='flex justify-between'>
                     <div class='flex'>
                     <div class=' p-2'>
@@ -126,7 +126,7 @@ const Footer = () => {
                     </div>
                
                     </div>
-                <div class='flex p-2'>
+                <div class='lg:flex p-2 hidden lg:block'>
                        <div class='m-4 '>
                        <div class='mb-4 '>
                        <h3><a href='https://www.condenast.com/careers' class='hover:underline underline-offset-0  text-white font-bold mx-2 p-1' target='_blank' rel="noopener noreferrer">SITE MAP</a></h3>
