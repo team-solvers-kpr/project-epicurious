@@ -108,11 +108,11 @@ const Footer = () => {
 
             {/* // -- middle part of footer-- */}
             <section class='h-96 lg:px-60 py-10 ' style={{backgroundColor:'#f93f23'}}>
-            <div class='flex justify-between'>
-                    <div class='flex'>
+            <div class='lg:flex justify-between ' >
+                    <div class='lg:flex '>
                     <div class=' p-2'>
                         <h1 class='text-4xl font-bold text-white'>epicurious</h1>
-                       <div class='m-2 flex p-2'>
+                       <div class='m-2 flex p-2 md:flex justify-center '>
                         < BsFacebook class='text-white text-2xl mx-1 '></BsFacebook>
                                 <FaTwitterSquare class='text-white text-2xl mx-1' ></FaTwitterSquare>
                                 <BsPinterest  class='text-white text-2xl mx-1'></BsPinterest>
