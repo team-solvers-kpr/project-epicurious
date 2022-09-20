@@ -1,7 +1,8 @@
 import { useState,useEffect } from "react";
 import BounceLoader from 'react-spinners/BounceLoader';
+import SignUp from "../pages/SignUp/SignUp";
 
-function loading() {
+function Loading() {
     const [loading,setLoading]=useState(false)
 useEffect(()=>{
     setLoading(true)
@@ -9,17 +10,24 @@ useEffect(()=>{
         setLoading(false)
     },5000)
 },[])    
-return
-<div>
+return(
+    <div className='flex justify-center my-32'>
     {
-        loading?
-        <BounceLoader color={"#f93f23"} loading={loading} cssOverride={override} size={60}/>
+    loading?
+        <BounceLoader color={"#36d7b7"} loading={loading}  size={300} />
         :
-        <div>
-            <h1>hello</h1>
-        </div>
-     }
+        <SignUp></SignUp>
+
+    
+    
+       
+
+}
 </div>
+)
+
+        
+
 };
 
-export default loading;
+export default Loading;
