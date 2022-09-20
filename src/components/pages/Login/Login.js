@@ -24,7 +24,7 @@ const Login = () => {
   if (error) {
     return (
       <div>
-        <p>Error: {error.message}</p>
+        <p>enter your password correctly: {error}</p>
       </div>
     );
   }
@@ -102,7 +102,7 @@ const Login = () => {
                    className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'
                 >
                 <span><AiFillApple /></span> 
-                <span>Sign In With Apple</span>
+                <span>Sign In With Facebook</span>
               </button>
             </div>
           </div>
