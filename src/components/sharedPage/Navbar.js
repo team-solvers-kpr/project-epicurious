@@ -16,22 +16,18 @@ const Navbar = () => {
         <div className="navbar bg-base-100 overflow-hidden fixed top-0 z-10">
             <div className="navbar-start">
                 <div className="flex-none">
-                    {!isOpen ?
-                        (
-                            <button onClick={dashboardOpen} className="btn btn-square btn-ghost">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                            </button>
-                        ) :
-                        (
-                            <button className="btn btn-ghost text-white text-xl hover:text-rose-600 rounded-full fixed top-4 left-4 z-20" onClick={dashboardOpen}>✕</button>
-                        )
-                    }
+                    <button onClick={dashboardOpen} className="btn btn-square btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                    
+                    {isOpen && <button className="btn btn-ghost text-white text-xl hover:text-rose-600 rounded-full fixed top-4 left-4 z-20" onClick={dashboardOpen}>✕</button>}
+
                     <div className={`top-0 left-0 fixed bg-gray-800 lg:w-[23vw] w-[60vw] h-full ${isOpen ? 'translate-x-0' : '-translate-x-full'} ease-in-out duration-700 z-10`}>
                         <div className='my-16'>
                             <Link to="/" className='text-white font-bold text-6xl bg-rose-600 lg:p-4 p-2 rounded-full'>epi</Link>
                         </div>
 
-                        <ul>
+                        <ul onClick={dashboardOpen}>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
                                 <Link to="/">RECIPIES & MENU</Link>
                             </li>
@@ -45,26 +41,26 @@ const Navbar = () => {
                                 <Link to="/">HOLIDAYS & EVENTS</Link>
                             </li>
                             <li className='text-white hover:text-rose-600 font-bold mb-4'>
-                                <Link to="/">VIDEOS</Link>
+                                <Link to="/videos">VIDEOS</Link>
                             </li>
                         </ul>
 
                         <div className='mt-10'>
                             <p className='text-gray-500 font-bold'>Follow Epicurious!</p>
                             <div className='flex my-2'>
-                                <div className='flex mx-auto'>
+                                <div className='flex mx-auto' onClick={dashboardOpen}>
                                     <p className='text-3xl text-rose-600 mr-4'>
-                                        <a href="https://www.fb.com">
+                                        <a href="https://www.fb.com" target="_blank" rel="noreferrer">
                                             <FaIcons.FaFacebookF />
                                         </a>
                                     </p>
                                     <p className='text-3xl text-rose-600 mr-4'>
-                                        <a href="https://www.twitter.com">
+                                        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
                                             <AiIcons.AiOutlineTwitter />
                                         </a>
                                     </p>
                                     <p className='text-3xl text-rose-600 mr-4'>
-                                        <a href="https://www.instagram.com">
+                                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                                             <AiIcons.AiOutlineInstagram />
                                         </a>
                                     </p>
@@ -77,7 +73,7 @@ const Navbar = () => {
 
                 <Link to='/' className='m-2 text-xl text-gray-500 hover:text-gray-700 focus:text-rose-600 cursor-pointer'><BsIcons.BsFillHeartFill /></Link>
 
-                <Link className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' to='/signin'>Sign In</Link>
+                <Link className='text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block' to='/signin' onClick={dashboardOpen}>Sign In</Link>
             </div>
 
             <div className="navbar-center">

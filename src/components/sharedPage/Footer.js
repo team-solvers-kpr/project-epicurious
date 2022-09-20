@@ -3,10 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div class='mt-20'>
-            <h1>This is footer section!!!</h1>
             <section class='h-screen bg-gray-100'>
-            <p class="text-sky-400">The quick brown fox...</p>
-
             </section>
             <section class='h-96 ' style={{backgroundColor:'#f93f23'}}>
            
