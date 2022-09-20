@@ -1,11 +1,11 @@
 import React from "react";
 import allBooksImg from "../../../assets/images/allBooks.png";
-import ProductInfo from "../../ProductInfo";
+import ProductInfo from "./ProductInfo";
 
 export default function BookRelease() {
   return (
     <div>
-      <div className="container mx-auto mt-10" data-aos="fade-right">
+      <div className="container mx-auto mt-10">
         <a href="/">
           <div className="books_img inline-block border-solid border-2 border-indigo-900">
             <img src={allBooksImg} alt="All the books" />
