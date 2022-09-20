@@ -92,7 +92,7 @@ const Login = () => {
                   className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600'
                 >
                 <span><FcGoogle /></span> 
-                <span>Sign In With Google</span> 
+                <span>Sign In With Google </span> 
               </button>
 
               {/* // sign in with apple */}
