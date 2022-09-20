@@ -1,21 +1,31 @@
 import React, { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
+import { useForm } from "react-hook-form";
+import Loading from "../../sharedPage/Loading";
+
 // import Footer from "../../sharedPage/Footer";
 const SignUp = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [signUpError, setError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    const email = data.email;
+    const password = data.password;
+    createUserWithEmailAndPassword(email, password);
+  };
+  let errorMessage;
+
   if (error) {
-    return (
-      <div>
-        <p>Error: {error.message}</p>
-      </div>
-    );
+    errorMessage = <p className="text-red-600 font-serif">{error.message}</p>;
   }
   if (loading) {
-    return <p>Loading...</p>;
+    return <Loading></Loading>;
   }
   if (user) {
     return (
@@ -25,42 +35,59 @@ const SignUp = () => {
     );
   }
   return (
-    <div className="h-screen  mx-auto flex items-center justify-center bg-[#f5f1e7]">
-      <div className="  flex flex-col lg:min-w-[500px]">
-        <div className="px-8 py-4 bg-white">
-          {" "}
-          <label class="label">
-            <span class="label-text">Email</span>
-          </label>
-          <div class="input-group flex justify-between border  h-12  ">
+    <div className="h-screen w-full mx-auto flex items-center  bg-[#f5f1e7]">
+      <div className="mx-auto w-[280px] sm:w-[400px]  ease-in-out delay-150 transition-all rounded-2xl bg-white p-5 ">
+        <form className=" mx-auto  space-y-2" onSubmit={handleSubmit(onSubmit)}>
+          {/* register your input into the hook by invoking the "register" function */}
+          <div className="my-2">
+            <label>
+              <div className="text-left ml-2 font-serif font-bold">
+                <span>Email</span>
+              </div>
+            </label>
             <input
+              placeholder="Email"
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Type here"
-              className=" h-full px-2 w-full"
+              className="border-black px-2 w-full input"
+              {...register("email", {
+                required: {
+                  value: true,
+                  message: "Email is required",
+                },
+              })}
             />
-            <span className="border-0 bg-white">Edit</span>
+            <p className="text-red-600 font-serif">
+              {errors.email?.type === "required" && errors.email.message}
+            </p>
           </div>
-          <label class="label">
-            <span class="label-text">Email</span>
-          </label>
-          <div class="flex justify-between border  h-12  ">
+
+          {/* include validation with required or other standard HTML validation rules */}
+          <div>
+            <label>
+              <div className="text-left ml-2 font-serif font-bold">
+                <span>Password</span>
+              </div>
+            </label>
             <input
               type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Type here"
-              className=" h-full px-2 w-full"
+              className="border-black input px-2 w-full"
+              {...register("password", {
+                required: {
+                  value: true,
+                  message: "Password is required",
+                },
+              })}
             />
-            <span className="border-0 bg-white">Edit</span>
+            <p className="text-red-600 font-serif">
+              {errors.password?.type === "required" && errors.password.message}
+            </p>
           </div>
-          <button
-            onClick={() => createUserWithEmailAndPassword(email, password)}
-          >
-            Register
-          </button>
-        </div>
+          {/* errors will return when field validation fails  */}
+          {errors.exampleRequired && <span>This field is required</span>}
+          {errorMessage}
+
+          <input className="font-serif font-bold btn" type="submit" />
+        </form>
       </div>
     </div>
   );
