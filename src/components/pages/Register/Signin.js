@@ -13,10 +13,16 @@ export default function Signin() {
             <form action=''>
             <p className='pt-8 pb-1 text-start pl-10 text-xs'>Email</p>
             <label>
-            <input  className=' border border-black h-12 w-4/5' type="email" name='email' placeholder='Your email address' required='' autoComplete='off' />
+            <input  
+              aria-label='Enter your Email Address'
+              className=' border border-black h-12 w-4/5' 
+              type="text"  
+              placeholder='Your email address'
+              onChange={({target}) => console.log(target.value)}
+            />
             </label>
             </form>
-            <Link to='/'>
+            <Link to='/login'>
               <button type='submit' value="Submit" className=' bg-slate-700 h-12 text-center text-white uppercase mt-6 w-4/5 rounded hover:bg-rose-600'>Next</button>
             </Link>
           </div>
