@@ -22,7 +22,7 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image1}
-                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    class="lg:h-72 h-48 w-full object-cover object-center"
                     alt="image"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
@@ -54,7 +54,7 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image2}
-                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    class="lg:h-72 h-48 w-full object-cover object-center"
                     alt="image"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
@@ -86,7 +86,7 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image3}
-                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    class="lg:h-72 h-48 w-full object-cover object-center"
                     alt="image"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
@@ -115,7 +115,7 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image4}
-                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    class="lg:h-72 h-48 w-full object-cover object-center"
                     alt="image"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
@@ -144,7 +144,7 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image5}
-                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    class="lg:h-72 h-48 w-full object-cover object-center"
                     alt="image"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
@@ -176,7 +176,7 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image6}
-                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    class="lg:h-72 h-48 w-full object-cover object-center"
                     alt="image"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">

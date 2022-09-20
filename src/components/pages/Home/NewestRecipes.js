@@ -16,40 +16,44 @@ export default function NewestRecipes() {
                     <h1 className='font-bold font-serif text-3xl'>Our Newest Recipes</h1>
                 </div>
             </div>
-            <div className='recipes_allItems md:m-8 mb-8'>
-                <Swiper
-                    spaceBetween={5}
-                    slidesPerView={5}
-                    breakpoints={{
-                        // when windows width is >= 640px
-                        640: {
-                        slidesPerView: 2,
-                        },
-                        // when windows width is >= 768px
-                        768: {
-                        slidesPerView: 3,
-                        },
-                        1200: {
-                        slidesPerView: 5,
-                        },
-                    }}
-                >
-                {recipesData.map((recipe, index) =>{
-                    if(index >= 5) return '';
-                    return (
-                        <SwiperSlide 
-                        key={recipe.id}>
-                            <Recipe 
-                                title={recipe.title}
-                                img={recipe.img}
-                                heading={recipe.heading}
-                            />
-                        </SwiperSlide>
-                    )
-                })}
-                </Swiper>
+                <div className='recipes_allItems md:m-8 mb-8'>
+                    <Swiper
+                        spaceBetween={5}
+                        slidesPerView={5}
+                        breakpoints={{
+
+                            400: {
+                                slidesPerView: 2,
+                            },
+                            // when windows width is >= 640px
+                            640: {
+                            slidesPerView: 2,
+                            },
+                            // when windows width is >= 768px
+                            768: {
+                            slidesPerView: 3,
+                            },
+                            1200: {
+                            slidesPerView: 5,
+                            },
+                        }}
+                    >
+                    {recipesData.map((recipe, index) =>{
+                        if(index >= 5) return '';
+                        return (
+                            <SwiperSlide 
+                            key={recipe.id}>
+                                <Recipe 
+                                    title={recipe.title}
+                                    img={recipe.img}
+                                    heading={recipe.heading}
+                                />
+                            </SwiperSlide>
+                        )
+                    })}
+                    </Swiper>
+                </div>    
             </div>
         </div>
-    </div>
-  )
+    )
 }

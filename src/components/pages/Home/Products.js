@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "../../Product";
+import Product from "./Product";
 import moonCakesImg from "../../../assets/images/Mooncakes_HERO_091321_20978.jpg";
 import readPaperPastaImg from "../../../assets/images/RedPepperPasta_HERO_040821_12876.jpg";
 
