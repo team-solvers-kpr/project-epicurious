@@ -4,7 +4,6 @@ import Home from "./components/pages/Home/Home";
 import Login from "./components/pages/Login/Login";
 import Signin from "./components/pages/Register/Signin";
 import SignUp from "./components/pages/SignUp/SignUp";
-import Signin from "./components/pages/Register/Signin";
 import Footer from "./components/sharedPage/Footer";
 import Navbar from "./components/sharedPage/Navbar";
 import NotFound from "./components/sharedPage/NotFound";
