@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../sharedPage/Loading";
@@ -9,6 +12,7 @@ const SignUp = () => {
   const [signUpError, setError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
+  const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
   const {
     register,
     handleSubmit,
@@ -35,7 +39,10 @@ const SignUp = () => {
     );
   }
   return (
-    <div className="h-screen w-full mx-auto flex items-center  bg-[#f5f1e7]">
+    <div className="h-screen w-full mx-auto flex flex-col justify-around items-center  bg-[#f5f1e7]">
+      <h1 className=" ease-in-out delay-150 transition-all  text-xl sm:text-3xl font-serif font-extrabold">
+        Create an Account
+      </h1>
       <div className="mx-auto w-[280px] sm:w-[400px]  ease-in-out delay-150 transition-all rounded-2xl bg-white p-5 ">
         <form className=" mx-auto  space-y-2" onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
@@ -86,8 +93,18 @@ const SignUp = () => {
           {errors.exampleRequired && <span>This field is required</span>}
           {errorMessage}
 
-          <input className="font-serif font-bold btn" type="submit" />
+          <input
+            className="font-serif font-bold btn"
+            type="submit"
+            value="Sign Up"
+          />
         </form>
+        <div className="divider">OR</div>
+        <div>
+          <button className="btn" onClick={() => signInWithGoogle()}>
+            Sign In With Google
+          </button>
+        </div>
       </div>
     </div>
   );
