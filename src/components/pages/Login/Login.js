@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import {
   useSignInWithEmailAndPassword,
+  useSignInWithFacebook,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import Loading from "../../sharedPage/Loading";
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 // import Footer from "../../sharedPage/Footer";
-const SignUp = () => {
+const Login = () => {
   const [signInError, setError] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
   useSignInWithEmailAndPassword(auth);
-  const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, googleUser, googleloading, googleerror] = useSignInWithGoogle(auth);
+  const [signInWithFacebook, facebookUser, facebookloading, facebookerror] = useSignInWithFacebook(auth);
   const {
     register,
     handleSubmit,
@@ -25,20 +29,25 @@ const SignUp = () => {
   };
   let errorMessage;
 
-  if (error) {
+  if (error || googleerror) {
     errorMessage = <p className="text-red-600 font-serif">{error.message}</p>;
   }
-  if (loading) {
-    return <Loading></Loading>;
+  if (loading || googleloading) {
+    return <p>Loading</p>;
   }
-  if (user) {
+  if (user || googleUser) {
     return (
       <div>
         <p>Registered User: {user.email}</p>
       </div>
     );
   }
+   const notify = () => {
+    toast('fast notification');
+   }
+
   return (
+    <>
     <div className="h-screen w-full mx-auto flex flex-col justify-around items-center  bg-[#f5f1e7]">
       <h1 className=" ease-in-out delay-150 transition-all  text-xl sm:text-3xl font-serif font-extrabold">
         Create an Account
@@ -96,6 +105,7 @@ const SignUp = () => {
             className="font-serif font-bold btn"
             type="submit"
             value="Sign In"
+            
           />
         </form>
         <div className="divider">OR</div>
@@ -103,10 +113,15 @@ const SignUp = () => {
           <button className="btn" onClick={() => signInWithGoogle()}>
             Sign In With Google
           </button>
+          <button className="btn" onClick={notify}>
+            Sign In With Google
+          </button>
         </div>
       </div>
     </div>
+    <ToastContainer />
+    </>
   );
 };
 
-export default SignUp;
+export default Login;
