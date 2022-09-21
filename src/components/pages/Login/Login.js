@@ -6,7 +6,9 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import { ToastContainer, toast } from 'react-toastify';
+import Loading from "../../sharedPage/Loading";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -27,24 +29,27 @@ const Login = () => {
     const password = data.password;
     signInWithEmailAndPassword(email, password);
   };
+  const navigate = useNavigate();
+
   let errorMessage;
 
-  if (error || googleerror) {
+  if (error || googleerror || facebookerror) {
+    // toast.error("user not found");
     errorMessage = <p className="text-red-600 font-serif">{error.message}</p>;
   }
-  if (loading || googleloading) {
-    return <p>Loading</p>;
+  if (loading || googleloading || facebookloading) {
+    return <Loading />;
   }
-  if (user || googleUser) {
+  if (user || googleUser || facebookUser) {
+    toast.success("Login successful");
     return (
-      <div>
-        <p>Registered User: {user.email}</p>
-      </div>
+      // <div>
+      //   <p>Registered User: {user.email}</p>
+      // </div>
+      navigate('/')
+
     );
   }
-   const notify = () => {
-    toast('fast notification');
-   }
 
   return (
     <>
@@ -100,7 +105,7 @@ const Login = () => {
           </div>
           {/* errors will return when field validation fails  */}
           {errors.exampleRequired && <span>This field is required</span>}
-          {errorMessage}
+          { errorMessage }
           <input
             className="font-serif font-bold btn"
             type="submit"
@@ -113,13 +118,12 @@ const Login = () => {
           <button className="btn" onClick={() => signInWithGoogle()}>
             Sign In With Google
           </button>
-          <button className="btn" onClick={notify}>
-            Sign In With Google
+          <button className="btn" onClick={() => signInWithFacebook()}>
+            Sign In With Facebook
           </button>
         </div>
       </div>
     </div>
-    <ToastContainer />
     </>
   );
 };
