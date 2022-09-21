@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import Loading from "../../sharedPage/Loading";
 
 // import Footer from "../../sharedPage/Footer";
+
 const SignUp = () => {
   const [signUpError, setError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
@@ -25,13 +26,13 @@ const SignUp = () => {
   };
   let errorMessage;
 
-  if (error) {
+  if (error || gerror) {
     errorMessage = <p className="text-red-600 font-serif">{error.message}</p>;
   }
-  if (loading) {
-    return <Loading></Loading>;
+  if (loading || gloading) {
+    return <Loading />;
   }
-  if (user) {
+  if (user || guser) {
     return (
       <div>
         <p>Registered User: {user.email}</p>
