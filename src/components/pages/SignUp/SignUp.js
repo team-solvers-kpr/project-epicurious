@@ -6,6 +6,7 @@ import {
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../../sharedPage/Loading";
+import { toast } from "react-toastify";
 
 // import Footer from "../../sharedPage/Footer";
 
@@ -33,9 +34,10 @@ const SignUp = () => {
     return <Loading />;
   }
   if (user || guser) {
+    toast.success("New User");
     return (
       <div>
-        <p>Registered User: {user.email}</p>
+        <p>Registered User: {user?.user?.email}</p>
       </div>
     );
   }
@@ -84,14 +86,20 @@ const SignUp = () => {
                   value: true,
                   message: "Password is required",
                 },
+                minLength: {
+                  value: 6,
+                  message: "Must be Six Characters or more ",
+                },
               })}
             />
             <p className="text-red-600 font-serif">
               {errors.password?.type === "required" && errors.password.message}
             </p>
+            <p className="text-red-600 font-serif">
+              {errors.password?.type === "minLength" && errors.password.message}
+            </p>
           </div>
           {/* errors will return when field validation fails  */}
-          {errors.exampleRequired && <span>This field is required</span>}
           {errorMessage}
 
           <input
