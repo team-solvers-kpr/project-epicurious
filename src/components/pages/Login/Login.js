@@ -35,20 +35,14 @@ const Login = () => {
 
   if (error || googleerror || facebookerror) {
     // toast.error("user not found");
-    errorMessage = <p className="text-red-600 font-serif">{error.message}</p>;
+    errorMessage = <span className="text-red-600 font-serif">wrong password</span>;
   }
   if (loading || googleloading || facebookloading) {
     return <Loading />;
   }
   if (user || googleUser || facebookUser) {
     toast.success("Login successful");
-    return (
-      // <div>
-      //   <p>Registered User: {user.email}</p>
-      // </div>
-      navigate('/')
-
-    );
+    return navigate('/');
   }
 
   return (
@@ -77,9 +71,9 @@ const Login = () => {
                 },
               })}
             />
-            <p className="text-red-600 font-serif">
+            <span className="text-red-600 font-serif">
               {errors.email?.type === "required" && errors.email.message}
-            </p>
+            </span>
           </div>
 
           {/* include validation with required or other standard HTML validation rules */}
@@ -99,15 +93,16 @@ const Login = () => {
                 },
               })}
             />
-            <p className="text-red-600 font-serif">
+            <span className="text-red-600 font-serif">
               {errors.password?.type === "required" && errors.password.message}
-            </p>
+            </span>
           </div>
           {/* errors will return when field validation fails  */}
           {errors.exampleRequired && <span>This field is required</span>}
+          {/* {console.log(errorMessage)} */}
           { errorMessage }
           <input
-            className="font-serif font-bold btn"
+            className="font-serif font-bold btn bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600"
             type="submit"
             value="Sign In"
             
@@ -115,13 +110,16 @@ const Login = () => {
         </form>
         <div className="divider">OR</div>
         <div>
-          <button className="btn" onClick={() => signInWithGoogle()}>
+          <button className="btn bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600" onClick={() => signInWithGoogle()}>
             Sign In With Google
           </button>
-          <button className="btn" onClick={() => signInWithFacebook()}>
+          <button className="btn bg-slate-700 h-12 text-center text-white uppercase mt-6 w-full rounded active:bg-rose-600" onClick={() => signInWithFacebook()}>
             Sign In With Facebook
           </button>
         </div>
+      </div>
+      <div className=" mt-2">
+         <a className="underline" href="/signin">Sign in with another account</a>
       </div>
     </div>
     </>
