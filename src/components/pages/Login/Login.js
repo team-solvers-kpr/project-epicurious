@@ -15,7 +15,7 @@ const Login = () => {
     user
   ] = useSignInWithEmailAndPassword(auth);
 
-  // const { register, formState: { errors }, handleSubmit } = useForm();
+  const { register, formState: { errors }, handleSubmit } = useForm();
   // const onSubmit = (data) => console.log(data);
 
   // sign in with apple 
@@ -64,7 +64,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
               className=" h-full px-2 w-4/5"
-              // {...register("mail", { required: "Email Address is required" })}
+              // {...register("mail", { required: true })}
             />
             <button className="border-0 bg-white">Edit</button>
             {/* <span>{error.email?.message}</span> */}
