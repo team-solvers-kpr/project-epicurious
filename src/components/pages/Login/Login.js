@@ -44,6 +44,9 @@ const Login = () => {
     toast.success("Login successful");
     return navigate('/');
   }
+  if(signInError){
+    setError('')
+  }
 
   return (
     <>
