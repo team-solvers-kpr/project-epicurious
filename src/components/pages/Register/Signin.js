@@ -26,7 +26,7 @@ export default function Signin() {
           </div>
           <div className='bg-white m-5 h-52  rounded'>
             <form onSubmit={handleSubmit(onSubmit)}>
-            <p className='pt-8 pb-1 text-start pl-10 text-xs'>Email</p>
+            <p className=' font-bold pt-8 pb-1 text-start pl-10 text-xs'>Email</p>
             <label>
             <input
               placeholder="Enter your Email"
