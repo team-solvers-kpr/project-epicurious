@@ -1,24 +1,13 @@
-import { useState, useEffect } from "react";
-import BounceLoader from "react-spinners/BounceLoader";
-import SignUp from "../pages/SignUp/SignUp";
+import React from "react";
 
-function Loading() {
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+import "./Loading.css";
+
+const Loading = () => {
   return (
-    <div className="flex justify-center my-32">
-      {loading ? (
-        <BounceLoader color={"#36d7b7"} loading={loading} size={300} />
-      ) : (
-        <SignUp></SignUp>
-      )}
+    <div className="h-screen w-full flex justify-center items-center  ">
+      <div class="water"></div>
     </div>
   );
-}
+};
 
 export default Loading;
