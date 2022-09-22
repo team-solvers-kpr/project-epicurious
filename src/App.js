@@ -17,7 +17,6 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/signin" element={<Signin></Signin>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/signin" element={<Signin></Signin>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
