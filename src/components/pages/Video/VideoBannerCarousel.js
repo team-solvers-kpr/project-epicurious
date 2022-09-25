@@ -8,13 +8,13 @@ const VideoBannerCarousel = (props) => {
       <img
         src={img}
         alt='video thumbnail'
-        className='w-full lg:h-[32vw] h-full mix-blend-overlay'
+        className='w-full lg:h-[32vw] h-48 mix-blend-overlay'
       />
       <div className='block text-start'>
-        <h4 className='absolute text-white top-[18.5rem] font-medium uppercase text-md mx-12'>
+        <h4 className='absolute lg:block hidden text-white top-[18.5rem]font-medium uppercase text-md mx-12'>
           {categories}
         </h4>
-        <h2 className='absolute text-white top-80 font-semibold text-3xl ml-12 mr-20'>
+        <h2 className='absolute text-white lg:top-80 top-32 font-semibold lg:text-3xl text-sm lg:ml-12 ml-4 lg:mr-20 mr-6'>
           {title}
         </h2>
       </div>

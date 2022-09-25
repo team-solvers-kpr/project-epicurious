@@ -4,7 +4,7 @@ import videoIcon from "../../../assets/images/video_icon.png";
 const BestOfEpiCarousel = (props) => {
   const { img, categories, title } = props.singleBestItem;
   return (
-    <div className='h-[360px]'>
+    <div className='lg:h-[360px] h-[240px]'>
       <div className='relative'>
         <img
           src={img}

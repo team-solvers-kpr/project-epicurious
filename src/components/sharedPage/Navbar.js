@@ -166,7 +166,7 @@ const Navbar = () => {
       )}
 
       {location.pathname === "/videos" && (
-        <div className='navbar-start mr-6'>
+        <div className='navbar-start mr-6 hidden lg:block'>
           <Link
             className='cursor-pointer normal-case font-bold text-sm mr-8'
             to='/vidoes'
@@ -195,8 +195,11 @@ const Navbar = () => {
       )}
 
       {location.pathname === "/videos" && (
-        <div class='w-[800px] grid grid-cols-4 divide-x'>
-          <Link className='cursor-pointer font-bold text-xs' to='/'>
+        <div class='w-[800px] lg:grid grid-cols-4 lg:divide-x block'>
+          <Link
+            className='cursor-pointer font-bold text-xs hidden lg:block'
+            to='/'
+          >
             Go to Epicurious.com
           </Link>
           <div className='flex justify-center'>
@@ -220,7 +223,7 @@ const Navbar = () => {
             </a>
           </div>
           <form action=''>
-            <div className='relative flex items-center text-gray-500 focus-within:text-gray-700'>
+            <div className='relative flex items-center lg:justify-center justify-end  text-gray-500 focus-within:text-gray-700'>
               <BiIcons.BiSearch className='text-xl w-5 h-5 absolute ml-3 pointer-events-none' />
               <input
                 type='text'
@@ -228,7 +231,7 @@ const Navbar = () => {
                 placeholder='Search videos'
                 autoComplete='off'
                 aria-label='search videos'
-                className='pl-10 pr-3 py-2 w-4 focus:w-40 font semibold placeholder-gray-500 text-black rounded-xl border-none'
+                className='lg:pl-10 pl-2 pr-3 py-2 w-4 focus:w-40 font semibold placeholder-gray-500 text-black rounded-xl border-none'
               />
             </div>
           </form>

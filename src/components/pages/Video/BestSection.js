@@ -20,8 +20,8 @@ const BestSection = () => {
 
   return (
     <div className='pt-4 pb-10 bg-gray-200'>
-      <div className='w-[870px] mx-auto '>
-        <h2 className='my-6 uppercase text-xl font-semibold text-start'>
+      <div className='lg:w-[870px] w-full mx-auto '>
+        <h2 className='my-6 uppercase text-xl font-semibold lg:text-start'>
           Best of Epicurious
         </h2>
         <Swiper

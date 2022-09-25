@@ -5,7 +5,7 @@ const NewestVideo = (props) => {
   const { img, categories, title } = props.singleVideoData;
 
   return (
-    <div>
+    <div className='mx-auto'>
       <div className='relative'>
         <img src={img} alt='thumbnail img' className='bestImg cursor-pointer' />
         <img
@@ -15,10 +15,10 @@ const NewestVideo = (props) => {
           className='playIcon cursor-pointer absolute '
         />
       </div>
-      <h2 className='mt-2 text-left text-sm font-bold cursor-pointer hover:underline'>
+      <h2 className='mt-2 lg:w-auto w-[270px] text-left text-sm font-bold cursor-pointer hover:underline'>
         {title}
       </h2>
-      <h4 className='text-left text-xs cursor-pointer hover:underline'>
+      <h4 className='text-left lg:w-auto w-[270px] text-xs cursor-pointer hover:underline'>
         {categories}
       </h4>
     </div>
