@@ -11,10 +11,10 @@ const VideoBannerCarousel = (props) => {
         className='w-full lg:h-[32vw] h-full mix-blend-overlay'
       />
       <div className='block text-start'>
-        <h4 className='absolute text-white top-64 font-medium uppercase text-md ml-10'>
+        <h4 className='absolute text-white top-[18.5rem] font-medium uppercase text-md mx-12'>
           {categories}
         </h4>
-        <h2 className='absolute text-white top-72 font-semibold text-3xl ml-10 pr-12'>
+        <h2 className='absolute text-white top-80 font-semibold text-3xl ml-12 mr-20'>
           {title}
         </h2>
       </div>

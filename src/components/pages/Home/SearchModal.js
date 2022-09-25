@@ -13,13 +13,12 @@ const SearchModal = () => {
           >
             ✕
           </label>
-          <span className='sr-only'>Search</span>
-          <div className='hover:text-gray-800'>
-            <span className='absolute inset-y-0 lg:flex hidden items-center pl-4 lg:-top-64 left-60 text-gray-500 hover:text-gray-800 lg:text-3xl z-10'>
+          <div className='text-gray-500 focus-within:text-gray-700'>
+            <span className='absolute inset-y-0 lg:flex hidden items-center pl-4 lg:-top-64 left-60 lg:text-3xl z-10 pointer-events-none'>
               <FaSearch className='top-50' />
             </span>
             <input
-              className='lg:mt-40 mt-4 placeholder:italic placeholder:text-slate-400 block justify-start lg:mx-auto bg-white lg:w-2/3 w-full border-gray-600 border-b-4 rounded-md lg:py-4 py-1 lg:pl-14 lg:pr-3 pl-6 shadow-md focus:outline-none focus:border-rose-600 focus:ring-rose-600 focus:ring-1 lg:text-3xl opacity-80 lg:font-bold'
+              className='lg:mt-40 mt-4 placeholder:italic placeholder:text-slate-400 block justify-start lg:mx-auto bg-white lg:w-2/3 w-full border-gray-600 border-b-4 rounded-md lg:py-4 py-1 lg:pl-16 lg:pr-3 pl-6 shadow-md focus:outline-none focus:border-rose-600 focus:ring-rose-600 focus:ring-1 lg:text-3xl opacity-80 lg:font-bold'
               placeholder='Find a Recipe...'
               type='text'
               name='search'

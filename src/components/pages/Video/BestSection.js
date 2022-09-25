@@ -19,7 +19,7 @@ const BestSection = () => {
   }, []);
 
   return (
-    <div className='my-10 bg-slate-100 py-10'>
+    <div className='pt-4 pb-10 bg-gray-200'>
       <div className='w-[870px] mx-auto '>
         <h2 className='my-6 uppercase text-xl font-semibold text-start'>
           Best of Epicurious
