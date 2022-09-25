@@ -8,9 +8,9 @@ import image6 from "../../../assets/images/f6.avif";
 
 const HomeCard = () => {
   return (
-    <div>
-      <div class=" bg-gray-100">
-        <section class="md:h-full flex items-center text-gray-600">
+    <div class=" ">
+      <div >
+        <section class="md:flex items-center text-gray-600">
           <div class="container px-5 py-24 mx-auto">
             <div class="text-center mb-12">
               <h1 class="text-4xl md:text-6xl text-gray-700 font-semibold">
@@ -19,7 +19,7 @@ const HomeCard = () => {
             </div>
             <div class="flex flex-wrap m-4 ">
               <div class="p-4 sm:w-1/2 lg:w-1/3 ">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div class=" border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image1}
                     class="lg:h-72 h-48 w-full object-cover object-center"
