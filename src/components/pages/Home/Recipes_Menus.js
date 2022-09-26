@@ -1,13 +1,26 @@
 import React from "react";
+import Navbar from "../../sharedPage/Navbar";
+import BookRelease from "./BookRelease";
+import HomeCard from "./HomeCard";
+import NewestRecipes from "./NewestRecipes";
+import Products from "./Products";
+import MainImage from '../../../assets/images/main.avif'
 import { IoMdArrowDropright } from 'react-icons/io';
 
 
 const Recipes_Menus = () => {
   return (
+    
     <div>
+      <Navbar></Navbar>
+       
+        {/* find recipes section start */}
+        <section>
         <div className=" text-4xl  font-semibold flex justify-start ml-10 md:ml-32 lg:ml-60 mt-10 ">
      <h1>RECIPES & MENUS</h1>
     </div>
+
+   
     <div className="lg:flex justify-around lg:px-60 lg:py-10">
     <div className="p-10 ">
         <h1 className='lg:text-7xl text-5xl  font-semibold lg:font-bold text-sky-700'>FIND A RECIPE</h1>
@@ -68,6 +81,13 @@ const Recipes_Menus = () => {
        </div>
     </div>
     </div>
+      
+        </section>
+        {/* find recipes section End */}
+
+       <div className="flex justify-center">
+       <img src={MainImage} className='w-full mx-60' style={{height:750}} alt="Image"/>
+       </div>
   
     
     </div>
