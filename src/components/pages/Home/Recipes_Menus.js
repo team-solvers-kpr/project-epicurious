@@ -5,14 +5,14 @@ import { IoMdArrowDropright } from 'react-icons/io';
 const Recipes_Menus = () => {
   return (
     <div>
-        <div className=" text-4xl  font-semibold flex justify-start ml-60 mt-10 ">
+        <div className=" text-4xl  font-semibold flex justify-start ml-10 md:ml-32 lg:ml-60 mt-10 ">
      <h1>RECIPES & MENUS</h1>
     </div>
     <div className="lg:flex justify-around lg:px-60 lg:py-10">
     <div className="p-10 ">
-        <h1 className='text-7xl  font-bold text-sky-700'>FIND A RECIPE</h1>
+        <h1 className='lg:text-7xl text-5xl  font-semibold lg:font-bold text-sky-700'>FIND A RECIPE</h1>
         <div className="flex item-center justify-center p-6 ">
-        <div className="flex w-96 rounded border border-1  ">
+        <div className="flex w-full lg:w-96 rounded border border-1  ">
             <input 
             type={'Search'}
             name='search'
@@ -55,7 +55,7 @@ const Recipes_Menus = () => {
 
     </div>
     <div className="p-10">
-    <h1 className='text-7xl  font-bold text-orange-600'>CREATE A MENU</h1>
+    <h1 className='lg:text-7xl text-5xl font-semibold lg:font-bold text-orange-600'>CREATE A MENU</h1>
        <div className="p-4 mt-10">
        <p className="text-xl font-semibold">Use our new menu creator to create your own</p>
         <p className="text-xl font-semibold"> menu collection from any recipes and share it</p>
