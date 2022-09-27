@@ -20,24 +20,18 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
   let eerror = 0;
+  let errorMessage;
   const onSubmit = async (data) => {
-    eerror = 1;
+    errorMessage = <p className="text-red-600 font-serif">{error?.message}</p>;
+
     const email = data.email;
     const password = data.password;
     await createUserWithEmailAndPassword(email, password);
   };
-  let errorMessage;
 
-  if (error || gerror) {
-    if (eerror === 1) {
-      errorMessage = (
-        <p className="text-red-600 font-serif">{error?.message}</p>
-      );
-    } else {
-      errorMessage = (
-        <p className="text-red-600 font-serif">{gerror?.message}</p>
-      );
-    }
+  if (gerror) {
+    eerror = 0;
+    errorMessage = <p className="text-red-600 font-serif">{gerror?.message}</p>;
   }
   if (loading || gloading) {
     return <Loading />;
