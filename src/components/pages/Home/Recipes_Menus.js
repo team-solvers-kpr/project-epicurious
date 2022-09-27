@@ -4,7 +4,7 @@ import BookRelease from "./BookRelease";
 import HomeCard from "./HomeCard";
 import NewestRecipes from "./NewestRecipes";
 import Products from "./Products";
-import MainImage from '../../../assets/images/main.avif'
+import MainImage from '../../../assets/images/main.jpg'
 import { IoMdArrowDropright } from 'react-icons/io';
 
 
@@ -68,7 +68,7 @@ const Recipes_Menus = () => {
 
     </div>
     <div className="p-10">
-    <h1 className='lg:text-7xl text-5xl font-semibold lg:font-bold text-orange-600'>CREATE A MENU</h1>
+    <h1 className='lg:text-7xl text-5xl font-semibold lg:font-bold'  style={{color:'#f93f23'}}>CREATE A MENU</h1>
        <div className="p-4 mt-10">
        <p className="text-xl font-semibold">Use our new menu creator to create your own</p>
         <p className="text-xl font-semibold"> menu collection from any recipes and share it</p>
@@ -76,8 +76,8 @@ const Recipes_Menus = () => {
        </div>
 
        <div className="flex  justify-center">
-       <a href='https://id.condenast.com/interaction/nnPP-NADhxjdTFZ8GlWNk/email?xid=22d82be7-60f3-4b62-9cde-2bb784a73434&scope=openid%20offline_access&state=%7B%22redirectURL%22%3A%22%2Faccount%2Fsaved%22%7D&prompt=select_account%20consent&client_id=condenast.identity.bd96ef0e8186fcea33396720bc76b8b9&redirect_uri=https%3A%2F%2Fwww.epicurious.com%2Fauth%2Fcomplete&response_type=code' class='hover:underline underline-offset-0 text-xl text-orange-500 font-semibold mx-2 p-1' target='_blank' rel="noopener noreferrer">CREATE A MENU </a>
-        <IoMdArrowDropright className="text-2xl text-gray-400 mt-1 pt-1"></IoMdArrowDropright>
+       <a href='https://id.condenast.com/interaction/nnPP-NADhxjdTFZ8GlWNk/email?xid=22d82be7-60f3-4b62-9cde-2bb784a73434&scope=openid%20offline_access&state=%7B%22redirectURL%22%3A%22%2Faccount%2Fsaved%22%7D&prompt=select_account%20consent&client_id=condenast.identity.bd96ef0e8186fcea33396720bc76b8b9&redirect_uri=https%3A%2F%2Fwww.epicurious.com%2Fauth%2Fcomplete&response_type=code' class='hover:underline underline-offset-0 text-xl  font-semibold mx-2 p-1' style={{color:'#f93f23'}} target='_blank' rel="noopener noreferrer">CREATE A MENU </a>
+        <IoMdArrowDropright className="text-2xl text-gray-400 mt-1 pt-1"  style={{color:'#f93f23'}}></IoMdArrowDropright>
        </div>
     </div>
     </div>
@@ -85,10 +85,27 @@ const Recipes_Menus = () => {
         </section>
         {/* find recipes section End */}
 
-       <div className="flex justify-center">
-       <img src={MainImage} className='w-full mx-60' style={{height:750}} alt="Image"/>
+       <div className="flex justify-center mx-60 relative ">
+       <img src={MainImage} className='w-full ' style={{height:750}} alt="Image"/>
+       <div class='mt-4 absolute' style={{marginLeft:800, marginTop:140}}>
+                        <button class='w-72 h-14 p-2 font-semibold text-white text-lg' style={{backgroundColor:'#f93f23'}}>COOK THIS NOW</button>
+                    </div>
+      
+       <div className="absolute w-1/3 mt-10 px-6 pt-32 bg-white  " style={{height:450,marginLeft:800, marginTop:180}}>
+          <div className="">
+         
+          <h3><a href='https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses' class='hover:underline underline-offset-2 text-5xl text-gray-800 font-bold mx-2 p-1' target='_blank' rel="noopener noreferrer">Chocolate-Pecan Sheet Pie</a></h3>
+       <p className="text-lg p-6 font-semibold">Creamy chocolate ganache, sweetened with earthy molasses, and crunchy candied pecans add texture and richness to this eminently shareable dessert.</p>
+       <div className="flex  justify-center">
+       <a href='https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses' class='hover:underline underline-offset-0 text-xl  font-semibold mx-2 p-1' target='_blank' rel="noopener noreferrer" style={{color:'#f93f23'}}>VIEW RECIPE </a>
+        <IoMdArrowDropright className="text-2xl mt-1 pt-1"  style={{color:'#f93f23'}}></IoMdArrowDropright>
        </div>
-  
+          </div>
+      
+      
+       </div >
+       </div>
+       
     
     </div>
   );
