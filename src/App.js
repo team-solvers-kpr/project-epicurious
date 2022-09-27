@@ -10,6 +10,7 @@ import NotFound from "./components/sharedPage/NotFound";
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Recipes_Menus from "./components/pages/Home/Recipes_Menus";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route
+          path="/recipies"
+          element={<Recipes_Menus></Recipes_Menus>}
+        ></Route>
         <Route path="/signin" element={<Signin></Signin>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/signin" element={<Signin></Signin>}></Route>
