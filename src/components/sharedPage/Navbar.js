@@ -12,7 +12,7 @@ const Navbar = () => {
     const dashboardOpen = () => { setIsOpen(!isOpen) };
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 border-b-4 border-gray-100 ">
             <div className="navbar-start">
                 <div className="flex-none">
                     {!isOpen ?
@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-center">
-                <Link className="cursor-pointer normal-case font-bold text-3xl text-rose-600" to='/'>epicurious</Link>
+                <Link className="cursor-pointer normal-case font-bold text-4xl text-rose-600" to='/'>epicurious</Link>
             </div>
 
             <div className="navbar-end">
