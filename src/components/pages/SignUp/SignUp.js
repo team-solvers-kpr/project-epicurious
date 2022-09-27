@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
@@ -20,13 +20,14 @@ const SignUp = () => {
     formState: { errors },
   } = useForm();
   let eerror = 0;
+  let errorMessage;
   const onSubmit = async (data) => {
-    eerror = 1;
+    errorMessage = <p className="text-red-600 font-serif">{error?.message}</p>;
+
     const email = data.email;
     const password = data.password;
     await createUserWithEmailAndPassword(email, password);
   };
-  let errorMessage;
 
   if (error || gerror) {
     if (eerror === 1) {

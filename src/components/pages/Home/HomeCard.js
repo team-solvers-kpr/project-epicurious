@@ -9,21 +9,17 @@ import image6 from "../../../assets/images/f6.avif";
 const HomeCard = () => {
   return (
     <div>
+      <hr className="py-4 mx-10" />
       <div class=" bg-gray-100">
         <section class="md:h-full flex items-center text-gray-600">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="text-center mb-12">
-              <h1 class="text-4xl md:text-6xl text-gray-700 font-semibold">
-                More
-              </h1>
-            </div>
+          <div class="container px-5 py-5 mx-auto">
             <div class="flex flex-wrap m-4 ">
               <div class="p-4 sm:w-1/2 lg:w-1/3 ">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image1}
-                    class="lg:h-72 h-48 w-full object-cover object-center"
-                    alt="image"
+                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    alt="meal-1"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     <h2 class="text-base font-medium text-indigo-300 mb-1">
@@ -38,10 +34,9 @@ const HomeCard = () => {
                     <p class="leading-relaxed mb-3 text-orange-500">
                       BY ANNA HIZAL
                     </p>
-                    <h1 class=""></h1>
                     <div class="flex item-center flex-wrap">
                       <a
-                        href="#"
+                        href="/"
                         class="text-indigo-300 inline-flex item-center md:mb-2 lg:mb-0"
                       >
                         Read more
@@ -54,8 +49,8 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image2}
-                    class="lg:h-72 h-48 w-full object-cover object-center"
-                    alt="image"
+                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    alt="meal-2"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     <h2 class="text-base font-medium text-indigo-300 mb-1">
@@ -70,10 +65,10 @@ const HomeCard = () => {
                     <p class="leading-relaxed mb-3 text-orange-500">
                       BY EMILY FARRIS
                     </p>
-                    <h1 class=""></h1>
+
                     <div class="flex item-center flex-wrap">
                       <a
-                        href="#"
+                        href="/"
                         class="text-indigo-300 inline-flex item-center md:mb-2 lg:mb-0"
                       >
                         Read more
@@ -86,8 +81,8 @@ const HomeCard = () => {
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={image3}
-                    class="lg:h-72 h-48 w-full object-cover object-center"
-                    alt="image"
+                    class="lg:h-72 md:h-48 w-full object-cover object-center"
+                    alt="meal-3"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     <h2 class="text-base font-medium text-indigo-300 mb-1">
@@ -99,7 +94,7 @@ const HomeCard = () => {
                     <p class="leading-relaxed mb-3 text-orange-500">
                       BY GENEVIEVE YAM
                     </p>
-                    <h1 class=""></h1>
+
                     <div class="flex item-center flex-wrap">
                       <a
                         href="/"
@@ -116,7 +111,7 @@ const HomeCard = () => {
                   <img
                     src={image4}
                     class="lg:h-72 h-48 w-full object-cover object-center"
-                    alt="image"
+                    alt="imagealt"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     <h2 class="text-base font-medium text-indigo-300 mb-1">
@@ -128,10 +123,10 @@ const HomeCard = () => {
                     <p class="leading-relaxed mb-3 text-orange-500">
                       THE EDITORS OF EPICURIOUS
                     </p>
-                    <h1 class=""></h1>
+
                     <div class="flex item-center flex-wrap">
                       <a
-                        href="#"
+                        href="/"
                         class="text-indigo-300 inline-flex item-center md:mb-2 lg:mb-0"
                       >
                         Read more
@@ -145,7 +140,7 @@ const HomeCard = () => {
                   <img
                     src={image5}
                     class="lg:h-72 h-48 w-full object-cover object-center"
-                    alt="image"
+                    alt="imagealt"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     <h2 class="text-base font-medium text-indigo-300 mb-1">
@@ -160,10 +155,9 @@ const HomeCard = () => {
                     <p class="leading-relaxed mb-3 text-orange-500">
                       BY ANNA HIZAL
                     </p>
-                    <h1 class=""></h1>
                     <div class="flex item-center flex-wrap">
                       <a
-                        href="#"
+                        href="/"
                         class="text-indigo-300 inline-flex item-center md:mb-2 lg:mb-0"
                       >
                         Read more
@@ -177,7 +171,7 @@ const HomeCard = () => {
                   <img
                     src={image6}
                     class="lg:h-72 h-48 w-full object-cover object-center"
-                    alt="image"
+                    alt="imagealt"
                   />
                   <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                     <h2 class="text-base font-medium text-indigo-300 mb-1">
@@ -189,10 +183,9 @@ const HomeCard = () => {
                     <p class="leading-relaxed mb-3 text-orange-500">
                       BY GENEVIEVE YAM
                     </p>
-                    <h1 class=""></h1>
                     <div class="flex item-center flex-wrap">
                       <a
-                        href="#"
+                        href="/"
                         class="text-indigo-300 inline-flex item-center md:mb-2 lg:mb-0"
                       >
                         Read more
