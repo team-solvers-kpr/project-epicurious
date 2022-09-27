@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
@@ -29,9 +29,16 @@ const SignUp = () => {
     await createUserWithEmailAndPassword(email, password);
   };
 
-  if (gerror) {
-    eerror = 0;
-    errorMessage = <p className="text-red-600 font-serif">{gerror?.message}</p>;
+  if (error || gerror) {
+    if (eerror === 1) {
+      errorMessage = (
+        <p className="text-red-600 font-serif">{error?.message}</p>
+      );
+    } else {
+      errorMessage = (
+        <p className="text-red-600 font-serif">{gerror?.message}</p>
+      );
+    }
   }
   if (loading || gloading) {
     return <Loading />;

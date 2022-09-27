@@ -4,6 +4,7 @@ import Home from "./components/pages/Home/Home";
 import Login from "./components/pages/Login/Login";
 import Signin from "./components/pages/Register/Signin";
 import SignUp from "./components/pages/SignUp/SignUp";
+import Video from "./components/pages/Video/Video";
 import Footer from "./components/sharedPage/Footer";
 import Navbar from "./components/sharedPage/Navbar";
 import NotFound from "./components/sharedPage/NotFound";
@@ -22,9 +23,9 @@ function App() {
           path="/recipies"
           element={<Recipes_Menus></Recipes_Menus>}
         ></Route>
+        <Route path="/videos" element={<Video></Video>}></Route>
         <Route path="/signin" element={<Signin></Signin>}></Route>
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
-        <Route path="/signin" element={<Signin></Signin>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>

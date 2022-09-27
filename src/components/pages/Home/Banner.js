@@ -9,10 +9,10 @@ const Banner = () => {
 
     return (
         <>
-            <div className="relative items-center">
-                <img style={{ height: '486px' }} src={bannerImage} alt="banner iamge" className="w-full brightness-75" />
+            <div style={{ height: '486px' }} className="relative items-center w-full">
+                <img  src={bannerImage} alt="banner iamge" className="w-full h-full object-cover mt-16 brightness-75" />
                 <div className="block">
-                    <h1 className="absolute font-bold text-white lg:text-6xl text-4xl top-40 lg:top-32 w-full ">Find a Recipe</h1>
+                    <h1 className="absolute font-bold text-white lg:text-6xl text-4xl top-40 lg:top-32 w-full">Find a Recipe</h1>
                     <div className="flex justify-center">
                         <label
                             htmlFor="search-modal"
@@ -20,7 +20,7 @@ const Banner = () => {
                             onClick={() => setShowSearchModal(true)}
                         ><ImSearch /></label>
                     </div>
-                    <h1 className="absolute font-bold text-white lg:text-md text-sm top-80 w-full text-center hover:underline cursor-pointer">ADVANCED SEARCH <BsArrowRightCircleFill className="mx-auto hover:underline cursor-pointer text-2xl" /></h1>
+                    <h1 className="absolute font-bold text-white lg:text-md text-sm top-80 w-full text-center hover:underline cursor-pointer ">ADVANCED SEARCH <BsArrowRightCircleFill className="mx-auto hover:underline cursor-pointer text-2xl" /></h1>
                 </div>
             </div>
             {showSearchModal && <SearchModal />}
