@@ -4,7 +4,6 @@ import BookRelease from "./BookRelease";
 import HomeCard from "./HomeCard";
 import NewestRecipes from "./NewestRecipes";
 import Products from "./Products";
-import Recipes_Menus from "./Recipes_Menus";
 
 const Home = () => {
   return (

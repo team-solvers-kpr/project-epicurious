@@ -11,23 +11,23 @@ import NotFound from "./components/sharedPage/NotFound";
 import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Recipes_Menus from "./components/pages/Home/Recipes_Menus";
+import RecipesMenus from "./components/pages/Home/RecipesMenus";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route
-          path="/recipies"
-          element={<Recipes_Menus></Recipes_Menus>}
+          path='/recipes-menus'
+          element={<RecipesMenus></RecipesMenus>}
         ></Route>
-        <Route path="/videos" element={<Video></Video>}></Route>
-        <Route path="/signin" element={<Signin></Signin>}></Route>
-        <Route path="/signup" element={<SignUp></SignUp>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="*" element={<NotFound></NotFound>}></Route>
+        <Route path='/videos' element={<Video></Video>}></Route>
+        <Route path='/signin' element={<Signin></Signin>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer></ToastContainer>
       <Footer></Footer>
