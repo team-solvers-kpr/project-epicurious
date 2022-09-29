@@ -86,12 +86,13 @@ const Recipes_Menus = () => {
       {/* find recipes section End 
       
       */}
+      {/* main pic added */}
 
       <div className="flex justify-center relative lg:h-screen "  >
         <img src={MainImage} className='w-3/4 lg:h-3/4 lg:mt-20'  alt="Image" />
         
 
-
+          {/* main pic button  */}
          <div className=" absolute">
         <div class='mt-4 absolute' style={{ marginLeft: 1060, marginTop: 140 }}>
           <button class='w-72 h-14 p-2 font-semibold text-white text-lg ' style={{ backgroundColor: '#f93f23' }}>COOK THIS NOW</button>
