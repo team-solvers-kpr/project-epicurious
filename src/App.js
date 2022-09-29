@@ -19,15 +19,12 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-<<<<<<< HEAD
         <Route
           path="/recipies"
           element={<Recipes_Menus></Recipes_Menus>}
         ></Route>
         <Route path="/videos" element={<Video></Video>}></Route>
         <Route path="/signin" element={<Signin></Signin>}></Route>
-=======
->>>>>>> 82f0459249e76da0f2b2ae834c03897a612c575f
         <Route path="/signup" element={<SignUp></SignUp>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
