@@ -9,10 +9,9 @@ import { useForm } from "react-hook-form";
 import Loading from "../../sharedPage/Loading";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-
 import 'react-toastify/dist/ReactToastify.css';
 
-// import Footer from "../../sharedPage/Footer";
+
 const Login = () => {
   const [signInError, setError] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -35,17 +34,14 @@ const Login = () => {
 
   if (error || googleerror || facebookerror) {
     // toast.error("user not found");
-    errorMessage = <span className="text-red-600 font-serif">wrong password</span>;
+    errorMessage = <span className="text-red-600 font-serif">{error?.message || facebookerror?.message || googleerror?.message}</span>;
   }
   if (loading || googleloading || facebookloading) {
     return <Loading />;
   }
   if (user || googleUser || facebookUser) {
     toast.success("Login successful");
-    return navigate('/');
-  }
-  if(signInError){
-    setError('')
+    navigate('/');
   }
 
   return (

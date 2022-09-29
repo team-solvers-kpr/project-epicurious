@@ -30,15 +30,11 @@ const SignUp = () => {
   };
 
   if (error || gerror) {
-    if (eerror === 1) {
-      errorMessage = (
-        <p className="text-red-600 font-serif">{error?.message}</p>
-      );
-    } else {
-      errorMessage = (
-        <p className="text-red-600 font-serif">{gerror?.message}</p>
-      );
-    }
+    errorMessage = (
+      <p className="text-red-600 font-serif">
+        {error?.message || gerror?.message}
+      </p>
+    );
   }
   if (loading || gloading) {
     return <Loading />;
