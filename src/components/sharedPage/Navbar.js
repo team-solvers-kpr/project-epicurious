@@ -7,11 +7,20 @@ import * as GrIcons from "react-icons/gr";
 import * as BiIcons from "react-icons/bi";
 import SearchModal from "../pages/Home/SearchModal";
 import { Link, useLocation } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
+  const [user, loading, error] = useAuthState(auth);
   const [isOpen, setIsOpen] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
   const location = useLocation();
+  const logout = () => {
+    signOut(auth);
+    toast.error("Logged Out");
+  };
 
   const dashboardOpen = () => {
     setIsOpen(!isOpen);
@@ -114,12 +123,23 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <Link
-              to="/signin"
-              className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
-            >
-              Sign In
-            </Link>
+            {!user && (
+              <Link
+                to="/signin"
+                className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
+              >
+                Sign In
+              </Link>
+            )}
+            {user && (
+              <button
+                className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
+                to="/"
+                onClick={logout}
+              >
+                Sign Out
+              </button>
+            )}
           </div>
         </div>
 
@@ -132,7 +152,7 @@ const Navbar = () => {
           </Link>
         )}
 
-        {location.pathname === "/" && (
+        {!user && (
           <Link
             className="text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block"
             to="/signin"
@@ -140,6 +160,15 @@ const Navbar = () => {
           >
             Sign In
           </Link>
+        )}
+        {user && (
+          <button
+            className="text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block"
+            to="/signin"
+            onClick={logout}
+          >
+            Sign Out
+          </button>
         )}
 
         {location.pathname === "/videos" && (
