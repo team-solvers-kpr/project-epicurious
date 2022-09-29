@@ -6,13 +6,14 @@ import * as BsIcons from "react-icons/bs";
 import * as GrIcons from "react-icons/gr";
 import * as BiIcons from "react-icons/bi";
 import SearchModal from "../pages/Home/SearchModal";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 import { toast } from "react-toastify";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [user, loading, error] = useAuthState(auth);
   const [isOpen, setIsOpen] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
@@ -20,6 +21,7 @@ const Navbar = () => {
   const logout = () => {
     signOut(auth);
     toast.error("Logged Out");
+    navigate("/");
   };
 
   const dashboardOpen = () => {
