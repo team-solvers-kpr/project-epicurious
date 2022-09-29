@@ -3,6 +3,8 @@ import {
   useSignInWithEmailAndPassword,
   useSignInWithFacebook,
   useSignInWithGoogle,
+  getAuth,
+  signOut, 
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
@@ -28,7 +30,15 @@ const Login = () => {
     const password = data.password;
     signInWithEmailAndPassword(email, password);
   };
+  const auth = getAuth(firebaseApp);
   const navigate = useNavigate();
+
+  const login = () => {
+    signInWithEmailAndPassword(auth, 'test@test.com', 'password');
+  };
+  const logout = () => {
+    signOut(auth);
+  };
 
   let errorMessage;
 
