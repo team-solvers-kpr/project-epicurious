@@ -20,7 +20,7 @@ const Navbar = () => {
   useEffect(() => {}, [location]);
 
   return (
-    <div className="navbar bg-base-100 overflow-hidden fixed top-0 z-10">
+    <div className=" navbar bg-base-100 overflow-hidden fixed top-0 z-10">
       <div className="navbar-start">
         <div className="flex-none">
           <button onClick={dashboardOpen} className="btn btn-square btn-ghost">

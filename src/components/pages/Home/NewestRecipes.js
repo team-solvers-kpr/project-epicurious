@@ -9,11 +9,19 @@ import 'swiper/css';
 
 export default function NewestRecipes() {
   return (
+<<<<<<< HEAD
     <div className='newest_recipes bg-slate-100'>
         <div className='lg:mx-40 sm:p-2 sm:m-28'>
             <div className='recipes_header'>
                 <div className="divider md:inline-flex lg:inline-flex w-full mt-0 text-black">
                     <h1 className='font-bold font-serif text-3xl'>Our Newest Recipes</h1>
+=======
+    <div className='h-full newest_recipes bg-slate-100'>
+        <div className='lg:m-40 sm:p-2 sm:m-28 m-10'>
+            <div className='recipes_header py-4'>
+                <div className="divider md:inline-flex lg:inline-flex w-full lg:mt-16 text-black">
+                    <h1 className='font-bold font-serif lg:text-3xl text-xl'>Our Newest Recipes</h1>
+>>>>>>> 82f0459249e76da0f2b2ae834c03897a612c575f
                 </div>
             </div>
                 <div className='recipes_allItems md:m-8 mb-8'>
@@ -21,17 +29,19 @@ export default function NewestRecipes() {
                         spaceBetween={5}
                         slidesPerView={5}
                         breakpoints={{
-
+                            200: {
+                                slidesPerView: 1,
+                            },
                             400: {
                                 slidesPerView: 2,
                             },
                             // when windows width is >= 640px
                             640: {
-                            slidesPerView: 2,
+                            slidesPerView: 3,
                             },
                             // when windows width is >= 768px
                             768: {
-                            slidesPerView: 3,
+                            slidesPerView: 4,
                             },
                             1200: {
                             slidesPerView: 5,
