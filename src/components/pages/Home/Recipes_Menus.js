@@ -83,19 +83,21 @@ const Recipes_Menus = () => {
         </div>
 
       </section>
-      {/* find recipes section End */}
+      {/* find recipes section End 
+      
+      */}
 
-      <div className="flex justify-center mx-60 relative ">
-        <img src={MainImage} className='w-full ' style={{ height: 750 }} alt="Image" />
+      <div className="flex justify-center relative lg:h-screen "  >
+        <img src={MainImage} className='w-3/4 lg:h-3/4 lg:mt-20'  alt="Image" />
         
 
 
-        <div className=" absolute">
-        <div class='mt-4 absolute' style={{ marginLeft: 1060, marginTop: 150 }}>
+         <div className=" absolute">
+        <div class='mt-4 absolute' style={{ marginLeft: 1060, marginTop: 140 }}>
           <button class='w-72 h-14 p-2 font-semibold text-white text-lg ' style={{ backgroundColor: '#f93f23' }}>COOK THIS NOW</button>
         </div>
 
-          <div className=" w-1/3 mt-10 px-6 pt-24 bg-white  " style={{ height: 450, marginLeft: 950, marginTop: 180 }}>
+          <div className=" w-1/3 mt-10 px-6 pt-24 bg-white  " style={{ height: 450, marginLeft: 950, marginTop: 170 }}>
 
             <h3><a href='https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses' class='hover:underline underline-offset-2 text-5xl text-gray-800 font-bold mx-2 p-1' target='_blank' rel="noopener noreferrer">Chocolate-Pecan Sheet Pie</a></h3>
             <p className="text-lg p-6 font-semibold">Creamy chocolate ganache, sweetened with earthy molasses, and crunchy candied pecans add texture and richness to this eminently shareable dessert.</p>
