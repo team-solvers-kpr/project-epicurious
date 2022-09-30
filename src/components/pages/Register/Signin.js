@@ -1,10 +1,19 @@
 import React from 'react';
+import { useSignInWithEmailAndPassword, } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 
 export default function Signin() {
 
   const navigate = useNavigate();
+
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
 
   const {
     register,
@@ -12,8 +21,31 @@ export default function Signin() {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    navigate('/login');
+    const email = data.email;
+    const password = data.password;
+    signInWithEmailAndPassword(email, password);
+    // navigate('/login');
   };
+
+  if (loading) {
+    return (
+      <div>
+        <p>Initialising User...</p>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div>
+        <p>Error: {error}</p>
+      </div>
+    );
+  }
+  if (user) {
+    
+  }
+
+ 
 
 
 

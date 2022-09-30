@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   useSignInWithEmailAndPassword,
   useSignInWithFacebook,
@@ -13,7 +13,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
-  const [signInError, setError] = useState("");
   const [signInWithEmailAndPassword, user, loading, error] =
   useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle, googleUser, googleloading, googleerror] = useSignInWithGoogle(auth);
