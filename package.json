@@ -10,9 +10,12 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "aos": "^2.3.4",
     "daisyui": "^2.27.0",
     "firebase": "^9.9.4",
+=======
+>>>>>>> b7de247d9254b341396bf6509acc874005a5d3cb
     "package.json": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
