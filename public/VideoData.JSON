@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1663253436/epicurious_the-smart-cook-pro-chef-turns-eggs-into-3-meals-for-under-9-dollars.jpg",
+    "categories": "How-To",
+    "title": "Pro Chef Turns Eggs Into 3 Meals For Under $9"
+  },
+  {
+    "id": 2,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1663094022/epicurious_well-equipped-5-taco-making-gadgets-tested-by-design-expert.jpg",
+    "categories": "Well Equipped",
+    "title": "5 Taco Making Gadgets Tested By Design Expert"
+  },
+  {
+    "id": 3,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1662472524/epicurious_4-levels-4-levels-of-empanadas-amateur-to-food-scientist.jpg",
+    "categories": "4 Levels",
+    "title": "4 Levels of Empanadas: Amateur to Food Scientist"
+  },
+  {
+    "id": 4,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1661896105/epicurious_ingredient-swap-178-dollars-vs-12-dollars-sundae-pro-chef-and-home-cook-swap-ingredients.jpg",
+    "categories": "Ingredient Swap",
+    "title": "$178 vs $12 Sundae: Pro Chef & Home Cook Swap Ingredients"
+  },
+  {
+    "id": 5,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1661779106/epicurious_well-equipped-5-japanese-gadgets-tested-by-design-expert.jpg",
+    "categories": "Well Equipped",
+    "title": "5 Japanese Gadgets Tested By Design Expert"
+  },
+  {
+    "id": 6,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1662739863/epicurious_produced-by-epicurious-for-raos-homemade-limited-reserve-the-unexpected-cocktail-with-muddling-memories.jpg",
+    "categories": "Produced by Epicurious with Rao's Homemade Limited Reserve",
+    "title": "Produced by Epicurious for Rao's Homemade Limited"
+  },
+  {
+    "id": 7,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1661440369/epicurious_the-smart-cook-pro-chef-turns-cauliflower-into-3-meals-for-under-9-dollars.jpg",
+    "categories": "The Smart Cook",
+    "title": "Pro Chef Turns Cauliflower Into 3 Meals For Under $9"
+  },
+  {
+    "id": 8,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1661265068/epicurious_epicurious-101-ep-epicurious-101-poached-eggs.jpg",
+    "categories": "Epicurious 101",
+    "title": "The Incredible New Way to Poach Eggs that NEVER Fails"
+  },
+  {
+    "id": 9,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1660767458/epicurious_ingredient-swap-162-dollars-vs-19-dollars-fried-chicken-pro-chef-and-home-cook-swap-ingredients.jpg",
+    "categories": "Ingredient Swap",
+    "title": "$162 vs $19 Fried Chicken: Pro Chef & Home Cook Swap in Gradients"
+  },
+  {
+    "id": 10,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1660660317/epicurious_4-levels-4-levels-of-mozzarella-sticks-amateur-to-food-scientist.jpg",
+    "categories": "4 Levels",
+    "title": "4 Levels of Mozzarella Sticks: Amateur to Food"
+  },
+  {
+    "id": 11,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1660224453/epicurious_what-does-gatorade-actually-do.jpg",
+    "categories": "Fine Print",
+    "title": "What Does Gatorade Actually Do?"
+  },
+  {
+    "id": 12,
+    "img": "https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thescene.jpg,fl_progressive,g_face,h_151,q_80,w_270/v1659980003/epicurious_picking-the-right-melon-for-every-recipe.jpg",
+    "categories": "The Big Guide",
+    "title": "Picking The Right Melon For Every Recipe"
+  }
+]
