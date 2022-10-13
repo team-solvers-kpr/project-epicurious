@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   useCreateUserWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import Loading from "../../sharedPage/loading";
+import loading from "../../sharedPage/loading";
 import { toast } from "react-toastify";
 
 // import Footer from "../../sharedPage/Footer";
 
 const SignUp = () => {
-  const [signUpError, setError] = useState("");
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
@@ -20,12 +19,15 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  let eerror = 0;
+  let errorMessage;
+  const onSubmit = async (data) => {
+    errorMessage = <p className="text-red-600 font-serif">{error?.message}</p>;
+
     const email = data.email;
     const password = data.password;
-    createUserWithEmailAndPassword(email, password);
+    await createUserWithEmailAndPassword(email, password);
   };
-  let errorMessage;
 
   if (error || gerror) {
     errorMessage = (
@@ -35,7 +37,7 @@ const SignUp = () => {
     );
   }
   if (loading || gloading) {
-    return <Loading />;
+    return <loading />;
   }
   if (user || guser) {
     toast.success("New User");
@@ -61,6 +63,7 @@ const SignUp = () => {
             </label>
             <input
               placeholder="Email"
+              id="email"
               type="email"
               className="border-black px-2 w-full input"
               {...register("email", {
@@ -83,6 +86,7 @@ const SignUp = () => {
               </div>
             </label>
             <input
+              id="pass"
               type="password"
               className="border-black input px-2 w-full"
               {...register("password", {

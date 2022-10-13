@@ -1,77 +1,128 @@
 import React from "react";
-import Navbar from "../../sharedPage/Navbar";
-import BookRelease from "./BookRelease";
+import MainImage from "../../../assets/images/main.jpg";
+import { IoMdArrowDropright } from "react-icons/io";
 import HomeCard from "./HomeCard";
-import NewestRecipes from "./NewestRecipes";
-import Products from "./Products";
-import MainImage from '../../../assets/images/main.jpg'
-import { IoMdArrowDropright } from 'react-icons/io';
-
 
 const Recipes_Menus = () => {
   return (
-
     <div>
-      <Navbar></Navbar>
-
       {/* find recipes section start */}
       <section>
         <div className=" text-4xl  font-semibold flex justify-start ml-10 md:ml-32 lg:ml-60 mt-10 ">
           <h1>RECIPES & MENUS</h1>
         </div>
 
-
         <div className="lg:flex justify-around lg:px-60 lg:py-10">
           <div className="p-10 ">
-            <h1 className='lg:text-7xl text-5xl  font-semibold lg:font-bold text-sky-700'>FIND A RECIPE</h1>
+            <h1 className="lg:text-7xl text-5xl  font-semibold lg:font-bold text-sky-700">
+              FIND A RECIPE
+            </h1>
             <div className="flex item-center justify-center p-6 ">
               <div className="flex w-full lg:w-96 rounded border border-1  ">
                 <input
-                  type={'Search'}
-                  name='search'
-                  id='search'
+                  type={"Search"}
+                  name="search"
+                  id="search"
                   placeholder="Search"
-                  className="w-full px-4 bg-gray-100 py-1 text-gray-900 outline-none focus:none" />
+                  className="w-full px-4 bg-gray-100 py-1 text-gray-900 outline-none focus:none"
+                />
                 <button className="m-2 rounded bg-teal-800 px-4 py-2 text-white">
                   Search
-
                 </button>
-
-
-
               </div>
             </div>
 
             <div className="hidden lg:block">
               <div className="flex justify-evenly mb-4">
-
-                <h5 class='text-lg text-sky-600 font-semibold'> <a href='https://www.epicurious.com/search' class='hover:underline underline-offset-0   mx-2 p-1   leading-1' target='_blank' rel="noopener noreferrer">WHAT'S NEW</a></h5>
+                <h5 class="text-lg text-sky-600 font-semibold">
+                  {" "}
+                  <a
+                    href="https://www.epicurious.com/search"
+                    class="hover:underline underline-offset-0   mx-2 p-1   leading-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WHAT'S NEW
+                  </a>
+                </h5>
                 <div className="border-r-2 border-gray-400 "></div>
-                <h5 class=' text-lg text-sky-600 font-semibold'> <a href='https://www.epicurious.com/search?special-consideration=healthy' class='hover:underline underline-offset-0   mx-2 p-1   leading-1' target='_blank' rel="noopener noreferrer">HEALTHY</a></h5>
+                <h5 class=" text-lg text-sky-600 font-semibold">
+                  {" "}
+                  <a
+                    href="https://www.epicurious.com/search?special-consideration=healthy"
+                    class="hover:underline underline-offset-0   mx-2 p-1   leading-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    HEALTHY
+                  </a>
+                </h5>
                 <div className="border-r-2 border-gray-400 "></div>
-                <h5 class='text-lg text-sky-600 font-semibold'> <a href='https://www.epicurious.com/search?special-consideration=quick-and-easy' class='hover:underline underline-offset-0    mx-2 p-1   leading-1' target='_blank' rel="noopener noreferrer">QUICK & EASY</a></h5>
-
+                <h5 class="text-lg text-sky-600 font-semibold">
+                  {" "}
+                  <a
+                    href="https://www.epicurious.com/search?special-consideration=quick-and-easy"
+                    class="hover:underline underline-offset-0    mx-2 p-1   leading-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    QUICK & EASY
+                  </a>
+                </h5>
               </div>
               <div className="flex justify-evenly">
-                <h5 class='text-lg text-sky-600 font-semibold'> <a href='https://www.epicurious.com/holidays-events' class='hover:underline underline-offset-0    mx-2 p-1   leading-1' target='_blank' rel="noopener noreferrer">HOLIDAY</a></h5>
+                <h5 class="text-lg text-sky-600 font-semibold">
+                  {" "}
+                  <a
+                    href="https://www.epicurious.com/holidays-events"
+                    class="hover:underline underline-offset-0    mx-2 p-1   leading-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    HOLIDAY
+                  </a>
+                </h5>
                 <div className="border-r-2 border-gray-400 "></div>
-                <h5 class='text-lg text-sky-600 font-semibold'> <a href='https://www.epicurious.com/search?special-consideration=wheat-gluten-free' class='hover:underline underline-offset-0    mx-2 p-1   leading-1' target='_blank' rel="noopener noreferrer">GLUTEN-FREE</a></h5>
+                <h5 class="text-lg text-sky-600 font-semibold">
+                  {" "}
+                  <a
+                    href="https://www.epicurious.com/search?special-consideration=wheat-gluten-free"
+                    class="hover:underline underline-offset-0    mx-2 p-1   leading-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GLUTEN-FREE
+                  </a>
+                </h5>
                 <div className="border-r-2 border-gray-400 "></div>
-                <h5 class='text-lg text-sky-600 font-semibold'> <a href='https://www.epicurious.com/search?special-consideration=vegetarian' class='hover:underline underline-offset-0    mx-2 p-1   leading-1' target='_blank' rel="noopener noreferrer">VEGETARIAN</a></h5>
-
+                <h5 class="text-lg text-sky-600 font-semibold">
+                  {" "}
+                  <a
+                    href="https://www.epicurious.com/search?special-consideration=vegetarian"
+                    class="hover:underline underline-offset-0    mx-2 p-1   leading-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    VEGETARIAN
+                  </a>
+                </h5>
               </div>
             </div>
           </div>
 
-
-          <div className="border-r-2 border-gray-300 ">
-
-          </div>
+          <div className="border-r-2 border-gray-300 "></div>
           <div className="p-10">
-            <h1 className='lg:text-7xl text-5xl font-semibold lg:font-bold' style={{ color: '#f93f23' }}>CREATE A MENU</h1>
+            <h1 className="lg:text-7xl text-5xl font-semibold lg:font-bold text-orange-600">
+              CREATE A MENU
+            </h1>
             <div className="p-4 mt-10">
-              <p className="text-xl font-semibold">Use our new menu creator to create your own</p>
-              <p className="text-xl font-semibold"> menu collection from any recipes and share it</p>
+              <p className="text-xl font-semibold">
+                Use our new menu creator to create your own
+              </p>
+              <p className="text-xl font-semibold">
+                {" "}
+                menu collection from any recipes and share it
+              </p>
               <p className="text-xl font-semibold">with friends!</p>
             </div>
 
@@ -116,6 +167,10 @@ const Recipes_Menus = () => {
       </div>
 
 
+   <div className="lg:mx-48">
+   <HomeCard></HomeCard>
+   </div>
+    
     </div>
   );
 };
