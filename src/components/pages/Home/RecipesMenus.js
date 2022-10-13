@@ -1,36 +1,31 @@
 import React from "react";
-import Navbar from "../../sharedPage/Navbar";
-import BookRelease from "./BookRelease";
-import HomeCard from "./HomeCard";
-import NewestRecipes from "./NewestRecipes";
-import Products from "./Products";
 import MainImage from "../../../assets/images/main.avif";
 import { IoMdArrowDropright } from "react-icons/io";
 
 const Recipes_Menus = () => {
   return (
-    <div>
+    <div className="my-24">
       {/* find recipes section start */}
       <section>
-        <div className=" text-4xl  font-semibold flex justify-start ml-10 md:ml-32 lg:ml-60 mt-10 ">
+        <div className="text-2xl font-semibold flex justify-start ml-10 md:ml-32 lg:ml-60 mt-20">
           <h1>RECIPES & MENUS</h1>
         </div>
 
         <div className="lg:flex justify-around lg:px-60 lg:py-10">
-          <div className="p-10 ">
-            <h1 className="lg:text-7xl text-5xl  font-semibold lg:font-bold text-sky-700">
+          <div className="p-10">
+            <h1 className="lg:text-6xl text-4xl font-semibold lg:font-bold text-sky-700">
               FIND A RECIPE
             </h1>
             <div className="flex item-center justify-center p-6 ">
-              <div className="flex w-full lg:w-96 rounded border border-1  ">
+              <div className="flex w-full lg:w-96 rounded border-2  ">
                 <input
                   type={"Search"}
                   name="search"
                   id="search"
-                  placeholder="Search"
+                  placeholder="Search 330,000+ recipes"
                   className="w-full px-4 bg-gray-100 py-1 text-gray-900 outline-none focus:none"
                 />
-                <button className="m-2 rounded bg-teal-800 px-4 py-2 text-white">
+                <button className="rounded bg-teal-800 px-6 py-3 text-white">
                   Search
                 </button>
               </div>
@@ -115,8 +110,8 @@ const Recipes_Menus = () => {
           </div>
 
           <div className="border-r-2 border-gray-300 "></div>
-          <div className="p-10">
-            <h1 className="lg:text-7xl text-5xl font-semibold lg:font-bold text-orange-600">
+          <div className="py-10 pl-8">
+            <h1 className="lg:text-6xl text-4xl font-semibold lg:font-bold text-orange-600">
               CREATE A MENU
             </h1>
             <div className="p-4 mt-10">
@@ -144,18 +139,66 @@ const Recipes_Menus = () => {
           </div>
         </div>
       </section>
-      {/* find recipes section End */}
+      {/* find recipes section End 
+      
+      */}
+      {/* main pic added */}
 
-      <div
-        className="flex justify-center "
-        style={{ backgroundImage: { MainImage } }}
-      >
+      <div className="flex justify-center relative lg:h-screen">
         <img
           src={MainImage}
-          className="w-full mx-60 border p-[16px]"
-          style={{ height: 750 }}
-          alt="Image"
-        ></img>
+          className="w-4/6 h-4/6 object-cover mt-20"
+          alt="cook item"
+        />
+
+        {/* main pic button  */}
+        <div className="absolute hidden 2xl:block mr-40">
+          <div
+            class="mt-4 absolute"
+            style={{ marginLeft: 650, marginTop: 140 }}
+          >
+            <button class="w-72 h-14 p-2 font-semibold text-white text-lg bg-rose-600">
+              COOK THIS NOW
+            </button>
+          </div>
+
+          <div
+            className=" w-96 mt-10 px-6 pt-16 bg-white"
+            style={{ marginLeft: 600, marginTop: 170 }}
+          >
+            <h3>
+              <a
+                href="https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses"
+                class="hover:underline underline-offset-2 text-4xl text-gray-800 font-semibold mx-2 p-1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chocolate-Pecan Sheet Pie
+              </a>
+            </h3>
+
+            <p className="text-md p-6 font-semibold">
+              Creamy chocolate ganache, sweetened with earthy molasses, and
+              crunchy candied pecans add texture and richness to this eminently
+              shareable dessert.
+            </p>
+            <div className="flex justify-center">
+              <a
+                href="https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses"
+                class="hover:underline underline-offset-0 text-md  font-semibold mx-2 p-2"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#f93f23" }}
+              >
+                VIEW RECIPE{" "}
+              </a>
+              <IoMdArrowDropright
+                className="text-2xl mt-1 pt-2"
+                style={{ color: "#f93f23" }}
+              ></IoMdArrowDropright>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
