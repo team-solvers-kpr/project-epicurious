@@ -10,12 +10,9 @@ import { BsRssFill } from "react-icons/bs";
 
 const MiddlePart = () => {
   return (
-    <div class="bg-gray-100  ">
+    <div class="bg-gray-100">
       {/* // -- middle part of footer-- */}
-      <section
-        class="lg:h-96 lg:px-60 py-10 h-1/2  "
-        style={{ backgroundColor: "#f93f23" }}
-      >
+      <section class="lg:h-96 lg:px-60 py-10 h-1/2 bg-rose-600">
         <div class="lg:flex justify-between ">
           <div class="lg:flex ">
             <div class=" p-2">
@@ -32,7 +29,7 @@ const MiddlePart = () => {
               </div>
             </div>
           </div>
-          <div class="lg:flex p-2 hidden lg:block">
+          <div class="lg:flex p-2 hidden">
             <div class="m-4 ">
               <div class="mb-4 ">
                 <h3>

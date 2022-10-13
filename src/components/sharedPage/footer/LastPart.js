@@ -15,7 +15,7 @@ const LastPart = () => {
             </div>
             <div class=" p-2">
               <select
-                class=" px-3 py-2 border border-gray-500 border-2 text-gray-600"
+                class=" px-3 py-2 border-gray-500 border-2 text-gray-600"
                 style={{ backgroundColor: "#292929" }}
               >
                 <option>Condé Nast Websites</option>
@@ -58,7 +58,7 @@ const LastPart = () => {
           </div>
         </div>
         <div class="mt-4">
-          <button class="border border-gray-500 border-2  p-2 text-gray-600">
+          <button class=" border-gray-500 border-2  p-2 text-gray-600">
             <a
               href="https://www.epicurious.com/expert-advice/accessibility-help-article"
               class="hover:text-orange-600 hover:font-bold text-gray-600 font-medium mx-2 p-1"
