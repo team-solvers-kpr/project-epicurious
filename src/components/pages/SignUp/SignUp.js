@@ -19,7 +19,6 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  let eerror = 0;
   let errorMessage;
   const onSubmit = async (data) => {
     errorMessage = <p className="text-red-600 font-serif">{error?.message}</p>;

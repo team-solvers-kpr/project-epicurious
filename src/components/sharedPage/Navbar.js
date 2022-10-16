@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const [isOpen, setIsOpen] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
   const location = useLocation();
@@ -216,7 +216,7 @@ const Navbar = () => {
       )}
 
       {location.pathname === "/videos" && (
-        <div class="w-[800px] lg:grid grid-cols-4 lg:divide-x block">
+        <div className="w-[800px] lg:grid grid-cols-4 lg:divide-x block">
           <Link
             className="cursor-pointer font-bold text-xs hidden lg:block"
             to="/"

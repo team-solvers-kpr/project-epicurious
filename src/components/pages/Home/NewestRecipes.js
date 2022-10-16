@@ -9,7 +9,7 @@ import "swiper/css";
 export default function NewestRecipes() {
   return (
     <div className="h-full newest_recipes bg-slate-100">
-      <div className="lg:m-40 sm:p-2 sm:m-28 m-10">
+      <div className="lg:mx-40 sm:p-2 mt-40">
         <div className="recipes_header py-4">
           <div className="divider md:inline-flex lg:inline-flex w-full lg:mt-16 text-black">
             <h1 className="font-bold font-serif lg:text-3xl text-xl">

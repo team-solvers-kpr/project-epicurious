@@ -9,6 +9,11 @@ import { AiOutlineDown } from "react-icons/ai";
 
 const NewestVideos = () => {
   const [allVideoData, setAllVideoData] = useState([]);
+  const [visibleData, setVisibleData] = useState(12);
+
+  const showMore = () => {
+    setVisibleData((previousVis) => previousVis + 4);
+  };
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -185,8 +190,8 @@ const NewestVideos = () => {
         </Menu>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8 pt-16 pb-6">
-        {allVideoData.map((singleVideoData) => (
+      <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8 pt-8 pb-6">
+        {allVideoData.slice(0, visibleData).map((singleVideoData) => (
           <NewestVideo
             key={singleVideoData._id}
             singleVideoData={singleVideoData}
@@ -194,9 +199,17 @@ const NewestVideos = () => {
         ))}
       </div>
 
-      <div className="lg:text-start">
-        <button className="btn btn-sm btn-outline">More...</button>
-      </div>
+      {allVideoData.length !== visibleData ? (
+        <div className="lg:text-start">
+          <button onClick={showMore} className="btn btn-sm btn-outline">
+            More...
+          </button>
+        </div>
+      ) : (
+        <div className="lg:text-start">
+          <h2 className="text-rose-600 font-semibold">That's all for now!</h2>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-import notFoundPageImg from "../../assets/images/404pageNotFound.jpg";
+import notFoundPageImg from "../../assets/Images/404pageNotFound.jpg";
 
 export default function NotFound() {
   return (
