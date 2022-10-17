@@ -5,10 +5,10 @@ const Newsletter = () => {
   return (
     <div>
       <div className="py-8 bg-rose-600 lg:flex grid items-center justify-center gap-12">
-        <h3 className="text-xl text-white font-semibold ">
+        <h3 className="lg:text-xl lg:px-0 px-28 text-white font-semibold ">
           Get our latest recipes and expert tips right in your inbox
         </h3>
-        <div className="flex w-full lg:w-80 border">
+        <div className="flex mx-auto lg:mx-0 lg:w-80 w-4/6 border">
           <input
             type={"Search"}
             name="search"
@@ -21,7 +21,7 @@ const Newsletter = () => {
           </button>
         </div>
       </div>
-      <div className="lg:flex grid justify-center gap-8 lg:px-60 px-0 py-6 bg-slate-100">
+      <div className="lg:flex grid justify-center lg:gap-8 gap-2 lg:px-60 px-10 py-6 bg-slate-100">
         <div className="flex justify-center gap-2">
           <AiOutlineCheckCircle className="inline-block text-8xl pb-12 text-green-500 cursor-pointer" />
           <div>

@@ -4,33 +4,27 @@ import MainImage from "../../../src/assets/Images/main.avif";
 
 const CookThisNow = () => {
   return (
-    <div>
+    <div className="lg:mb-0 mb-52">
       {/* main pic added */}
       <a
         href="https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses"
-        className="flex justify-center relative lg:h-screen"
+        className="flex justify-center lg:relative lg:h-screen"
       >
         <img
           src={MainImage}
-          className="w-4/6 h-4/6 object-cover mt-20"
+          className="lg:w-4/6 w-full lg:h-4/6 h-full object-cover mt-20"
           alt="cook item"
         />
 
         {/* main pic button  */}
-        <div className="absolute hidden 2xl:block mr-40 group">
-          <div
-            className="mt-4 absolute"
-            style={{ marginLeft: 650, marginTop: 140 }}
-          >
-            <button className="w-72 h-14 p-2 font-semibold text-white text-lg bg-rose-600">
+        <div className="absolute lg:block mr-40 group">
+          <div className="absolute lg:ml-[650px] lg:mt-[156px] ml-80 mt-12">
+            <button className="lg:w-72 w-48 h-14 p-2 font-semibold text-white text-lg bg-rose-600">
               COOK THIS NOW
             </button>
           </div>
 
-          <div
-            className="w-96 mt-10 px-6 pt-16 bg-white"
-            style={{ marginLeft: 600, marginTop: 170 }}
-          >
+          <div className="lg:w-96 w-[100vw] px-6 pt-16 bg-white lg:ml-[600px] ml-40 mt-80 lg:mt-[170px]">
             <h3>
               <a
                 href="https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses"

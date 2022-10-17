@@ -19,16 +19,18 @@ const TheBigGuide = () => {
           THE BIG GUIDE
         </button>
       </div>
-      <div className="grid grid-cols-2 divide-x py-8">
-        <div className="pl-[16rem] pr-4">
+      <div className="grid lg:grid-cols-2 grid-cols-1 divide-x py-8">
+        <div className="lg:pl-[16rem] pl-10 pr-4">
           <a
             href="https://www.epicurious.com/recipes-menus/best-fall-baking-recipes-gallery"
-            className="hover:underline cursor-pointer flex text-start text-5xl font-semibold"
+            className="hover:underline cursor-pointer flex lg:text-start text-center text-5xl font-semibold"
           >
             67 Fall Desserts to Cozy Up to All Season Long
           </a>
-          <p className="text-sm mt-8 text-start">It's time to get baking.</p>
-          <div className="flex justify-start mt-6">
+          <p className="text-sm mt-8 lg:text-start text-center">
+            It's time to get baking.
+          </p>
+          <div className="flex lg:justify-start justify-center mt-6">
             <a
               href="https://www.epicurious.com/recipes-menus/best-fall-baking-recipes-gallery"
               className="hover:underline underline-offset-0 text-sm text-rose-500 font-semibold"
@@ -40,7 +42,7 @@ const TheBigGuide = () => {
             <IoMdArrowDropright className="inline-block text-2xl text-rose-600"></IoMdArrowDropright>
           </div>
         </div>
-        <div className="pl-10 pr-64">
+        <div className="pl-10 lg:pr-64 lg:pt-0 pt-12">
           <a
             href="https://www.epicurious.com/expert-advice/reverse-creaming-cake"
             className="hover:underline text-lg text-start font-semibold flex gap-4"

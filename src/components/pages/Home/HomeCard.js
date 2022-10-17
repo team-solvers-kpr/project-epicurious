@@ -10,7 +10,7 @@ const HomeCard = () => {
   return (
     <div>
       <hr className="py-6 mx-20" />
-      <div className=" bg-gray-100">
+      <div>
         <section className="md:h-full flex items-center text-gray-600">
           <div className="container px-5 py-5 mx-auto">
             <div className="flex flex-wrap m-4 ">

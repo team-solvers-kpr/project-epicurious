@@ -13,7 +13,7 @@ const BestSection = () => {
   const [bestOfEpi, setbestOfEpi] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5500/bestOfEpiData")
+    fetch("https://project-epicurious-backendapi.onrender.com/bestOfEpiData")
       .then((res) => res.json())
       .then((data) => setbestOfEpi(data));
   }, []);

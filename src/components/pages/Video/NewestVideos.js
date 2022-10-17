@@ -20,7 +20,7 @@ const NewestVideos = () => {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5500/videoData")
+    fetch("https://project-epicurious-backendapi.onrender.com/videoData")
       .then((res) => res.json())
       .then((data) => setAllVideoData(data));
   });
