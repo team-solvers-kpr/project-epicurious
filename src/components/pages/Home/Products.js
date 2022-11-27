@@ -1,13 +1,13 @@
 import React from "react";
 import Product from "./Product";
-import moonCakesImg from "../../../assets/images/Mooncakes_HERO_091321_20978.jpg";
-import readPaperPastaImg from "../../../assets/images/RedPepperPasta_HERO_040821_12876.jpg";
+import moonCakesImg from "../../../assets/Images/Mooncakes_HERO_091321_20978.jpg";
+import readPaperPastaImg from "../../../assets/Images/RedPepperPasta_HERO_040821_12876.jpg";
 
 export default function Products() {
   return (
     <div className="container mx-auto">
       <div>
-        <div className="products flex justify-center">
+        <div className="products lg:flex justify-center">
           <Product
             heading="meal plan"
             title="A Week of Easy Dinners to Get You Back in the Cooking Groove"
@@ -22,6 +22,7 @@ export default function Products() {
           />
         </div>
       </div>
+      <hr className="mx-16" />
     </div>
   );
 }

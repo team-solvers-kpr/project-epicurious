@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const [isOpen, setIsOpen] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
   const location = useLocation();
@@ -31,7 +31,7 @@ const Navbar = () => {
   useEffect(() => {}, [location]);
 
   return (
-    <div className=" navbar bg-base-100 overflow-hidden sticky top-0 z-10">
+    <div className="navbar bg-base-100 overflow-hidden fixed top-0 z-10 shadow">
       <div className="navbar-start">
         <div className="flex-none">
           <button onClick={dashboardOpen} className="btn btn-square btn-ghost">
@@ -68,6 +68,7 @@ const Navbar = () => {
               <Link
                 to="/"
                 className="text-white font-bold text-6xl bg-rose-600 lg:p-4 p-2 rounded-full"
+                onClick={dashboardOpen}
               >
                 epi
               </Link>
@@ -75,16 +76,16 @@ const Navbar = () => {
 
             <ul onClick={dashboardOpen}>
               <li className="text-white hover:text-rose-600 font-bold mb-4">
-                <Link to="/recipies">RECIPIES & MENU</Link>
+                <Link to="/recipes-menus">RECIPIES & MENU</Link>
               </li>
               <li className="text-white hover:text-rose-600 font-bold mb-4">
-                <Link to="/">EXPERT ADVICE</Link>
+                <Link to="/expert-advice">EXPERT ADVICE</Link>
               </li>
               <li className="text-white hover:text-rose-600 font-bold mb-4">
-                <Link to="/">INGREDIENTS</Link>
+                <Link to="/ingredients">INGREDIENTS</Link>
               </li>
               <li className="text-white hover:text-rose-600 font-bold mb-4">
-                <Link to="/">HOLIDAYS & EVENTS</Link>
+                <Link to="/holidays-events">HOLIDAYS & EVENTS</Link>
               </li>
               <li className="text-white hover:text-rose-600 font-bold mb-4">
                 <Link to="/videos">VIDEOS</Link>
@@ -125,27 +126,17 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            {!user && (
-              <Link
-                to="/signin"
-                className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
-              >
-                Sign In
-              </Link>
-            )}
-            {user && (
-              <button
-                className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
-                to="/"
-                onClick={logout}
-              >
-                Sign Out
-              </button>
-            )}
+            <Link
+              to="/signin"
+              className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
+              onClick={dashboardOpen}
+            >
+              Sign In
+            </Link>
           </div>
         </div>
 
-        {location.pathname === "/" && (
+        {location.pathname !== "/videos" && (
           <Link
             to="/"
             className="m-2 text-xl text-gray-500 hover:text-gray-700 focus:text-rose-600 cursor-pointer"
@@ -154,11 +145,10 @@ const Navbar = () => {
           </Link>
         )}
 
-        {!user && (
+        {location.pathname !== "/videos" && (
           <Link
             className="text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block"
             to="/signin"
-            onClick={dashboardOpen}
           >
             Sign In
           </Link>
@@ -177,7 +167,7 @@ const Navbar = () => {
           <div className="navbar-start ml-32">
             <Link
               className="cursor-pointer normal-case font-bold text-3xl text-rose-600"
-              to="/vidoes"
+              to="/videos"
             >
               epicurious
             </Link>
@@ -185,7 +175,7 @@ const Navbar = () => {
         )}
       </div>
 
-      {location.pathname === "/" && (
+      {location.pathname !== "/videos" && (
         <div className="navbar-center">
           <Link
             className="cursor-pointer normal-case font-bold text-3xl text-rose-600"
@@ -226,7 +216,7 @@ const Navbar = () => {
       )}
 
       {location.pathname === "/videos" && (
-        <div class="w-[800px] lg:grid grid-cols-4 lg:divide-x block">
+        <div className="w-[800px] lg:grid grid-cols-4 lg:divide-x block">
           <Link
             className="cursor-pointer font-bold text-xs hidden lg:block"
             to="/"
@@ -254,7 +244,7 @@ const Navbar = () => {
             </a>
           </div>
           <form action="">
-            <div className="relative flex items-center lg:justify-center justify-end  text-gray-500 focus-within:text-gray-700">
+            <div className="relative flex items-center lg:justify-start justify-end text-gray-500 focus-within:text-gray-700">
               <BiIcons.BiSearch className="text-xl w-5 h-5 absolute ml-3 pointer-events-none" />
               <input
                 type="text"
@@ -269,7 +259,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {location.pathname === "/" && (
+      {location.pathname !== "/videos" && (
         <div className="navbar-end">
           <p className="mr-4 font-bold text-gray-500 pb-2 hidden lg:block">
             Follow
