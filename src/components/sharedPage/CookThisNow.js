@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
-import MainImage from "../../../src/assets/Images/main.avif";
+import MainImage from "../../../src/assets/images/main.avif";
 
 const CookThisNow = () => {
   return (
