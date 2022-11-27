@@ -3,6 +3,8 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../sharedPage/Loading';
+
 
 export default function Signin() {
   const navigate = useNavigate();
@@ -22,19 +24,23 @@ export default function Signin() {
   const password = '1234';
     signInWithEmailAndPassword(email, password);
     // navigate('/login');
+    
+    
   };
-
-  if (error) {
+  // const errorMessage = 'auth/wrong-password';
+  const erroruser = 'auth/user-not-found';
+  // console.log(errorMessage);
+  if (error !== erroruser) {
     // toast.error("user not found");
-    return <span className="text-red-600 font-serif">{error.message}</span>;
+    // return <span className="text-red-600 font-serif">{error.message}</span>;
+    // navigate('/login');
+    navigate('/signup');
+
+    console.log(error);
   }
 
   if (loading) {
-    return (
-      <div>
-        <p>Initialising User...</p>
-      </div>
-    );
+    return <Loading />;
   }
   // if (!user) {
   //   navigate('/signup');
@@ -68,9 +74,7 @@ export default function Signin() {
                     },
                   })}
                 />
-                
               </label>
-              {console.log(error)}
               <input
                 className="font-serif font-bold btn bg-slate-700 h-12 text-center text-white uppercase mt-6 w-4/5 rounded active:bg-rose-600"
                 type="submit"
