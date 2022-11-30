@@ -12,6 +12,8 @@ const Loading = () => {
     }, 5000);
   }, []);
 
+//loading
+
   return (
     <div className="flex justify-center my-32">
       {loading ? (
