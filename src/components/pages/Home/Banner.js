@@ -9,7 +9,10 @@ const Banner = () => {
 
   return (
     <>
-      <div style={{ height: "486px" }} className="relative items-center w-full">
+      <div
+        style={{ height: "486px" }}
+        className="relative items-center w-full mt-16"
+      >
         <img
           src={bannerImage}
           alt="banner iamge"
@@ -30,7 +33,7 @@ const Banner = () => {
           </div>
           <h1 className="absolute font-bold text-white lg:text-md text-sm top-80 w-full text-center hover:underline cursor-pointer ">
             ADVANCED SEARCH{" "}
-            <BsArrowRightCircleFill className="mx-auto hover:underline cursor-pointer text-2xl" />
+            <BsArrowRightCircleFill className="mx-auto hover:underline cursor-pointer text-2xl mt-2" />
           </h1>
         </div>
       </div>

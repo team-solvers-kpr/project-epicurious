@@ -10,35 +10,32 @@ import { BsRssFill } from "react-icons/bs";
 
 const MiddlePart = () => {
   return (
-    <div class="bg-gray-100  ">
+    <div className="bg-gray-100">
       {/* // -- middle part of footer-- */}
-      <section
-        class="lg:h-96 lg:px-60 py-10 h-1/2  "
-        style={{ backgroundColor: "#f93f23" }}
-      >
-        <div class="lg:flex justify-between ">
-          <div class="lg:flex ">
-            <div class=" p-2">
-              <h1 class="text-5xl font-bold text-white">epicurious</h1>
-              <div class="m-2 flex p-2 md:flex justify-center ">
-                <BsFacebook class="text-white text-2xl mx-1 "></BsFacebook>
-                <FaTwitterSquare class="text-white text-2xl mx-1"></FaTwitterSquare>
-                <BsPinterest class="text-white text-2xl mx-1"></BsPinterest>
-                <FaTumblrSquare class="text-white text-2xl mx-1"></FaTumblrSquare>
-                <TiSocialYoutubeCircular class="text-white text-3xl mx-1"></TiSocialYoutubeCircular>
-                <ImGooglePlus3 class="text-white text-2xl mx-1"></ImGooglePlus3>
-                <AiFillInstagram class="text-white text-3xl mx-1"></AiFillInstagram>
-                <BsRssFill class="text-white text-2xl mx-1"></BsRssFill>
+      <section className="lg:h-96 lg:px-60 py-10 h-1/2 bg-rose-600">
+        <div className="lg:flex justify-between ">
+          <div className="lg:flex ">
+            <div className=" p-2">
+              <h1 className="text-5xl font-bold text-white">epicurious</h1>
+              <div className="m-2 flex p-2 md:flex justify-center ">
+                <BsFacebook className="text-white text-2xl mx-1 "></BsFacebook>
+                <FaTwitterSquare className="text-white text-2xl mx-1"></FaTwitterSquare>
+                <BsPinterest className="text-white text-2xl mx-1"></BsPinterest>
+                <FaTumblrSquare className="text-white text-2xl mx-1"></FaTumblrSquare>
+                <TiSocialYoutubeCircular className="text-white text-3xl mx-1"></TiSocialYoutubeCircular>
+                <ImGooglePlus3 className="text-white text-2xl mx-1"></ImGooglePlus3>
+                <AiFillInstagram className="text-white text-3xl mx-1"></AiFillInstagram>
+                <BsRssFill className="text-white text-2xl mx-1"></BsRssFill>
               </div>
             </div>
           </div>
-          <div class="lg:flex p-2 hidden lg:block">
-            <div class="m-4 ">
-              <div class="mb-4 ">
+          <div className="lg:flex p-2 hidden">
+            <div className="m-4 ">
+              <div className="mb-4 ">
                 <h3>
                   <a
                     href="https://www.condenast.com/careers"
-                    class="hover:underline underline-offset-0 text-xl text-white font-bold mx-2 p-1"
+                    className="hover:underline underline-offset-0 text-xl text-white font-bold mx-2 p-1"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -50,7 +47,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/recipes-menus"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -61,7 +58,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/expert-advice"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -72,7 +69,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/ingredients"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -83,7 +80,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/holidays-events"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -94,7 +91,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://video.epicurious.com/"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -102,9 +99,9 @@ const MiddlePart = () => {
                 </a>
               </h5>
             </div>
-            <div class="m-4">
-              <div class="mb-4">
-                <h3 class=" text-white text-xl font-bold mx-2 p-1">
+            <div className="m-4">
+              <div className="mb-4">
+                <h3 className=" text-white text-xl font-bold mx-2 p-1">
                   HELPFUL LINKS
                 </h3>
               </div>
@@ -112,7 +109,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/info/epicurious-user-help-article"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -123,7 +120,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/about/contact-us"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -134,7 +131,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/about/masthead"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -145,7 +142,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/expert-advice/accessibility-help-article"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -156,7 +153,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.condenast.com/careers"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -167,7 +164,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/about/press-center"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -178,7 +175,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/newsletter"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -186,9 +183,9 @@ const MiddlePart = () => {
                 </a>
               </h5>
             </div>
-            <div class="m-4">
-              <div class="mb-4">
-                <h3 class="text-white text-xl font-bold mx-2 p-1">
+            <div className="m-4">
+              <div className="mb-4">
+                <h3 className="text-white text-xl font-bold mx-2 p-1">
                   FOOD INNOVATION GROUP
                 </h3>
               </div>
@@ -196,7 +193,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.bonappetit.com/"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -207,7 +204,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="https://www.epicurious.com/"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -218,7 +215,7 @@ const MiddlePart = () => {
                 {" "}
                 <a
                   href="http://www.gourmet.com/"
-                  class="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
+                  className="hover:underline underline-offset-0  text-white  mx-2 p-1 text-sm font-semibold  leading-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

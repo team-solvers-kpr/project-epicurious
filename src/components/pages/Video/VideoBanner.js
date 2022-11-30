@@ -13,7 +13,7 @@ const VideoBanner = () => {
   const [videoData, setVideoData] = useState([]);
 
   useEffect(() => {
-    fetch("./videoData.JSON")
+    fetch("https://project-epicurious-backendapi.onrender.com/videoData")
       .then((res) => res.json())
       .then((data) => setVideoData(data));
   }, []);
@@ -35,7 +35,7 @@ const VideoBanner = () => {
         {videoData.map((vData, index) => {
           if (index >= 5) return "";
           return (
-            <SwiperSlide key={vData.id}>
+            <SwiperSlide key={vData._id}>
               <VideoBannerCarousel vData={vData}></VideoBannerCarousel>
             </SwiperSlide>
           );

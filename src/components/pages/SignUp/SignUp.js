@@ -5,7 +5,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import loading from "../../sharedPage/loading";
+import loading from "../../sharedPage/Loading";
 import { toast } from "react-toastify";
 
 // import Footer from "../../sharedPage/Footer";
