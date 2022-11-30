@@ -33,8 +33,7 @@ export default function Signin() {
   if (error !== erroruser) {
     // toast.error("user not found");
     // return <span className="text-red-600 font-serif">{error.message}</span>;
-    // navigate('/login');
-    navigate('/signup');
+    navigate('/login');
 
     console.log(error);
   }
