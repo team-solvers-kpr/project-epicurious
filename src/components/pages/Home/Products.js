@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "./Product";
-import moonCakesImg from "../../../assets/Images/Mooncakes_HERO_091321_20978.jpg";
-import readPaperPastaImg from "../../../assets/Images/RedPepperPasta_HERO_040821_12876.jpg";
+import moonCakesImg from "../../../assets/images/Mooncakes_HERO_091321_20978.jpg";
+import readPaperPastaImg from "../../../assets/images/RedPepperPasta_HERO_040821_12876.jpg";
 
 export default function Products() {
   return (

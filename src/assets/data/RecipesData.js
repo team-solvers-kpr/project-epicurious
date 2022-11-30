@@ -1,9 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
-import CandiedImg from "../Images/CandiedCitrus_RECIPE_080420_37712.jpg";
-import CheaterImg2 from "../Images/cheaterRecipe.jpg";
-import FortunateImg from "../Images/Fortune_Cookie_Magic_Shell_RECIPE_082522_39234.jpg";
-import SesameImg from "../Images/sesameNoodlesRecipe.jpg";
-import TunaImg from "../Images/TunaNoodleCasserole_RECIPE_090721_2033.jpg";
+import CandiedImg from "../images/CandiedCitrus_RECIPE_080420_37712.jpg";
+import CheaterImg2 from "../images/cheaterRecipe.jpg";
+import FortunateImg from "../images/Fortune_Cookie_Magic_Shell_RECIPE_082522_39234.jpg";
+import SesameImg from "../images/TunaNoodleCasserole_RECIPE_090721_2033.jpg";
 
 const recipesData = [
   {
@@ -34,7 +33,7 @@ const recipesData = [
     id: uuidv4(),
     heading: "The vegan Chines Kitchen",
     title: "Sesame Noodles",
-    img: TunaImg,
+    img: FortunateImg,
   },
 ];
 

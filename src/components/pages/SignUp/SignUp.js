@@ -5,7 +5,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import Loading from "../../sharedPage/Loading";
+import loading from "../../sharedPage/Loading";
 import { toast } from "react-toastify";
 
 // import Footer from "../../sharedPage/Footer";
@@ -19,6 +19,7 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  let eerror = 0;
   let errorMessage;
   const onSubmit = async (data) => {
     errorMessage = <p className="text-red-600 font-serif">{error?.message}</p>;
@@ -36,7 +37,7 @@ const SignUp = () => {
     );
   }
   if (loading || gloading) {
-    return <Loading />;
+    return <loading />;
   }
   if (user || guser) {
     toast.success("New User");

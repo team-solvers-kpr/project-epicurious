@@ -1,16 +1,49 @@
-import React from "react";
+import React from 'react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
+import Loading from '../../sharedPage/Loading';
+
 
 export default function Signin() {
   const navigate = useNavigate();
+  const [
+    signInWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useSignInWithEmailAndPassword(auth);
 
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+  } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
-    navigate("/login");
+  const email = data.email;
+  const password = '1234';
+    signInWithEmailAndPassword(email, password);
+    // navigate('/login');
+    
+    
   };
+  // const errorMessage = 'auth/wrong-password';
+  const erroruser = 'auth/user-not-found';
+  // console.log(errorMessage);
+  if (error !== erroruser) {
+    // toast.error("user not found");
+    // return <span className="text-red-600 font-serif">{error.message}</span>;
+    navigate('/login');
 
+    console.log(error);
+  }
+
+  if (loading) {
+    return <Loading />;
+  }
+  // if (!user) {
+  //   navigate('/signup');
+  // }
   return (
     <div className="bg-[#F5F1E7] h-screen mt-16">
       <div className="max-w-md mx-auto">
