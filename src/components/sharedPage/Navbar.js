@@ -11,6 +11,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 import { toast } from "react-toastify";
+import Loading from "./Loading";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -24,11 +25,15 @@ const Navbar = () => {
         navigate("/");
     };
 
+    useEffect(() => {}, [location]);
+
+    if (loading) {
+        return <Loading></Loading>;
+    }
+
     const dashboardOpen = () => {
         setIsOpen(!isOpen);
     };
-
-    useEffect(() => {}, [location]);
 
     return (
         <div className="navbar bg-base-100 overflow-hidden fixed top-0 z-10 shadow">
@@ -136,11 +141,11 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
+
                         {!user && (
                             <Link
                                 to="/signin"
                                 className="btn btn-ghost text-white border-1 border-b-gray-500 hover:text-rose-600 mt-4"
-                                onClick={dashboardOpen}
                             >
                                 Sign In
                             </Link>
@@ -166,7 +171,7 @@ const Navbar = () => {
                     </Link>
                 )}
 
-                {location.pathname !== "/videos" && (
+                {location.pathname !== "/videos" && !user && (
                     <Link
                         className="text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block"
                         to="/signin"
@@ -174,7 +179,8 @@ const Navbar = () => {
                         Sign In
                     </Link>
                 )}
-                {user && (
+
+                {location.pathname !== "/videos" && user && (
                     <button
                         className="text-gray-500 hover:text-gray-700 text-sm font-bold hidden lg:block"
                         to="/signin"
@@ -183,7 +189,6 @@ const Navbar = () => {
                         Sign Out
                     </button>
                 )}
-
                 {location.pathname === "/videos" && (
                     <div className="navbar-start ml-32">
                         <Link
