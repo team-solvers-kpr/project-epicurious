@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import signInImg from '../../../assets/images/Epicurious-Id-portal-Image.webp';
 import {
   useSignInWithEmailAndPassword,
   useSignInWithFacebook,
@@ -51,16 +52,16 @@ const Signin = () => {
   }
 
   return (
-    <>
-      <div className=" w-full mx-auto flex flex-col justify-around items-center bg-[#f5f1e7] mt-16">
-        <div className="max-w-md mx-auto">
-          <div className="pt-10 pb-4">
+    <div className="grid grid-cols-2">
+      <div className="image-content">
+        <img src={signInImg} />
+      </div>
+      <div className=" mt-16">
+        <div className="max-w-lg mx-auto">
+          <div className="pt-10 pb-4 m-4 text-left">
             <h1 className=" ease-in-out delay-150 transition-all  text-xl sm:text-3xl font-serif font-extrabold">
               Sign in to your account
             </h1>
-            <h3 className="pt-4 text-slate-700">
-              Enter your Password to continue.
-            </h3>
           </div>
 
           <div className="mx-auto ease-in-out delay-150 transition-all rounded-2xl bg-white p-5 ">
@@ -99,6 +100,7 @@ const Signin = () => {
                   </div>
                 </label>
                 <input
+                  placeholder="Password"
                   type="password"
                   className="border-black input px-2 w-full"
                   {...register("password", {
@@ -140,13 +142,13 @@ const Signin = () => {
             </div>
           </div>
           <div className=" mt-2 mb-8">
-            <a className="underline" href="/signin">
-              Sign in with another account
+            <a className="underline" href="/signup">
+              Create an account
             </a>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
