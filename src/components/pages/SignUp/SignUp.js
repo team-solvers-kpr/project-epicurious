@@ -7,7 +7,7 @@ import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import Loading from "../../sharedPage/Loading";
+import Loading from "../../sharedPage/loading";
 
 // import Footer from "../../sharedPage/Footer";
 

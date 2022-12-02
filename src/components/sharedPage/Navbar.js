@@ -11,7 +11,6 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 import { toast } from "react-toastify";
-import Loading from "./Loading";
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -27,9 +26,9 @@ const Navbar = () => {
 
     useEffect(() => {}, [location]);
 
-    if (loading) {
-        return <Loading></Loading>;
-    }
+    // if (loading) {
+    //     return <Loading></Loading>;
+    // }
 
     const dashboardOpen = () => {
         setIsOpen(!isOpen);
