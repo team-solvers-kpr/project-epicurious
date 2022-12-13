@@ -5,12 +5,14 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import Loading from "../../sharedPage/Loading";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import Loading from "../../sharedPage/loading";
 
 // import Footer from "../../sharedPage/Footer";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
@@ -19,6 +21,7 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  let eerror = 0;
   let errorMessage;
   const onSubmit = async (data) => {
     errorMessage = <p className="text-red-600 font-serif">{error?.message}</p>;
@@ -40,20 +43,38 @@ const SignUp = () => {
   }
   if (user || guser) {
     toast.success("New User");
-    return (
-      <div>
-        <p>Registered User: {user?.user?.email}</p>
-      </div>
-    );
+    return navigate("/");
   }
   return (
     <div className="h-screen w-full mx-auto flex flex-col justify-around items-center  bg-[#f5f1e7]">
-      <h1 className=" ease-in-out delay-150 transition-all  text-xl sm:text-3xl font-serif font-extrabold">
+      <h1 className="mt-12 ease-in-out delay-150 transition-all  text-xl sm:text-3xl font-serif font-extrabold">
         Create an Account
       </h1>
-      <div className="mx-auto w-[280px] sm:w-[400px]  ease-in-out delay-150 transition-all rounded-2xl bg-white p-5 ">
-        <form className=" mx-auto  space-y-2" onSubmit={handleSubmit(onSubmit)}>
+      <div className="mx-auto w-max-md sm:w-[400px]  ease-in-out delay-150 transition-all rounded-2xl bg-white p-5 ">
+        <form className=" mx-auto space-y-2 " onSubmit={handleSubmit(onSubmit)}>
           {/* register your input into the hook by invoking the "register" function */}
+          <div className="my-2">
+            <label>
+              <div className="text-left ml-2 font-serif font-bold">
+                <span>Full Name</span>
+              </div>
+            </label>
+            <input
+              placeholder="Enter Your Full Name"
+              id="fullName"
+              type="text"
+              className="border-black px-2 w-full input"
+              {...register("fullName", {
+                required: {
+                  value: true,
+                  message: "full name is required",
+                },
+              })}
+            />
+            <p className="text-red-600 font-serif">
+              {errors.email?.type === "required" && errors.email.message}
+            </p>
+          </div>
           <div className="my-2">
             <label>
               <div className="text-left ml-2 font-serif font-bold">

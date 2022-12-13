@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BounceLoader } from "react-spinners";
-import Login from "../pages/Login/Login";
+import Signin from "../pages/Register/Signin";
 
 const Loading = () => {
   const [loading, setLoading] = useState(false);
@@ -17,7 +17,7 @@ const Loading = () => {
       {loading ? (
         <BounceLoader color={"#36d7b7"} loading={loading} size={300} />
       ) : (
-        <Login></Login>
+        <Signin></Signin>
       )}
     </div>
   );
