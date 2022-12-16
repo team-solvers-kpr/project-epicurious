@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../assets/images/cornstarch-macro-051022.webp';
+import img from '../../../assets/Images/cornstarch-macro-051022.webp';
 
 const CardTop = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Images from "../../../assets/images/Brussels_sprouts_with_pistachios_and_lime_recipe_BA_111819.webp";
+import Images from "../../../assets/Images/Brussels_sprouts_with_pistachios_and_lime_recipe_BA_111819.webp";
 
 const IngredientsTop = () => {
   return (

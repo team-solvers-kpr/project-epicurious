@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import signInImg from '../../../assets/images/Epicurious-Id-portal-Image.webp';
+import signInImg from '../../../assets/Images/Epicurious-Id-portal-Image.webp';
 import {
   useSignInWithEmailAndPassword,
   useSignInWithFacebook,
