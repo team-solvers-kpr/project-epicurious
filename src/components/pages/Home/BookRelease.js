@@ -1,5 +1,5 @@
 import React from "react";
-import allBooksImg from "../../../assets/images/allBooks.png";
+import allBooksImg from "../../../assets/Images/allBooks.png";
 import ProductInfo from "./ProductInfo";
 
 export default function BookRelease() {

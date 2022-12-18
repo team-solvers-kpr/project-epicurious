@@ -10,7 +10,7 @@ const IngredientsTop = () => {
           <div className="">
             <img src={Images} alt="images" />
           </div>
-          <div className='bg-white absolute mt-[100px]'>
+          <div className='bg-white absolute -bottom-[75px] left-[20px]'>
               <div className="section_title p-6">
                   <h2 className="heading uppercase text-slate-300">brussels sprout</h2>
                   <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer">31 Ways to Make Crispy, Crunchy, Caramelized Brussels Sprouts
