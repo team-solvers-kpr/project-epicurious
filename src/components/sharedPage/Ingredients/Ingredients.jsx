@@ -1,7 +1,7 @@
 import React from 'react';
 import IngredientsTop from './IngredientsTop';
 import CardTop from './CardTop'
-import CardBottom from '../../pages/Home/HomeCard';
+import CardBottom from './CardBottom';
 import TheBigGuide from '.././../sharedPage/Ingredients/TheBigGuide';
 
 const ingredients = () => {
