@@ -3,7 +3,7 @@ import img from '../../../assets/Images/cornstarch-macro-051022.webp';
 
 const CardTop = () => {
   return (
-    <div className='flex justify-center flex-wrap mt-20'>
+    <div className='flex justify-center flex-wrap CardTop'>
       <div className="p-4 sm:w-1/2 lg:w-1/3 ">
                 <a href='/' className="h-full border-2 cursor-pointer border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img

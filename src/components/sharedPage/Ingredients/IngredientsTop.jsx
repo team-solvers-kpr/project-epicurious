@@ -3,20 +3,23 @@ import Images from "../../../assets/Images/Brussels_sprouts_with_pistachios_and_
 
 const IngredientsTop = () => {
   return (
-    <div className='mt-20 flex flex-col items-center'>
-        <h1 className='text-2xl uppercase font-se'>ingredients</h1>
+    <div className='flex-col items-center flex justify-center mt-20 itop'>
+        <h1 className='text-2xl uppercase font-bold'>ingredients</h1>
        <a href="/" >
         <div className='ingridents'>
           <div className="ingridents-img">
             <img src={Images} alt="images" />
           </div>
-          <div className='bg-white absolute mt-[-20px] ingridents-items'>
+          <div className='bg-white ingridents-items lg:mr-4'>
               <div className="section_title p-6">
                   <h2 className="heading uppercase text-slate-300">brussels sprout</h2>
                   <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer">31 Ways to Make Crispy, Crunchy, Caramelized Brussels Sprouts
                   </p>
-                  <div className="divider "></div>
-                  <h3 className="uppercase text-red-600">by the editors of epicurious</h3>
+                  <div className="divider"></div>
+                  <div className='flex justify-center gap-8'>
+                    <h3 className="uppercase text-red-600">by the editors of epicurious </h3>
+                    <span className='text-slate-300'>/ 11.15.22</span>
+                  </div>
               </div>
           </div>
         </div>
