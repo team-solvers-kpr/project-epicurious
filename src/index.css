@@ -23,15 +23,17 @@ code {
 
 .ingridents-items{
   position: absolute;
-  margin-top: -6rem;
-  margin-left: 5rem;
+  bottom: -8rem;
   width: 85%;
 }
 
-.CardTop{
+/* .CardTop{
   margin-top: 10rem;
-}
+} */
 
+.itop{
+  padding-bottom: 10rem;
+}
 /* .itop h1{
   padding-right: 53rem;
 } */
