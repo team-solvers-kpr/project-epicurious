@@ -22,15 +22,18 @@ code {
 }
 
 .ingridents-items{
-  position: absolute;
-  bottom: -8rem;
-  width: 85%;
+  bottom: -231px;
 }
 
-/* .CardTop{
-  margin-top: 10rem;
-} */
+@media (min-width: 1024px) { 
+  .ingridents-items{
+    bottom: -7.5rem;
+  }
+  .card-top{
+    margin-top: 6rem;
+  }
 
+ }
 .itop{
   padding-bottom: 10rem;
 }

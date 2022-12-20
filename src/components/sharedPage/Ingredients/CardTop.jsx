@@ -5,7 +5,7 @@ const CardTop = () => {
   return (
     <div>
 
-    <div className='flex justify-center flex-wrap CardTop py-16'>
+    <div className='flex justify-center flex-wrap card-top mt-20 py-16'>
       <div className="p-4 sm:w-1/2 lg:w-1/3 ">
                 <a href='/' className="h-full border-2 cursor-pointer border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
