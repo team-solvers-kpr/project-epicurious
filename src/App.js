@@ -1,3 +1,4 @@
+import React, { useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Home from "./components/pages/Home/Home";
@@ -7,7 +8,6 @@ import Video from "./components/pages/Video/Video";
 import Footer from "./components/sharedPage/Footer";
 import Navbar from "./components/sharedPage/Navbar";
 import NotFound from "./components/sharedPage/NotFound";
-import React, { useLayoutEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RecipesMenus from "./components/pages/Home/RecipesMenus";
@@ -45,4 +45,3 @@ function App() {
 }
 
 export default App;
-
