@@ -11,7 +11,7 @@ import React, { useLayoutEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RecipesMenus from "./components/pages/Home/RecipesMenus";
-import Ingredients from './components/sharedPage/Ingredients/Ingredients';
+import Ingredients from './components/pages/Ingredients/Ingredients';
 
 function App() {
   const Wrapper = ({ children }) => {

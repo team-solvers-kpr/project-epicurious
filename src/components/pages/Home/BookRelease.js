@@ -1,13 +1,12 @@
 import React from "react";
 import Images from "../../../assets/Images/allBooks.png";
-import ProductInfo from "./ProductInfo";
 
 export default function BookRelease() {
   return (
-    <div className='flex-col items-center flex justify-center mt-12 mb-20'>
+    <div className='flex-col items-center flex justify-center mt-12 mb-20 '>
        <a href="/" >
         <div className='relative flex justify-center hover:underline'>
-          <div className="ingridents-img">
+          <div className="ingridents-img outline-slate-50 outline-2 outline -outline-offset-[15px] ">
             <img src={Images} alt="images" />
           </div>
           <div className='bg-white lg:-bottom-[9.5rem] absolute w-[85%] bottom-[-250px]'>
