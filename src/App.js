@@ -11,6 +11,7 @@ import NotFound from "./components/sharedPage/NotFound";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RecipesMenus from "./components/pages/Home/RecipesMenus";
+import Ingredients from './components/pages/Ingredients/Ingredients';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/videos" element={<Video></Video>}></Route>
           <Route path="/signin" element={<Signin></Signin>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
+          <Route path="/ingredients" element={<Ingredients></Ingredients>}></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
         <ToastContainer></ToastContainer>
