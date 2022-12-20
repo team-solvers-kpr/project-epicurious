@@ -7,7 +7,7 @@ export default function Products() {
   return (
     <div className="container mx-auto lg:pt-24 pt-40">
       <div>
-        <div className="products lg:flex justify-center flex lg:flex-row flex-col items-center">
+        <div className="products lg:flex justify-center flex lg:flex-row flex-col lg:gap-8 items-center">
           <Product
             heading="meal plan"
             title="A Week of Easy Dinners to Get You Back in the Cooking Groove"
