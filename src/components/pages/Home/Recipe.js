@@ -1,5 +1,5 @@
 import React from "react";
-import recipesImg from "../../../assets/images/CandiedCitrus_RECIPE_080420_37712.jpg";
+import recipesImg from "../../../assets/Images/CandiedCitrus_RECIPE_080420_37712.jpg";
 
 export default function Recipe({
   img = recipesImg,

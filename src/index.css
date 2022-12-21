@@ -14,3 +14,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* shareed page folder ingridents css */
+.ingridents{
+  position: relative;
+}
+
+.ingridents-items{
+  bottom: -231px;
+}
+
+@media (min-width: 1024px) { 
+  .ingridents-items{
+    bottom: -7.5rem;
+  }
+  .card-top{
+    margin-top: 6rem;
+  }
+
+ }
+.itop{
+  padding-bottom: 10rem;
+}
+/* .itop h1{
+  padding-right: 53rem;
+} */
