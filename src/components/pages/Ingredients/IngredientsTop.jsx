@@ -13,14 +13,14 @@ const IngredientsTop = () => {
 
   return (
     <div>
-      <div className="flex-col items-center flex justify-center mt-20 m-40">
+      <div className="flex-col items-center flex justify-center mt-20 lg:m-40">
           <h1 className="text-2xl uppercase font-bold lg:">ingredients</h1>
           <a href="/">
-              <div className="flex items-center justify-center flex-col outline-slate-50  outline-2 outline -outline-offset-[15px]">
+              <div className="flex items-center  justify-center flex-col outline-slate-50  outline-2 outline -outline-offset-[15px]">
                   <div className="">
-                      <img src="{ingredientsTopSingle.img}" alt="images" />
+                      <img src={ingredientsTopSingle.img} alt="ingredents images" />
                   </div>
-                  <div className="bg-white -mt-24 w-[85%]">
+                  <div className="bg-white lg:-mt-24 w-[85%]">
                       <div className="p-6">
                           <h2 className="heading uppercase text-indigo-300">{ingredientsTopSingle.category}</h2>
                           <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer pb-2">{ingredientsTopSingle.title}</p>
@@ -40,7 +40,7 @@ const IngredientsTop = () => {
 
               <div className="p-4 sm:w-1/2 lg:w-1/3 ">
                   <a href="/" className="h-full border-2 cursor-pointer border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                      <img src="{data.img}" className="lg:h-72 md:h-48 w-full object-cover object-center" alt="meal-1" />
+                      <img src={data.img} className="lg:h-72 md:h-48 w-full object-cover object-center" alt="meal-1" />
                       <div className="p-6  transition duration-300 ease-in">
                           <h2 className="text-base font-medium text-indigo-300 mb-1">
                               {data.category}
