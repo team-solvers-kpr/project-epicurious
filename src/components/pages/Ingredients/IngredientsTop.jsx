@@ -27,7 +27,7 @@ const IngredientsTop = () => {
                           <hr className="mx-16" />
                           <div className="flex justify-center gap-2 pt-4">
                               <h3 className="uppercase text-red-600">{ingredientsTopSingle.author}</h3>
-                              <span className="text-slate-300">{ingredientsTopSingle.date}</span>
+                              <span className="text-indigo-300">{ingredientsTopSingle.date}</span>
                           </div>
                       </div>
                   </div>
@@ -51,7 +51,7 @@ const IngredientsTop = () => {
                               </p>
                           </h1>
                           <p className="leading-relaxed mb-3 text-orange-500">
-                              BY {data.author} / {data.date}
+                              BY {data.author} / <span className='text-indigo-300'>{data.date}</span>
                           </p>
                       </div>
                   </a>
