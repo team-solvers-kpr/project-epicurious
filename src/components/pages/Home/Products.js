@@ -5,7 +5,7 @@ import readPaperPastaImg from "../../../assets/Images/RedPepperPasta_HERO_040821
 
 export default function Products() {
    return (
-      <div className="container mx-auto">
+      <div className="container mx-auto lg:pt-24 pt-40">
          <div>
             <div className="products lg:flex justify-center flex lg:flex-row flex-col lg:gap-8 items-center">
                <Product
@@ -22,7 +22,6 @@ export default function Products() {
                />
             </div>
          </div>
-         <hr className="mx-16" />
       </div>
    );
 }
