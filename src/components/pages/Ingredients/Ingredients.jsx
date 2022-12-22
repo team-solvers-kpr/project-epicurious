@@ -2,14 +2,14 @@ import React from 'react';
 import IngredientsTop from './IngredientsTop';
 // import CardTop from './CardTop';
 import CardBottom from './CardBottom';
-import TheBigGuide from './TheBigGuide';
+import IngredientsBigGuide from './IngredientsBigGuide';
 
 const ingredients = () => {
   return (
     <>
         <IngredientsTop></IngredientsTop>
         {/* <CardTop></CardTop> */}
-        <TheBigGuide></TheBigGuide>
+        <IngredientsBigGuide></IngredientsBigGuide>
         <CardBottom></CardBottom>
     </>
   )
