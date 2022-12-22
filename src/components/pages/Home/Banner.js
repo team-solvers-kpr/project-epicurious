@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bannerImage from "../../../assets/images/banner_img.jpg";
+import bannerImage from "../../../assets/Images/banner_img.jpg";
 import { ImSearch } from "react-icons/im";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import SearchModal from "./SearchModal";

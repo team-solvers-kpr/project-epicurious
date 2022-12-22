@@ -1,10 +1,10 @@
 import React from "react";
-import image from "../../../assets/images/Gourmet.png";
-import image2 from "../../../assets/images/bon.png";
-import image3 from "../../../assets/images/self.png";
-import image4 from "../../../assets/images/penguin.png";
-import image5 from "../../../assets/images/weelicious.png";
-import image6 from "../../../assets/images/harper.png";
+import image from "../../../assets/Images/Gourmet.png";
+import image2 from "../../../assets/Images/bon.png";
+import image3 from "../../../assets/Images/self.png";
+import image4 from "../../../assets/Images/penguin.png";
+import image5 from "../../../assets/Images/weelicious.png";
+import image6 from "../../../assets/Images/harper.png";
 
 const FirstPart = () => {
   return (
