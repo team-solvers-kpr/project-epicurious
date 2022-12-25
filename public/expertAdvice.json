@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/62267aec280d108b91b7ceb7/1:1/w_800%2Cc_limit/BostonCreamPie_HERO_030322_29186.jpg",
         "cardCategory": "SHOPPING",
         "cardHeading": "A Mildly Chaotic White Elephant Gift Guide for Folks Who Want Something Truly Unique",
         "cardSubHeading":"This is the lowest-stakes kind of gift exchange—which means it should be the most fun.",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "cardImg": "",
+        "cardImg": "https://www.epicurious.com/shopping/in-praise-of-the-dough-hook-the-unsung-hero-of-kitchenaid-attachments",
         "cardCategory": "SHOPPING",
         "cardHeading": "All the GIft Ideas From Epicurious",
         "cardSubHeading":"Our hub for holiday gift inspiration, with ideas for every lucky recipient on your list.",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/6348395b972661170c935446/1:1/w_960,c_limit/caraway-cookware-set_HERO_101222_11733_V1_final.jpg",
         "cardCategory": "GIFT GUIDE",
         "cardHeading": "49 Wine Gifts for Oenophiles (That Aren't Cutesy Charms for Their Glasses)",
         "cardSubHeading":"The fanciest wine glass. An opener for old corks. And a reminder to hydrate.",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/6283a7784ef547c8ce3ad5d6/1:1/w_960,c_limit/NoBakeCheesecake_HERO_051222_33813.jpg",
         "cardCategory": "GIFT GUIDE",
         "cardHeading": "The 41 Best Gifts for Tea Lovers.",
         "cardSubHeading":"Stovetop or electric kettle fanatics, fans of high-caffeine matcha or low-key chamomile—don’t worry, we’ve got every type of tea lover covered.",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/63977b3a17b0aaa43ced81f0/1:1/w_960,c_limit/ChimneySweepIceCream_HERO_120822_44001.jpg",
         "cardCategory": "SHOPPING",
         "cardHeading": "34 Holiday Gifts the Epi Team is Giving This Year",
         "cardSubHeading":"Baking tools, funky mugs, and the best crunchy nut butter.",
@@ -51,43 +51,52 @@
     },
     {
         "id": 6,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/637bd9a0d76aa15587578cd6/1:1/w_960,c_limit/KingCake_HERO_111622_42500.jpg",
         "cardCategory": "CHICKEN",
         "cardHeading": "Yes. You can Roast a Whole Chicken in Your Air Fryer",
-        "":"",
+        "cardSubHeading":"Baking tools, funky mugs, and the best crunchy nut butter.",
         "adviceBy": "STEVE ORLANDO",
+        "details":"Not to brag, but we at Epicurious are very good at giving holiday gifts. This is because we spend way more time than is normal or advised thinking about the best cooking tools, pretty tabletop items, and craveable snacks and condiments. We use this knowledge to stock our own kitchens, certainly, but when the holiday season rolls around, we pull from that same roster of products we know and love to shop for everyone on our lists.",
         "postDate": "12.12.22"
     },
     {
         "id": 7,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/63979f46ca0105ba469bb156/1:1/w_960,c_limit/AcidPhosphateDrinks_HERO_120822_43903.jpg 960w",
         "cardCategory": "SHOPPING",
         "cardHeading": "The Best Last-Minute Kitchen Gifts",
+        "cardSubHeading":"Stovetop or electric kettle fanatics, fans of high-caffeine matcha or low-key chamomile—don’t worry, we’ve got every type of tea lover covered.",
         "adviceBy": "WILDER DAVIES",
+        "details":"Not to brag, but we at Epicurious are very good at giving holiday gifts. This is because we spend way more time than is normal or advised thinking about the best cooking tools, pretty tabletop items, and craveable snacks and condiments. We use this knowledge to stock our own kitchens, certainly, but when the holiday season rolls around, we pull from that same roster of products we know and love to shop for everyone on our lists.",
         "postDate": "12.10.22"
     },
     {
         "id": 8,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/63977b3a17b0aaa43ced81f0/1:1/w_960,c_limit/ChimneySweepIceCream_HERO_120822_44001.jpg",
         "cardCategory": "SMALL PLATES",
         "cardHeading": "The Best Coocking Gifts for Kids",
+        "cardSubHeading":"Stovetop or electric kettle fanatics, fans of high-caffeine matcha or low-key chamomile—don’t worry, we’ve got every type of tea lover covered.",
         "adviceBy": "EMILY FARRIS & POOJA MAKHIJANI",
+        "details":"Not to brag, but we at Epicurious are very good at giving holiday gifts. This is because we spend way more time than is normal or advised thinking about the best cooking tools, pretty tabletop items, and craveable snacks and condiments. We use this knowledge to stock our own kitchens, certainly, but when the holiday season rolls around, we pull from that same roster of products we know and love to shop for everyone on our lists.",
         "postDate": "12.10.22"
     },
     {
         "id": 9,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/6363e4f165b53ff6569baab2/16:9/w_960,c_limit/20220215%20Turkish%20Eggs%20LEDE.jpg",
         "cardCategory": "SHOPPING",
         "cardHeading": "The Best All-Clad Factory Sale Deals Online Right Now",
+        "cardSubHeading":"Stovetop or electric kettle fanatics, fans of high-caffeine matcha or low-key chamomile—don’t worry, we’ve got every type of tea lover covered.",
         "adviceBy": "THE EDITORS OF EPICURIOUS",
+        "details":"Not to brag, but we at Epicurious are very good at giving holiday gifts. This is because we spend way more time than is normal or advised thinking about the best cooking tools, pretty tabletop items, and craveable snacks and condiments. We use this knowledge to stock our own kitchens, certainly, but when the holiday season rolls around, we pull from that same roster of products we know and love to shop for everyone on our lists.",
         "postDate": "12.10.22"
     },
     {
         "id": 10,
-        "cardImg": "",
+        "cardImg": "https://assets.epicurious.com/photos/6388cfdc0ab2ad422d5fe500/1:1/w_960,c_limit/Best-Cookbooks-2022_HERO_113022_12739_VOG_final.jpg",
         "cardCategory": "SHOPPING",
         "cardHeading": "The 29 Cooking Tools Our Editors Loved This Year",
+        "cardSubHeading":"Stovetop or electric kettle fanatics, fans of high-caffeine matcha or low-key chamomile—don’t worry, we’ve got every type of tea lover covered.",
         "adviceBy": "MEGAN WAHN",
+        "details":"Not to brag, but we at Epicurious are very good at giving holiday gifts. This is because we spend way more time than is normal or advised thinking about the best cooking tools, pretty tabletop items, and craveable snacks and condiments. We use this knowledge to stock our own kitchens, certainly, but when the holiday season rolls around, we pull from that same roster of products we know and love to shop for everyone on our lists.",
         "postDate": "12.10.22"
     }
 ]
