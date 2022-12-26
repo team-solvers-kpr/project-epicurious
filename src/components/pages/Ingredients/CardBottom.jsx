@@ -30,7 +30,7 @@ const CardBottom = () => {
                       </u>
                     </h1>
                     <p className="leading-relaxed mb-3 text-orange-500">
-                      BY {data.author} / {data.date}
+                            BY {data.author} / <span className='text-indigo-300'>{data.date}</span>
                     </p>
                     <div className="flex item-center flex-wrap">
                       <a
