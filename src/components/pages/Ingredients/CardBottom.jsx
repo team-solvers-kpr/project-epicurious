@@ -1,10 +1,4 @@
 import React from 'react';
-import image1 from "../../../assets/Images/f1.avif";
-import image2 from "../../../assets/Images/f2.avif";
-import image3 from "../../../assets/Images/f3.avif";
-import image4 from "../../../assets/Images/f4.avif";
-import image5 from "../../../assets/Images/f5.avif";
-import image6 from "../../../assets/Images/f6.avif";
 
 import cardBootmJson from './ingredients_cards.json';
 
@@ -19,7 +13,7 @@ const CardBottom = () => {
           <div className="container px-5 py-5 mx-auto">
             <div className="flex flex-wrap m-4 ">
               {cardBootm.map((data)=> (
-                <div className="p-4 sm:w-1/2 lg:w-1/3 ">
+                <div key={data.id} className="p-4 sm:w-1/2 lg:w-1/3 ">
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={data.img}
