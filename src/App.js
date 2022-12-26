@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Ingredients from "./components/pages/Ingredients/Ingredients";
 import RecipesMenus from "./components/pages/RecipesMenus/RecipesMenus";
+import ExpertAdvices from "./components/pages/Expert-advices/ExpertAdvices";
 
 function App() {
    const Wrapper = ({ children }) => {
@@ -39,6 +40,10 @@ function App() {
                <Route
                   path="/ingredients"
                   element={<Ingredients></Ingredients>}
+               ></Route>
+               <Route
+                  path="/expert-advice"
+                  element={<ExpertAdvices></ExpertAdvices>}
                ></Route>
                <Route path="*" element={<NotFound></NotFound>}></Route>
             </Routes>
