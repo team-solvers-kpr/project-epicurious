@@ -12,7 +12,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Ingredients from "./components/pages/Ingredients/Ingredients";
 import RecipesMenus from "./components/pages/RecipesMenus/RecipesMenus";
+import ExpertAdvices from "./components/pages/Expert-advices/ExpertAdvices";
 import IngrediantsDetails from "./components/pages/Ingredients/IngrediantsDetails";
+
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -53,6 +55,7 @@ function App() {
       </Wrapper>
     </div>
   );
+
 }
 
 export default App;
