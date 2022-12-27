@@ -10,9 +10,11 @@ const CardBottom = () => {
       <div>
         <section className="md:h-full flex items-center text-gray-600">
           <div className="container px-5 py-5 mx-auto">
+
             {/* <div className="flex flex-wrap m-4 ">
               {cardBootm.map((data) => (
                 <div className="p-4 sm:w-1/2 lg:w-1/3 ">
+
 
                 <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
