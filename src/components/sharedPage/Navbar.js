@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 
 const Navbar = () => {
    const navigate = useNavigate();
-   const [user, loading, error] = useAuthState(auth);
+   const [user] = useAuthState(auth);
    const [isOpen, setIsOpen] = useState(false);
    const [showSearchModal, setShowSearchModal] = useState(false);
    const location = useLocation();
@@ -24,11 +24,8 @@ const Navbar = () => {
       navigate("/");
    };
 
+   // eslint-disable-next-line @typescript-eslint/no-empty-function
    useEffect(() => {}, [location]);
-
-   // if (loading) {
-   //     return <Loading></Loading>;
-   // }
 
    const dashboardOpen = () => {
       setIsOpen(!isOpen);
