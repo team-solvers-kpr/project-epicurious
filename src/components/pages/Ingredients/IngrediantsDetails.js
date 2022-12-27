@@ -34,7 +34,7 @@ const IngrediantsDetails = () => {
                     {findSingalData.author}
                   </h3>
                 </div>
-                <span className="text-black font-mono text-xs">
+                <span className="text-black font-mono text-xs oldstyle-nums ">
                   {findSingalData.date}
                 </span>
                 <div>

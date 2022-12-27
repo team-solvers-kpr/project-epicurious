@@ -16,47 +16,55 @@ import ExpertAdvices from "./components/pages/Expert-advices/ExpertAdvices";
 import IngrediantsDetails from "./components/pages/Ingredients/IngrediantsDetails";
 
 function App() {
-   const Wrapper = ({ children }) => {
-      const location = useLocation();
+  const Wrapper = ({ children }) => {
+    const location = useLocation();
 
-      useLayoutEffect(() => {
-         document.documentElement.scrollTo(0, 0);
-      }, [location.pathname]);
-      return children;
-   };
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children;
+  };
 
-   return (
-      <div className="App">
-         <Wrapper>
-            <Navbar></Navbar>
-            <Routes>
-               <Route path="/" element={<Home></Home>}></Route>
-               <Route
-                  path="/recipes-menus"
-                  element={<RecipesMenus></RecipesMenus>}
-               ></Route>
-               <Route path="/videos" element={<Video></Video>}></Route>
-               <Route path="/signin" element={<Signin></Signin>}></Route>
-               <Route path="/signup" element={<SignUp></SignUp>}></Route>
-               <Route
-                  path="/ingredients"
-                  element={<Ingredients></Ingredients>}
-               ></Route>
-               <Route
-                  path="/expert-advice"
-                  element={<ExpertAdvices></ExpertAdvices>}
-               ></Route>
-               <Route
-                  path="/ingredients/details/:id"
-                  element={<IngrediantsDetails></IngrediantsDetails>}
-               ></Route>
-               <Route path="*" element={<NotFound></NotFound>}></Route>
-            </Routes>
-            <ToastContainer></ToastContainer>
-            <Footer></Footer>
-         </Wrapper>
-      </div>
-   );
+  return (
+    <div className="App">
+      <Wrapper>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route
+            path="/recipes-menus"
+            element={<RecipesMenus></RecipesMenus>}
+          ></Route>
+          <Route path="/videos" element={<Video></Video>}></Route>
+          <Route path="/signin" element={<Signin></Signin>}></Route>
+          <Route path="/signup" element={<SignUp></SignUp>}></Route>
+          <Route
+            path="/expert-advice"
+            element={<ExpertAdvices></ExpertAdvices>}
+          ></Route>
+          <Route
+            path="/ingredients"
+            element={<Ingredients></Ingredients>}
+          ></Route>
+          <Route
+            path="/ingredients/details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route
+            path="/expert-advice/details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route
+            path="details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route path="*" element={<NotFound></NotFound>}></Route>
+        </Routes>
+        <ToastContainer></ToastContainer>
+        <Footer></Footer>
+      </Wrapper>
+    </div>
+  );
 }
 
 export default App;

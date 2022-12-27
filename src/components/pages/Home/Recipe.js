@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import recipesImg from "../../../assets/Images/CandiedCitrus_RECIPE_080420_37712.jpg";
 
