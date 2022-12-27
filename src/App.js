@@ -39,7 +39,7 @@ function App() {
           <Route path="/signin" element={<Signin></Signin>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
           <Route
-            path="/Expert-advice"
+            path="/expert-advice"
             element={<ExpertAdvices></ExpertAdvices>}
           ></Route>
           <Route
@@ -48,6 +48,14 @@ function App() {
           ></Route>
           <Route
             path="/ingredients/details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route
+            path="/expert-advice/details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route
+            path="details/:id"
             element={<IngrediantsDetails></IngrediantsDetails>}
           ></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
