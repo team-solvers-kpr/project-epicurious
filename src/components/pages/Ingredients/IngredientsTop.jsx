@@ -13,7 +13,7 @@ const IngredientsTop = () => {
 
   return (
     <div>
-      <div className="flex-col items-center flex justify-center mt-20 lg:m-40">
+      <div className="flex-col items-center flex justify-center mt-20 lg:mx-40">
           <h1 className="text-2xl uppercase font-bold lg:">ingredients</h1>
           <a href="/">
               <div className="flex items-center  justify-center flex-col outline-slate-50  outline-2 outline -outline-offset-[15px]">
