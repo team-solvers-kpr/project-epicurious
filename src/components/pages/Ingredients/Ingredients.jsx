@@ -1,9 +1,9 @@
-import React from "react";
-import IngredientsTop from "./IngredientsTop";
-// import CardTop from './CardTop';
-import CardBottom from "./CardBottom";
-import IngredientsBigGuide from "./IngredientsBigGuide";
-//import { useState } from "react";
+
+import React from 'react';
+import IngredientsTop from './IngredientsTop';
+import CardBottom from './CardBottom';
+import IngredientsBigGuide from './IngredientsBigGuide';
+
 const ingredients = () => {
   // const [singalDetails, SetSingalDetails] = useState([]);
   // console.log(details);
@@ -16,10 +16,9 @@ const ingredients = () => {
 
   return (
     <>
-      <IngredientsTop key={"in"}></IngredientsTop>
-      {/* <CardTop></CardTop> */}
-      <IngredientsBigGuide key={"bigg"}></IngredientsBigGuide>
-      <CardBottom key={"card"}></CardBottom>
+        <IngredientsTop></IngredientsTop>
+        <IngredientsBigGuide></IngredientsBigGuide>
+        <CardBottom></CardBottom>
     </>
   );
 };
