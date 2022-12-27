@@ -12,7 +12,7 @@ export default function ProductInfo({
         {title}
       </p>
       <hr className="mx-16 pb-4" />
-      <h3 className=" author name uppercase text-red-600">{author}</h3>
+      <h3 className="uppercase text-red-600">{author}</h3>
     </div>
   );
 }
