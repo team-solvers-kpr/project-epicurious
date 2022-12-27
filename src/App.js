@@ -15,7 +15,6 @@ import RecipesMenus from "./components/pages/RecipesMenus/RecipesMenus";
 import ExpertAdvices from "./components/pages/Expert-advices/ExpertAdvices";
 import IngrediantsDetails from "./components/pages/Ingredients/IngrediantsDetails";
 
-
 function App() {
   const Wrapper = ({ children }) => {
     const location = useLocation();
@@ -39,7 +38,10 @@ function App() {
           <Route path="/videos" element={<Video></Video>}></Route>
           <Route path="/signin" element={<Signin></Signin>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
-          <Route path="/Expert-advice" element={<SignUp></SignUp>}></Route>
+          <Route
+            path="/Expert-advice"
+            element={<ExpertAdvices></ExpertAdvices>}
+          ></Route>
           <Route
             path="/ingredients"
             element={<Ingredients></Ingredients>}
@@ -55,7 +57,6 @@ function App() {
       </Wrapper>
     </div>
   );
-
 }
 
 export default App;
