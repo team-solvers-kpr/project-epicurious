@@ -1,3 +1,4 @@
+import React, { useLayoutEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Home from "./components/pages/Home/Home";
@@ -7,10 +8,13 @@ import Video from "./components/pages/Video/Video";
 import Footer from "./components/sharedPage/Footer";
 import Navbar from "./components/sharedPage/Navbar";
 import NotFound from "./components/sharedPage/NotFound";
-import React, { useLayoutEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import RecipesMenus from "./components/pages/Home/RecipesMenus";
+import Ingredients from "./components/pages/Ingredients/Ingredients";
+import RecipesMenus from "./components/pages/RecipesMenus/RecipesMenus";
+
+import ExpertAdvices from "./components/pages/Expert-advices/ExpertAdvices";
+import IngrediantsDetails from "./components/pages/Ingredients/IngrediantsDetails";
 import HolidayEvent from "./components/pages/Home/HolidayEvent";
 
 function App() {
@@ -40,6 +44,26 @@ function App() {
           <Route path="/videos" element={<Video></Video>}></Route>
           <Route path="/signin" element={<Signin></Signin>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
+          <Route
+            path="/expert-advice"
+            element={<ExpertAdvices></ExpertAdvices>}
+          ></Route>
+          <Route
+            path="/ingredients"
+            element={<Ingredients></Ingredients>}
+          ></Route>
+          <Route
+            path="/ingredients/details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route
+            path="/expert-advice/details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
+          <Route
+            path="details/:id"
+            element={<IngrediantsDetails></IngrediantsDetails>}
+          ></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
         <ToastContainer></ToastContainer>
@@ -50,4 +74,3 @@ function App() {
 }
 
 export default App;
-

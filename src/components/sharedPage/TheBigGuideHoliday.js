@@ -1,9 +1,9 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
-import bigGuideImg from "../../assets/images/burger.webp";
-import bigGuideC1 from "../../../src/assets/images/bigGuideContent3.webp";
-import bigGuideC2 from "../../../src/assets/images/bigGuideContent2.webp";
-import bigGuideC3 from "../../../src/assets/images/bigGuideContent1.webp";
+import bigGuideImg from "../../assets/Images/burger.webp";
+import bigGuideC1 from "../../assets/Images/bigGuideContent3.webp";
+import bigGuideC2 from "../../assets/Images/bigGuideContent2.webp";
+import bigGuideC3 from "../../assets/Images/bigGuideContent1.webp";
 
 const TheBigGuide = () => {
   return (

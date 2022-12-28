@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import signInImg from '../../../assets/images/Epicurious-Id-portal-Image.webp';
+import signInImg from "../../../assets/Images/Epicurious-Id-portal-Image.webp";
 import {
   useSignInWithEmailAndPassword,
   useSignInWithFacebook,
@@ -7,7 +7,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { useForm } from "react-hook-form";
-import loading from "../../sharedPage/loading";
+import Loading from "../../sharedPage/loading";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
@@ -41,7 +41,7 @@ const Signin = () => {
     );
   }
   if (loading || googleloading || facebookloading) {
-    return <loading />;
+    return <Loading></Loading>;
   }
   if (user || googleUser || facebookUser) {
     toast.success("Login successful");

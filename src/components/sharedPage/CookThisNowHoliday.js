@@ -1,5 +1,5 @@
 import React from "react";
-import MainImage from "../../../src/assets/images/Cookies.avif";
+import MainImage from "../../assets/Images/Cookies.avif";
 
 const CookThisNow = () => {
   return (

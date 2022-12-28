@@ -1,11 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
-import CookThisNow from "../../sharedPage/CookThisNow";
-import TheBigGuide from "../../sharedPage/TheBigGuide";
-import HomeCard from "./HomeCard";
-import Products from "./Products";
 
-const Recipes_Menus = () => {
+const FindRecipes = () => {
   return (
     <div className="my-24">
       {/* find recipes section start */}
@@ -143,18 +140,8 @@ const Recipes_Menus = () => {
         </div>
       </section>
       {/* find recipes section End */}
-
-      <CookThisNow></CookThisNow>
-
-      <Products></Products>
-
-      <TheBigGuide></TheBigGuide>
-
-      <div className="lg:mx-48">
-        <HomeCard></HomeCard>
-      </div>
     </div>
   );
 };
 
-export default Recipes_Menus;
+export default FindRecipes;

@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-import videoIcon from "../../../assets/images/video_icon.png";
+import videoIcon from "../../../assets/Images/video_icon.png";
 
 const NewestVideo = (props) => {
   const { img, categories, title } = props.singleVideoData;
