@@ -1,5 +1,4 @@
 import React from "react";
-import { IoMdArrowDropright } from "react-icons/io";
 import MainImage from "../../../src/assets/images/Cookies.avif";
 
 const CookThisNow = () => {
@@ -21,7 +20,7 @@ const CookThisNow = () => {
         <div className="absolute lg:block  group">
           
 
-          <div className="lg:w-3/5  w-[100vw] px-6 pt-16 bg-white lg:ml-[250px] ml-40 mt-80 lg:mt-[500px]">
+          <div className="lg:w-3/5  w-[100vw] px-6 pt-16 bg-white lg:ml-[250px] ml-40 mt-80 lg:mt-[450px]">
             <p>COOKIE</p>
             <h3>
               <a
@@ -38,17 +37,14 @@ const CookThisNow = () => {
             <div className="flex justify-center">
               <a
                 href="https://www.epicurious.com/recipes/food/views/chocolate-pecan-sheet-pie-with-molasses"
-                className="hover:underline underline-offset-0 text-md  font-semibold mx-2 p-2"
+                className=" text-xs  font-semibold mx-2 p-2"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#f93f23" }}
               >
-                VIEW RECIPE{" "}
+               BY NATASHA DAVID  <span className="text-gray-400 ml-1 "> / </span> <span className="text-gray-400 ml-1">12.19.22</span>
               </a>
-              <IoMdArrowDropright
-                className="text-2xl mt-1 pt-2"
-                style={{ color: "#f93f23" }}
-              ></IoMdArrowDropright>
+              
             </div>
           </div>
         </div>

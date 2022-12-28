@@ -1,5 +1,5 @@
 import React from "react";
-import TheBigGuide from "../../sharedPage/TheBigGuide";
+import TheBigGuideHoliday from "../../sharedPage/TheBigGuideHoliday";
 import CookThisNowHoliday from '../../sharedPage/CookThisNowHoliday'
 import HomeCard from "./HomeCard";
 import Products from "./Products";
@@ -12,7 +12,7 @@ const HolidayEvent = () => {
 
       <Products></Products>
 
-      <TheBigGuide></TheBigGuide>
+      <TheBigGuideHoliday></TheBigGuideHoliday>
 
       <div className="lg:mx-48">
         <HomeCard></HomeCard>
