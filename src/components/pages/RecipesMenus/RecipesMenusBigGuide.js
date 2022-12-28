@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import TheBigGuideBottom from "../../sharedPage/TheBigGuideBottom";
@@ -10,7 +11,7 @@ const RecipesMenusBigGuide = () => {
    return (
       <div className="my-16 relative">
          <div className="flex items-center justify-center relative">
-            <a href="https://www">
+            <a href="https://www.epicurious.com/recipes-menus/best-fall-baking-recipes-gallery">
                <img
                   src={bigGuideTop.img}
                   alt="big guide poster"
@@ -29,7 +30,7 @@ const RecipesMenusBigGuide = () => {
                >
                   {bigGuideTop.title}
                </a>
-               <p className="text-sm mt-8 lg:text-start text-center">
+               <p className="text-sm mt-8 lg:mr-10 mr-0 lg:text-start text-center">
                   For these recipes, you'll make a double batch of a base sauce.
                   Use half for one dish, and then turn the remainder into a
                   radically different meal the following night.

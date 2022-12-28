@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import videoIcon from "../../../assets/Images/video_icon.png";
 

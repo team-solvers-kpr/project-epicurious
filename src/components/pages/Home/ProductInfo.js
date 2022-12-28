@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 
 export default function ProductInfo({
+  // eslint-disable-next-line react/prop-types
   heading = "Meal Plan",
   title = "this is meal",
   author = "author name",

@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import cardBootmJson from './ingredients_cards.json';
+import cardBottom from "./ingredients_cards.json";
 
 const CardBottom = () => {
-
-  const cardBootm = cardBootmJson.slice(3, 12);
+    const cardBottomSlice = cardBottom.slice(3, 12);
   return (
     <div>
       <hr className="py-6 mx-20" />
@@ -12,9 +12,9 @@ const CardBottom = () => {
         <section className="md:h-full flex items-center text-gray-600">
           <div className="container px-5 py-5 mx-auto">
             <div className="flex flex-wrap m-4 ">
-              {cardBootm.map((data)=> (
-                <div className="p-4 sm:w-1/2 lg:w-1/3 ">
-                <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              {cardBottomSlice.map((data) => (
+                <div key={data.id} className="p-4 sm:w-1/2 lg:w-1/3 ">
+                <Link to={`details/${data.id}`} className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={data.img}
                     className="lg:h-72 md:h-48 w-full object-cover object-center"
@@ -40,18 +40,18 @@ const CardBottom = () => {
                       >
                         Read more
                       </a>
+
                     </div>
                   </div>
-                </div>
-              </div>
-              ))}
-              
+                </Link>
             </div>
+              ))}
+          </div>
           </div>
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CardBottom;
