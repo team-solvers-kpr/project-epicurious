@@ -12,13 +12,13 @@ const ExpartBigGuid = () => {
    return (
       <div className="my-16 relative">
          <div className="flex items-center justify-center relative">
-            <a href="https://www">
+            <Link to={`details/${bigGuideTop.id}`}>
                <img
                   src={bigGuideTop.img}
                   alt="big guide poster"
                   className="lg:w-[1004px] lg:h-[500px]"
                />
-            </a>
+            </Link>
             <button className="absolute w-48 h-12 p-2 font-semibold text-white text-lg bg-rose-600 -top-6">
                THE BIG GUIDE
             </button>
