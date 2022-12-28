@@ -11,6 +11,7 @@ import React, { useLayoutEffect } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import RecipesMenus from "./components/pages/Home/RecipesMenus";
+import HolidayEvent from "./components/pages/Home/HolidayEvent";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -31,6 +32,10 @@ function App() {
           <Route
             path="/recipes-menus"
             element={<RecipesMenus></RecipesMenus>}
+          ></Route>
+           <Route
+            path="/holidays-events"
+            element={<HolidayEvent/>}
           ></Route>
           <Route path="/videos" element={<Video></Video>}></Route>
           <Route path="/signin" element={<Signin></Signin>}></Route>
