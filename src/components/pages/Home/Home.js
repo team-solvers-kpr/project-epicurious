@@ -1,6 +1,5 @@
 import React from "react";
 import CookThisNow from "../../sharedPage/CookThisNow";
-import TheBigGuideTop from "./HomeBigGuide";
 import Banner from "./Banner";
 import BookRelease from "./BookRelease";
 import HomeCard from "./HomeCard";
