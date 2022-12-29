@@ -23,7 +23,7 @@ const IngredientsTop = () => {
     <div>
       <div className="flex-col items-center flex justify-center mt-20 lg:mx-48">
 
-          <h1 className="text-2xl uppercase font-bold lg:">ingredients</h1>
+          <h1 className="text-2xl uppercase font-semibold lg:mr-[800px] md:mr-[680px] mr-80">ingredients</h1>
           <Link to={`details/${ingredientsTopSingle.id}`}>
               <div className="flex items-center  justify-center flex-col ">
                   <div className="md:outline-slate-50  md:outline-2 md:outline md:-outline-offset-[15px]">
@@ -36,7 +36,7 @@ const IngredientsTop = () => {
                           <hr className="md:mx-80 mx-20" />
                           <div className="flex justify-center gap-2 pt-2">
                               <h3 className="uppercase text-red-600">{ingredientsTopSingle.author}</h3>
-                              <span className="text-indigo-300">{ingredientsTopSingle.date}</span>
+                              <span className="text-indigo-300">/ {ingredientsTopSingle.date}</span>
                           </div>
                       </div>
                   </div>
