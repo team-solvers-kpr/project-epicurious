@@ -21,7 +21,7 @@ const IngrediantsDetails = () => {
                   </div>
                   <div className="bg-white  w-[85%]">
                      <div className="p-6">
-                        <h2 className="heading uppercase text-xs tracking-tighter font-semibold leading-loose text-red-600">
+                        <h2 className="heading uppercase tracking-tighter font-semibold leading-loose text-red-600">
                            {findSingalData.category}
                         </h2>
                         <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer pb-2">
