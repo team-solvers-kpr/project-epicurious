@@ -33,7 +33,7 @@ const IngredientsTop = () => {
                       <div className="p-6">
                           <h2 className="heading uppercase text-indigo-300">{ingredientsTopSingle.category}</h2>
                           <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer pb-2">{ingredientsTopSingle.title}</p>
-                          <hr className="mx-96" />
+                          <hr className="mx-28 lg:mx-96" />
                           <div className="flex justify-center gap-2 pt-4">
                               <h3 className="uppercase text-red-600">{ingredientsTopSingle.author}</h3>
                               <span className="text-indigo-300">{ingredientsTopSingle.date}</span>

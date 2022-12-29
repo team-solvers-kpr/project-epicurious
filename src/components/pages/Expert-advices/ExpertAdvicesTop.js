@@ -26,7 +26,7 @@ const ExpertAdvicesTop = () => {
                         <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer pb-2">
                            <h1> {expertAdvicesTopSingle.cardHeading}</h1>
                         </p>
-                        <hr className="mx-96" />
+                        <hr className="mx-28 lg:mx-96" />
                         <div className="flex justify-center gap-2 pt-4">
                            <h3 className="uppercase text-red-600">
                               {expertAdvicesTopSingle.adviceBy}
