@@ -21,13 +21,13 @@ const IngredientsTop = () => {
 
   return (
     <div>
-      <div className="flex-col items-center flex justify-center mt-20 lg:mx-48">
+      <div className="flex-col items-center flex justify-center mt-20">
 
           <h1 className="text-2xl uppercase font-semibold lg:mr-[800px] md:mr-[680px] mr-80">ingredients</h1>
           <Link to={`details/${ingredientsTopSingle.id}`}>
               <div className="flex items-center  justify-center flex-col ">
                   <div className="md:outline-slate-50  md:outline-2 md:outline md:-outline-offset-[15px]">
-                      <img src={ingredientsTopSingle.img} alt="ingredents images" />
+                      <img src={ingredientsTopSingle.img} alt="ingredents images" className="lg:w-[1004px] lg:h-[519px]"/>
                   </div>
                   <div className="bg-white lg:-mt-24 lg:w-[85%]">
                       <div className="p-6">

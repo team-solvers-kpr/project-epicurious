@@ -9,13 +9,16 @@ const ExpertAdvicesTop = () => {
    return (
       <div>
          <div className="flex-col items-center flex justify-center lg:mx-48 mt-20">
-            <h1 className="text-2xl uppercase font-semibold lg:mr-[780px] md:mr-[650px] mr-72">EXPERT ADVICE</h1>
+            <h1 className="text-2xl uppercase font-semibold lg:mr-[780px] md:mr-[650px] mr-72">
+               EXPERT ADVICE
+            </h1>
             <Link to={`details/${expertAdvicesTopSingle.id}`}>
                <div className="flex items-center  justify-center flex-col ">
                   <div className="lg:outline-slate-50  lg:outline-2 lg:outline lg:-outline-offset-[15px]">
                      <img
                         src={expertAdvicesTopSingle.cardImg}
                         alt="ingredents images"
+                        className="lg:w-[1004px] lg:h-[519px]"
                      />
                   </div>
                   <div className="bg-white lg:-mt-24 w-[85%]">
