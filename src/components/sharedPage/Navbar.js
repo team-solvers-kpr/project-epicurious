@@ -23,7 +23,8 @@ const Navbar = () => {
       toast.error("Logged Out");
       navigate("/");
    };
-   
+
+   // eslint-disable-next-line @typescript-eslint/no-empty-function
    useEffect(() => {}, [location]);
 
    const dashboardOpen = () => {
