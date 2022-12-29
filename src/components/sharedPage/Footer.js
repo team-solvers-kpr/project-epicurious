@@ -1,3 +1,4 @@
+
 import React from "react";
 import FirstPart from "./footer/FirstPart";
 import MiddlePart from "./footer/MiddlePart";
