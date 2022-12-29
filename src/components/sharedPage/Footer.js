@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
-/* eslint-disable react/react-in-jsx-scope */
 import React from "react";
 import FirstPart from "./footer/FirstPart";
 import MiddlePart from "./footer/MiddlePart";
