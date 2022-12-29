@@ -21,20 +21,20 @@ const IngredientsTop = () => {
 
   return (
     <div>
-      <div className="flex-col items-center flex justify-center mt-20 lg:m-40">
+      <div className="flex-col items-center flex justify-center mt-20 lg:mx-48">
 
           <h1 className="text-2xl uppercase font-bold lg:">ingredients</h1>
           <Link to={`details/${ingredientsTopSingle.id}`}>
-              <div className="flex items-center  justify-center flex-col outline-slate-50  outline-2 outline -outline-offset-[15px]">
-                  <div className="">
+              <div className="flex items-center  justify-center flex-col ">
+                  <div className="md:outline-slate-50  md:outline-2 md:outline md:-outline-offset-[15px]">
                       <img src={ingredientsTopSingle.img} alt="ingredents images" />
                   </div>
-                  <div className="bg-white lg:-mt-24 w-[85%]">
+                  <div className="bg-white lg:-mt-24 lg:w-[85%]">
                       <div className="p-6">
                           <h2 className="heading uppercase text-indigo-300">{ingredientsTopSingle.category}</h2>
-                          <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer pb-2">{ingredientsTopSingle.title}</p>
-                          <hr className="mx-28 lg:mx-96" />
-                          <div className="flex justify-center gap-2 pt-4">
+                          <p className="hover:underline text-2xl my-2 text-black font-semibold cursor-pointer pb-2">{ingredientsTopSingle.title}</p>
+                          <hr className="md:mx-80 mx-20" />
+                          <div className="flex justify-center gap-2 pt-2">
                               <h3 className="uppercase text-red-600">{ingredientsTopSingle.author}</h3>
                               <span className="text-indigo-300">{ingredientsTopSingle.date}</span>
                           </div>
@@ -64,7 +64,8 @@ const IngredientsTop = () => {
                   <h1 className="text-2xl font-semibold mb-3 hover:underline">
                     <p>{data.title}</p>
                   </h1>
-                  <p className="leading-relaxed mb-3 text-orange-500">
+                  <hr className="mx-28" />
+                  <p className="leading-relaxed my-3 text-orange-500">
                     BY {data.author} /{" "}
                     <span className="text-indigo-300">{data.date}</span>
                   </p>

@@ -8,11 +8,11 @@ const ExpertAdvicesTop = () => {
 
    return (
       <div>
-         <div className="flex-col items-center flex justify-center lg:mx-40 mt-20">
+         <div className="flex-col items-center flex justify-center lg:mx-48 mt-20">
             <h1 className="text-2xl uppercase font-bold">EXPERT ADVICE</h1>
             <Link to={`details/${expertAdvicesTopSingle.id}`}>
-               <div className="flex items-center  justify-center flex-col outline-slate-50  outline-2 outline -outline-offset-[15px]">
-                  <div className="">
+               <div className="flex items-center  justify-center flex-col ">
+                  <div className="lg:outline-slate-50  lg:outline-2 lg:outline lg:-outline-offset-[15px]">
                      <img
                         src={expertAdvicesTopSingle.cardImg}
                         alt="ingredents images"
@@ -23,11 +23,11 @@ const ExpertAdvicesTop = () => {
                         <h2 className="heading uppercase text-indigo-300">
                            {expertAdvicesTopSingle.cardCategory}
                         </h2>
-                        <p className=" title hover:underline text-2xl my-5 text-black font-semibold cursor-pointer pb-2">
+                        <p className=" title hover:underline text-2xl my-2 text-black font-semibold cursor-pointer pb-2">
                            <h1> {expertAdvicesTopSingle.cardHeading}</h1>
                         </p>
-                        <hr className="mx-28 lg:mx-96" />
-                        <div className="flex justify-center gap-2 pt-4">
+                        <hr className="lg:mx-80 mx-20" />
+                        <div className="flex justify-center gap-2 pt-2">
                            <h3 className="uppercase text-red-600">
                               {expertAdvicesTopSingle.adviceBy}
                            </h3>
@@ -41,7 +41,7 @@ const ExpertAdvicesTop = () => {
             </Link>
          </div>
          <div>
-            <div className="flex justify-center flex-wrap mt-4">
+            <div className="flex justify-center flex-wrap mt-20">
                {expertAdvicesTopDouble.map((data) => (
                   <div key={data.id} className="p-4 sm:w-1/2 lg:w-1/3">
                      <Link
