@@ -9,8 +9,6 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import Loading from "../../sharedPage/Loading";
 
-// import Footer from "../../sharedPage/Footer";
-
 const SignUp = () => {
    const navigate = useNavigate();
    const [createUserWithEmailAndPassword, user, loading, error] =
