@@ -1,19 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import ingredientsCardTop from "./ingredients_cards.json";
+import DetailsPage from "./DetailsPage";
+import detalis from "./details.json";
 const IngrediantsDetails = () => {
   const ingredientsTopSingle = ingredientsCardTop;
-  console.log(ingredientsTopSingle);
   const id = useParams();
-  console.log(id);
   const findSingalData = ingredientsTopSingle.find(
     (detail) => detail.id == id.id
   );
-  console.log(findSingalData);
+
   return (
     <div>
       {" "}
-      <div className="flex-col items-center flex justify-center mt-20 lg:m-40">
+      <div className="flex-col items-center flex justify-center mt-20 lg:mt-40 lg:ml-40 lg:mr-40">
         <a href="/">
           <div className="flex items-center  justify-center flex-col outline-slate-50  outline-2 outline ">
             <div className="">
@@ -46,6 +46,11 @@ const IngrediantsDetails = () => {
             </div>
           </div>
         </a>
+      </div>
+      <div className="lg:ml-40 lg:mr-40">
+        {detalis?.map((deatil) => (
+          <DetailsPage key={"ok"} deatil={deatil}></DetailsPage>
+        ))}
       </div>
     </div>
   );
