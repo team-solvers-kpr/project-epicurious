@@ -22,7 +22,6 @@ const IngredientsTop = () => {
   return (
     <div>
       <div className="flex-col items-center flex justify-center mt-20">
-
           <h1 className="text-2xl uppercase font-semibold lg:mr-[800px] md:mr-[680px] mr-80">ingredients</h1>
           <Link to={`details/${ingredientsTopSingle.id}`}>
               <div className="flex items-center  justify-center flex-col ">
