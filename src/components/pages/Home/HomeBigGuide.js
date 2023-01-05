@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import { Link } from "react-router-dom";
+import Loading from "../../sharedPage/Loading";
 import TheBigGuideBottom from "../../sharedPage/TheBigGuideBottom";
-import bigGuideData from "./home_bigGuide.json";
 
 const HomeBigGuide = () => {
-   const bigGuideTop = bigGuideData[0];
-   const bigGuideBottom = bigGuideData.slice(1, 4);
+   const [bigGuideData, setBigGuideData] = useState(0);
+   const [loading, setLoading] = useState(false);
+
+   useEffect(() => {
+      setLoading(true);
+      fetch("http://localhost:5500/allEpicuriousData")
+         .then((res) => res.json())
+         .then((data) => {
+            setBigGuideData(data);
+            setLoading(false);
+         });
+   }, []);
+
+   if (loading || bigGuideData === 0) {
+      return <Loading></Loading>;
+   }
 
    return (
       <div className="my-16 relative">
          <div className="flex items-center justify-center relative">
-            <Link to={`details/${bigGuideTop.id}`}>
+            <Link to={`allEpicuriousData/${bigGuideData[0]._id}`}>
                <img
-                  src={bigGuideTop.img}
+                  src={bigGuideData[0].img}
                   alt="big guide poster"
                   className="lg:w-[1004px] lg:h-[500px]"
                />
@@ -25,10 +39,10 @@ const HomeBigGuide = () => {
          <div className="grid lg:grid-cols-2 grid-cols-1 divide-x py-8">
             <div className="lg:pl-[16rem] pl-10 pr-4">
                <Link
-                  to={`details/${bigGuideTop.id}`}
+                  to={`allEpicuriousData/${bigGuideData[0]._id}`}
                   className="hover:underline cursor-pointer flex lg:text-start text-center text-5xl font-bold"
                >
-                  {bigGuideTop.title}
+                  {bigGuideData[0].title}
                </Link>
                <p className="text-sm mt-8 lg:text-start text-center">
                   Find all of our gift-giving advice here.
@@ -46,9 +60,9 @@ const HomeBigGuide = () => {
                </div>
             </div>
             <div className="lg:pl-10 pl-4 lg:pr-64 pr-4 lg:pt-0 pt-12">
-               {bigGuideBottom.map((data) => (
+               {bigGuideData.slice(1, 4).map((data) => (
                   <TheBigGuideBottom
-                     key={data.id}
+                     key={data._id}
                      data={data}
                   ></TheBigGuideBottom>
                ))}

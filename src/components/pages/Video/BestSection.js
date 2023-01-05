@@ -16,7 +16,7 @@ const BestSection = () => {
 
    useEffect(() => {
       setIsLoading(true);
-      fetch("https://project-epicurious-backendapi.onrender.com/bestOfEpiData")
+      fetch("http://localhost:5500/bestOfEpiData")
          .then((res) => res.json())
          .then((data) => {
             setbestOfEpi(data);
@@ -31,7 +31,7 @@ const BestSection = () => {
    return (
       <div className="pt-4 pb-10 bg-gray-200">
          <div className="lg:w-[870px] w-full mx-auto ">
-            <h2 className="my-6 uppercase text-xl font-semibold lg:text-start">
+            <h2 className="mt-6 uppercase text-xl font-semibold lg:text-start">
                Best of Epicurious
             </h2>
             <Swiper

@@ -16,7 +16,7 @@ const VideoBanner = () => {
 
    useEffect(() => {
       setIsLoading(true);
-      fetch("https://project-epicurious-backendapi.onrender.com/videoData")
+      fetch("http://localhost:5500/videoData")
          .then((res) => res.json())
          .then((data) => {
             setVideoData(data);

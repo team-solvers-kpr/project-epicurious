@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TheBigGuideBottom from "../../sharedPage/TheBigGuideBottom";
 import { IoMdArrowDropright } from "react-icons/io";
-import bigGuideData from "./expartAdvice_bigGuide.json";
 import { Link } from "react-router-dom";
+import Loading from "../../sharedPage/Loading";
 
 const ExpartBigGuid = () => {
-   const bigGuideTop = bigGuideData[0];
-   const bigGuideBottom = bigGuideData.slice(1, 4);
-   console.log(bigGuideBottom);
+   const [bigGuideData, setBigGuideData] = useState(0);
+   const [loading, setLoading] = useState(false);
+
+   useEffect(() => {
+      setLoading(true);
+      fetch("http://localhost:5500/allEpicuriousData")
+         .then((res) => res.json())
+         .then((data) => {
+            setBigGuideData(data);
+            setLoading(false);
+         });
+   }, []);
+
+   if (loading || bigGuideData === 0) {
+      return <Loading></Loading>;
+   }
 
    return (
       <div className="my-16 relative">
          <div className="flex items-center justify-center relative">
-            <Link to={`details/${bigGuideTop.id}`}>
+            <Link to={`allEpicuriousData/${bigGuideData[16]._id}`}>
                <img
-                  src={bigGuideTop.img}
+                  src={bigGuideData[16].img}
                   alt="big guide poster"
                   className="lg:w-[1004px] lg:h-[500px]"
                />
@@ -26,10 +39,10 @@ const ExpartBigGuid = () => {
          <div className="grid lg:grid-cols-2 grid-cols-1 divide-x py-8">
             <div className="lg:pl-[16rem] pl-10 pr-4">
                <Link
-                  to={`details/${bigGuideTop.id}`}
+                  to={`allEpicuriousData/${bigGuideData[16]._id}`}
                   className="hover:underline cursor-pointer flex lg:text-start text-center text-5xl font-bold"
                >
-                  {bigGuideTop.title}
+                  {bigGuideData[16].title}
                </Link>
                <p className="text-sm mt-8 lg:text-start text-center">
                   How to shop for it, store it, and cook with it in 2019.
@@ -47,7 +60,7 @@ const ExpartBigGuid = () => {
                </div>
             </div>
             <div className="lg:pl-10 pl-4 lg:pr-64 pr-4 lg:pt-0 pt-12">
-               {bigGuideBottom.map((data) => (
+               {bigGuideData.slice(17, 20).map((data) => (
                   <TheBigGuideBottom
                      key={data.id}
                      data={data}

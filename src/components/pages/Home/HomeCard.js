@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import homeCardData from "./homeCard.json";
+import Loading from "../../sharedPage/Loading";
 
 const HomeCard = () => {
+   const [cardData, setCardData] = useState(0);
+   const [loading, setLoading] = useState(false);
+
+   useEffect(() => {
+      setLoading(true);
+      fetch("http://localhost:5500/allEpicuriousData")
+         .then((res) => res.json())
+         .then((data) => {
+            setCardData(data);
+            setLoading(false);
+         });
+   }, []);
+
+   if (loading || cardData === 0) {
+      return <Loading></Loading>;
+   }
+
    return (
       <div>
          <hr className="py-6 mx-12" />
@@ -10,10 +27,10 @@ const HomeCard = () => {
             <section className="md:h-full flex items-center text-gray-600">
                <div className="container lg:px-20 px-5 py-5 mx-auto">
                   <div className="flex flex-wrap m-4 ">
-                     {homeCardData.map((card) => (
+                     {cardData.slice(4, 12).map((card) => (
                         <div key={card.id} className="p-4 sm:w-1/2 lg:w-1/3 ">
                            <Link
-                              to={`details/${card.id}`}
+                              to={`allEpicuriousData/${card._id}`}
                               className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden"
                            >
                               <img

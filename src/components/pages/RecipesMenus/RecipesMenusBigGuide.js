@@ -1,19 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
+import Loading from "../../sharedPage/Loading";
 import TheBigGuideBottom from "../../sharedPage/TheBigGuideBottom";
-import bigGuideData from "./recipesMenus_bigGuide.json";
 
 const RecipesMenusBigGuide = () => {
-   const bigGuideTop = bigGuideData[0];
-   const bigGuideBottom = bigGuideData.slice(1, 4);
+   const [bigGuideData, setBigGuideData] = useState(0);
+   const [loading, setLoading] = useState(false);
+
+   useEffect(() => {
+      setLoading(true);
+      fetch("http://localhost:5500/allEpicuriousData")
+         .then((res) => res.json())
+         .then((data) => {
+            setBigGuideData(data);
+            setLoading(false);
+         });
+   }, []);
+
+   if (loading || bigGuideData === 0) {
+      return <Loading></Loading>;
+   }
 
    return (
       <div className="my-16 relative">
          <div className="flex items-center justify-center relative">
             <a href="https://www.epicurious.com/recipes-menus/best-fall-baking-recipes-gallery">
                <img
-                  src={bigGuideTop.img}
+                  src={bigGuideData[12].img}
                   alt="big guide poster"
                   className="lg:w-[1004px] lg:h-[500px]"
                />
@@ -28,7 +42,7 @@ const RecipesMenusBigGuide = () => {
                   href="https://www.epicurious.com/recipes-menus/best-fall-baking-recipes-gallery"
                   className="hover:underline cursor-pointer flex lg:text-start text-center text-5xl font-bold"
                >
-                  {bigGuideTop.title}
+                  {bigGuideData[12].title}
                </a>
                <p className="text-sm mt-8 lg:mr-10 mr-0 lg:text-start text-center">
                   For these recipes, you'll make a double batch of a base sauce.
@@ -48,7 +62,7 @@ const RecipesMenusBigGuide = () => {
                </div>
             </div>
             <div className="lg:pl-10 pl-4 lg:pr-64 pr-4 lg:pt-0 pt-12">
-               {bigGuideBottom.map((data) => (
+               {bigGuideData.slice(13, 16).map((data) => (
                   <TheBigGuideBottom
                      key={data.id}
                      data={data}

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import bigGuideImg from "../../../assets/Images/big_guide_img.webp";

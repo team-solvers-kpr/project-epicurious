@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import cardBottom from "./ingredients_cards.json";
+import Loading from '../../sharedPage/Loading';
 
 const CardBottom = () => {
-    const cardBottomSlice = cardBottom.slice(3, 12);
+  const [cardData, setCardData] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+     setLoading(true);
+     fetch("http://localhost:5500/allEpicuriousData")
+        .then((res) => res.json())
+        .then((data) => {
+           setCardData(data);
+           setLoading(false);
+        });
+  }, []);
+
+  if (loading || cardData === 0) {
+     return <Loading></Loading>;
+  }
+
   return (
     <div>
       <hr className="py-6 mx-20" />
@@ -12,9 +27,9 @@ const CardBottom = () => {
         <section className="md:h-full flex items-center text-gray-600">
           <div className="container px-5 py-5 mx-auto">
             <div className="flex flex-wrap m-4 ">
-              {cardBottomSlice.map((data) => (
-                <div key={data.id} className="p-4 sm:w-1/2 lg:w-1/3 ">
-                <Link to={`details/${data.id}`} className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              {cardData.slice(38,45).map((data) => (
+                <div key={data._id} className="p-4 sm:w-1/2 lg:w-1/3 ">
+                <Link to={`allEpicuriousData/${data._id}`} className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img
                     src={data.img}
                     className="lg:h-72 md:h-48 w-full object-cover object-center"
